@@ -1,4 +1,15 @@
+#!/usr/bin/env python3
+"""Regenerate Vol. 1 Ch. IV events and patch concept-registry. Run: python update_ch04.py (from scripts/) or python scripts/update_ch04.py"""
 import json
+import sys
+from pathlib import Path
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPT_DIR))
+
+from repo_paths import REPO_ROOT
+
+_SCRATCH = REPO_ROOT / ".scratch" / "religion-map"
 
 refs = {
   178: "Н. Frankfort. The Birth of Civilization in the Near East, pp. 100–111; E.I. Baumgartel. The Culture of Prehistoric Egypt, p. 48 sq.",
@@ -449,11 +460,11 @@ for event in events:
         event["references"] = [{"num": n, "text": refs[n]} for n in event.pop("ref_nums") if n in refs]
 
 # Write to ch04-events.json
-with open(".scratch/religion-map/vol1/ch04-events.json", "w") as f:
+with open(_SCRATCH / "vol1" / "ch04-events.json", "w", encoding="utf-8") as f:
     json.dump(events, f, ensure_ascii=False, indent=2)
 
 # Update concept-registry.json
-with open(".scratch/religion-map/concept-registry.json", "r") as f:
+with open(_SCRATCH / "concept-registry.json", "r", encoding="utf-8") as f:
     registry = json.load(f)
 
 for event in events:
@@ -467,7 +478,7 @@ for event in events:
                 "source_ref": event["source_ref"]
             }
 
-with open(".scratch/religion-map/concept-registry.json", "w") as f:
+with open(_SCRATCH / "concept-registry.json", "w", encoding="utf-8") as f:
     json.dump(registry, f, ensure_ascii=False, indent=2)
 
 print("Done generating events and updating registry.")

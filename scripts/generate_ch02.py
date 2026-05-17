@@ -1,5 +1,11 @@
 import json
-import os
+import sys
+from pathlib import Path
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPT_DIR))
+
+from repo_paths import REPO_ROOT
 
 events = [
     {
@@ -373,10 +379,10 @@ events = [
     }
 ]
 
-with open('.scratch/religion-map/vol1/ch02-events.json', 'w', encoding='utf-8') as f:
+with open(REPO_ROOT / ".scratch" / "religion-map" / "vol1" / "ch02-events.json", "w", encoding="utf-8") as f:
     json.dump(events, f, ensure_ascii=False, indent=2)
 
-with open('.scratch/religion-map/concept-registry.json', 'r', encoding='utf-8') as f:
+with open(REPO_ROOT / ".scratch" / "religion-map" / "concept-registry.json", "r", encoding="utf-8") as f:
     registry = json.load(f)
 
 for event in events:
@@ -388,7 +394,7 @@ for event in events:
             "source_ref": event['source_ref']
         }
 
-with open('.scratch/religion-map/concept-registry.json', 'w', encoding='utf-8') as f:
+with open(REPO_ROOT / ".scratch" / "religion-map" / "concept-registry.json", "w", encoding="utf-8") as f:
     json.dump(registry, f, ensure_ascii=False, indent=2)
 
 print("Done")

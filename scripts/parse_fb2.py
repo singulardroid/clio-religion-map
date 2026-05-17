@@ -2,8 +2,9 @@
 """
 parse_fb2.py — extract chapters from an .fb2 file into plain-text files.
 
-Usage:
-    python scripts/parse_fb2.py [path/to/file.fb2] [--out-dir data/vol1/chapters]
+Usage (from repo root or from scripts/):
+    python scripts/parse_fb2.py
+    cd scripts && python parse_fb2.py
 
 Defaults:
     fb2 file : inputs/01_История_веры_и_религиозных_идей_Том_1_*.fb2  (first match)
@@ -16,7 +17,14 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPT_DIR))
+
 from lxml import etree
+
+from repo_paths import REPO_ROOT
 
 # FB2 uses a default namespace; we strip it for simpler XPath.
 FB2_NS = "http://www.gribuser.ru/xml/fictionbook/2.0"
@@ -155,21 +163,34 @@ def main():
     )
     parser.add_argument(
         "--out-dir",
-        default="data/vol1/chapters",
-        help="Output directory for chapter text files",
+        default=None,
+        help="Output directory for chapter text files (default: data/vol1/chapters)",
     )
     args = parser.parse_args()
+
+    out_dir = Path(args.out_dir) if args.out_dir else REPO_ROOT / "data" / "vol1" / "chapters"
+    if not out_dir.is_absolute():
+        out_dir = (REPO_ROOT / out_dir).resolve()
+    else:
+        out_dir = out_dir.resolve()
+    out_dir_str = str(out_dir)
 
     # Resolve fb2 file
     fb2_path = args.fb2_file
     if not fb2_path:
-        matches = sorted(glob.glob("inputs/*Том_1*.fb2") + glob.glob("inputs/*Tom_1*.fb2"))
+        inputs = REPO_ROOT / "inputs"
+        matches = sorted(
+            glob.glob(str(inputs / "*Том_1*.fb2")) + glob.glob(str(inputs / "*Tom_1*.fb2"))
+        )
         if not matches:
-            matches = sorted(glob.glob("inputs/*.fb2"))
+            matches = sorted(glob.glob(str(inputs / "*.fb2")))
         if not matches:
             print("ERROR: No .fb2 file found in inputs/. Pass path explicitly.", file=sys.stderr)
             sys.exit(1)
         fb2_path = matches[0]
+    else:
+        p = Path(fb2_path)
+        fb2_path = str(p if p.is_absolute() else (REPO_ROOT / p).resolve())
 
     print(f"Parsing: {fb2_path}")
 
@@ -187,11 +208,11 @@ def main():
         print("WARNING: No chapters found. Check .fb2 structure.", file=sys.stderr)
         sys.exit(1)
 
-    os.makedirs(args.out_dir, exist_ok=True)
+    os.makedirs(out_dir_str, exist_ok=True)
 
     # Extract and save bibliographic references
     notes = extract_notes(tree)
-    refs_path = os.path.join(args.out_dir, "refs.json")
+    refs_path = os.path.join(out_dir_str, "refs.json")
     with open(refs_path, "w", encoding="utf-8") as f:
         json.dump(notes, f, ensure_ascii=False, indent=2)
     print(f"References:     {len(notes)} entries → {refs_path}")
@@ -200,7 +221,7 @@ def main():
     print("-" * 70)
 
     for ch in chapters:
-        filename = os.path.join(args.out_dir, f"ch{ch['num']:02d}.txt")
+        filename = os.path.join(out_dir_str, f"ch{ch['num']:02d}.txt")
         content = f"{ch['title']}\n{'=' * len(ch['title'])}\n\n{ch['body']}" if ch['title'] else ch['body']
         with open(filename, "w", encoding="utf-8") as f:
             f.write(content)
@@ -210,7 +231,7 @@ def main():
 
     print("-" * 70)
     print(f"Total chapters: {len(chapters)}")
-    print(f"Output dir:     {args.out_dir}/")
+    print(f"Output dir:     {out_dir_str}/")
 
 
 if __name__ == "__main__":

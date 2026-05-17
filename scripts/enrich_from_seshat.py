@@ -1,6 +1,13 @@
 import json
 import os
+import sys
 import requests
+from pathlib import Path
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPT_DIR))
+
+from repo_paths import REPO_ROOT
 
 def territory_to_search(term: str) -> str:
     """
@@ -40,10 +47,20 @@ def territory_to_search(term: str) -> str:
     return term
 
 
-def enrich_events(base_dirs=['.scratch/religion-map/vol1', '.scratch/religion-map/vol2', '.scratch/religion-map/vol3']):
+def enrich_events(base_dirs=None):
+    if base_dirs is None:
+        base_dirs = [
+            REPO_ROOT / ".scratch" / "religion-map" / "vol1",
+            REPO_ROOT / ".scratch" / "religion-map" / "vol2",
+            REPO_ROOT / ".scratch" / "religion-map" / "vol3",
+        ]
     files = []
     for base_dir in base_dirs:
-        if os.path.exists(base_dir):
+        base_dir = Path(base_dir)
+        if not base_dir.is_absolute():
+            base_dir = REPO_ROOT / base_dir
+        base_dir = base_dir.resolve()
+        if base_dir.exists():
             dir_files = [os.path.join(base_dir, f) for f in os.listdir(base_dir) if f.endswith('-events.json')]
             files.extend(dir_files)
     files.sort()

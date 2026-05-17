@@ -45,27 +45,28 @@ def mock_events_dir(tmpdir):
         
     return tmpdir
 
-@patch('requests.get')
+@patch("scripts.enrich_from_seshat.requests.get")
 def test_enrich_events(mock_get, mock_events_dir):
     # Setup mocks
     vol1_path = os.path.join(str(mock_events_dir), '.scratch', 'religion-map', 'vol1')
     
-    # Mock API responses
+    # Mock API responses (requests passes query params via kwargs, not always in URL string)
     def mock_requests_get(url, *args, **kwargs):
         mock_resp = MagicMock()
         mock_resp.status_code = 200
-        
-        if 'ngas/?search=Mesopotamia' in url:
+        params = kwargs.get("params") or {}
+
+        if "ngas" in url and params.get("search") == "Mesopotamia":
             mock_resp.json.return_value = {
                 "results": [{"id": 1, "name": "Mesopotamia NGA"}]
             }
-        elif 'nga-polity-relations/' in url:
+        elif "nga-polity-relations/" in url:
             mock_resp.json.return_value = {
                 "results": [
                     {"nga_party": 1, "polity_party": 101, "year_from": -3500, "year_to": -1500}
                 ]
             }
-        elif 'polities/101/' in url:
+        elif "polities/101/" in url:
             mock_resp.json.return_value = {
                 "name": "Sumerian City States"
             }

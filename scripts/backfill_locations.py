@@ -1,9 +1,13 @@
 import json
 import os
 import glob
-import re
+import sys
+from pathlib import Path
 
-def backfill_locations():
+_SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPT_DIR))
+
+from repo_paths import REPO_ROOT
     # Simple hardcoded backfill for known entities in early chapters
     # to avoid needing full LLM API setup in this simple script.
     
@@ -51,7 +55,7 @@ def backfill_locations():
         "aryan-invasion-india": "Пенджаб",
     }
     
-    files = glob.glob(".scratch/religion-map/vol1/ch*-events.json")
+    files = glob.glob(str(REPO_ROOT / ".scratch" / "religion-map" / "vol1" / "ch*-events.json"))
     for file in files:
         with open(file, 'r', encoding='utf-8') as f:
             data = json.load(f)

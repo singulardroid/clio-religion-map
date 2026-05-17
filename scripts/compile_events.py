@@ -2,9 +2,9 @@
 """
 compile_events.py — merge all chapter event JSON files into app/src/data/events.json.
 
-Usage:
-    python scripts/compile_events.py [--vol-dir .scratch/religion-map/vol1]
-                                     [--out app/src/data/events.json]
+Usage (from repo root or from scripts/):
+    python scripts/compile_events.py
+    cd scripts && python compile_events.py
 
 Reads every ch*.json in --vol-dir, merges their events arrays,
 deduplicates by concept_id (first occurrence wins), and writes
@@ -16,6 +16,12 @@ import glob
 import json
 import os
 import sys
+from pathlib import Path
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPT_DIR))
+
+from repo_paths import REPO_ROOT
 
 
 def load_chapter_files(vol_dirs: list[str]) -> list[dict]:
@@ -146,29 +152,40 @@ def main():
     parser.add_argument(
         "--vol-dirs",
         nargs="+",
-        default=[
-            ".scratch/religion-map/vol1",
-            ".scratch/religion-map/vol2",
-            ".scratch/religion-map/vol3"
-        ],
-        help="Directories containing ch*-events.json files",
+        default=None,
+        help="Directories containing ch*-events.json (default: .scratch/religion-map/vol1–3)",
     )
     parser.add_argument(
         "--out",
-        default="app/src/data/events.json",
-        help="Output path for merged events JSON",
+        default=None,
+        help="Output path for merged events JSON (default: app/src/data/events.json)",
     )
     args = parser.parse_args()
 
-    chapters = load_chapter_files(args.vol_dirs)
+    if args.vol_dirs is None:
+        vol_dirs = [
+            str(REPO_ROOT / ".scratch" / "religion-map" / f"vol{i}")
+            for i in (1, 2, 3)
+        ]
+    else:
+        vol_dirs = []
+        for d in args.vol_dirs:
+            p = Path(d)
+            vol_dirs.append(str(p if p.is_absolute() else (REPO_ROOT / p).resolve()))
+
+    out_arg = args.out if args.out is not None else REPO_ROOT / "app" / "src" / "data" / "events.json"
+    out_path = Path(out_arg)
+    out_final = str(out_path if out_path.is_absolute() else (REPO_ROOT / out_path).resolve())
+
+    chapters = load_chapter_files(vol_dirs)
     events = compile_events(chapters)
 
-    os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    with open(args.out, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(out_final), exist_ok=True)
+    with open(out_final, "w", encoding="utf-8") as f:
         json.dump(events, f, ensure_ascii=False, indent=2)
 
     print(f"Compiled {len(events)} events from {len(chapters)} chapter file(s)")
-    print(f"Output: {args.out}")
+    print(f"Output: {out_final}")
 
 
 if __name__ == "__main__":

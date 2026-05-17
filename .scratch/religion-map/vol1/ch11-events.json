@@ -1,0 +1,410 @@
+{
+  "volume": 1,
+  "chapter_num": 11,
+  "chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+  "source_file": "data/vol1/chapters/ch12.txt",
+  "events": [
+    {
+      "concept_id": "poseidon-earth-husband-to-sea-god",
+      "period": "Элладский период",
+      "era": "Бронзовый век",
+      "territory": "Греция",
+      "precise_location": "Аркадия",
+      "religion": "Древнегреческая религия",
+      "statement": "Посейдон, первоначально индоевропейский верховный бог-оплодотворитель и «супруг Земли», связанный с лошадьми, после переселения греков на юг становится богом моря, сохраняя лишь часть своих архаических хтонических черт.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Индоевропейские народы, поклонявшиеся Посейдону, не знали моря, пока не поселились в Южной Греции... В Аркадии Посейдон встретил Деметру... Посейдон в облике жеребца настиг ее.»",
+      "source_ref": "Том 1, Глава XI, § 88",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "indoeuropean-sky-god-father",
+          "label": "происходит от индоевропейского верховного бога"
+        }
+      ],
+      "references": [
+        {
+          "num": 563,
+          "text": "В Пилосе в ахейский период Посейдон находился на более высокой ступени в религиозной иерархии, чем Зевс."
+        },
+        {
+          "num": 565,
+          "text": "См.: Leonard Palmer. Mycenaeans and Minoans, p. 127 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -2000,
+        "year_to": -1200,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      }
+    },
+    {
+      "concept_id": "hephaestus-smith-magician-shaman",
+      "period": "Элладский период",
+      "era": "Бронзовый век",
+      "territory": "Греция",
+      "precise_location": "Лемнос",
+      "religion": "Древнегреческая религия",
+      "statement": "Гефест предстает как бог-колдун и кузнец, чьи увечья (хромота) и испытания напоминают шаманские инициации; он владеет магией связывания и технологическим совершенством.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Как и другие боги-колдуны, Гефест заплатил за знание кузнечного и ремесленного дела физическими увечьями... В мифологии Гефеста сконцентрирован источник магической силы, подобной секретам мастерства металлургов, кузнецов и ремесленников.»",
+      "source_ref": "Том 1, Глава XI, § 88",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "shamanism-paleolithic",
+          "label": "сохраняет черты шаманской инициации (увечья)"
+        },
+        {
+          "target_concept_id": "metallurgy-telluric-sacredness",
+          "label": "сакрализация кузнечного дела"
+        }
+      ],
+      "references": [
+        {
+          "num": 567,
+          "text": "См.: Marie Delcourt. Hephaistos ou la legende du magicien, p. 42 sq."
+        },
+        {
+          "num": 569,
+          "text": "Delcourt, p. 110 sq. К шаманской традиции и рассказам о кузнецах-колдунах относится и то, что Гефест обучается своему искусству в пещере Эвриномы (Смерти) или в подземной кузнице Кедалиона."
+        },
+        {
+          "num": 570,
+          "text": "См. нашу работу Le \"dieu lier\" et le symbolisme des noeuds. — Images et Symboles, pp. 120–163."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1500,
+        "year_to": -800,
+        "mapping_confidence": "low",
+        "nga_id": "1",
+        "polity_id": "179",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ba"
+      }
+    },
+    {
+      "concept_id": "apollo-replaces-prehellenic-deities",
+      "period": "Архаическая Греция",
+      "era": "Железный век",
+      "territory": "Греция",
+      "precise_location": "Дельфы",
+      "religion": "Древнегреческая религия",
+      "statement": "Аполлон, бог азиатского или северного (гиперборейского) происхождения, жестоко замещает доэллинские местные божества, убивая змея Пифона и воцаряясь в Дельфах.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Эта агрессивная мифология... отражает историю проникновения Аполлона в Грецию — историю замещения, более или менее жестокого, доэллинских местных божеств... наиболее яркий пример — воцарение его в Дельфах после убийства хозяина этого священного места, змея Пифона.»",
+      "source_ref": "Том 1, Глава XI, § 89",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "pre-hellenic-religious-synthesis",
+          "label": "замещает доэллинские культы"
+        }
+      ],
+      "references": [
+        {
+          "num": 575,
+          "text": "См.: Wilamowitz. Der Glaube der Hellenen, t.2, p. 34; Marie Delcourt. L'oracle de Delphes, p. 215 sq."
+        },
+        {
+          "num": 577,
+          "text": "Ср.: Martin Nilsson. Greek Folk Religion, p. 79; Guthrie. The Greeks and Their Gods, p. 86,n. 1."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -700,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "apollo-shamanic-ecstasy-to-wisdom",
+      "period": "Классическая Греция",
+      "era": "Осевое время",
+      "territory": "Греция",
+      "precise_location": "Дельфы",
+      "religion": "Древнегреческая религия",
+      "statement": "Аполлон трансформирует архаические шаманские техники экстаза и прорицания (Пифия, Абарис) в путь духовного совершенства, разума и самопознания («Познай себя!»).",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "«Аполлон открывает человечеству путь, ведущий от пророческого «видения» к мысли. Демонический элемент, присущий всем формам оккультного знания, изгоняется... Разум, знание, мудрость рассматриваются как божественные качества...»",
+      "source_ref": "Том 1, Глава XI, § 91",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "shamanism-paleolithic",
+          "label": "переосмысление шаманского экстаза"
+        }
+      ],
+      "references": [
+        {
+          "num": 587,
+          "text": "W. Otto. The Homeric Gods, p. 72."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -800,
+        "year_to": -400,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "hermes-trickster-psychopomp",
+      "period": "Архаическая Греция",
+      "era": "Железный век",
+      "territory": "Греция",
+      "religion": "Древнегреческая религия",
+      "statement": "Гермес, первоначально покровитель кочевников и бог дорог, осмысляется как вестник богов, хитрец и психопомп (проводник душ), чье владычество над тьмой и путями символизирует оккультное знание и гнозис.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Тот, кто находит путь в темноте, провожает души умерших и передвигается со скоростью молнии... в конечном итоге отражает возможности духа: не только разум и хитрость, но также гнозис и магию.»",
+      "source_ref": "Том 1, Глава XI, § 92",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 591,
+          "text": "Otto. The Homeric Gods, p. 122 sq."
+        },
+        {
+          "num": 592,
+          "text": "См. источники, цитируемые Хьюго Ранером: Greek Myths and Christian Mystery, pp. 191–192. См. также том II настоящей работы."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -500,
+        "mapping_confidence": "low",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "hera-earth-mother-to-marriage-goddess",
+      "period": "Элладский период",
+      "era": "Бронзовый век",
+      "territory": "Греция",
+      "precise_location": "Аргос",
+      "religion": "Древнегреческая религия",
+      "statement": "Гера, изначально доэллинская богиня всеобщего плодородия и Мать-Земля в Аргосе, становится женой Зевса и переосмысляется греками как богиня брака, утрачивая хтонические черты.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Первоначально Гера была богиней Аргоса... Как большинство эгейских и азиатский богинь, Гера была божеством не только брака, но и всеобщего плодородия... Но все это хтонические атрибуты постепенно забылись... в первую очередь богиней брака.»",
+      "source_ref": "Том 1, Глава XI, § 93",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "pre-hellenic-religious-synthesis",
+          "label": "эллинизация доэллинской богини"
+        }
+      ],
+      "references": [
+        {
+          "num": 593,
+          "text": "Wilamowitz. Glaube der Griechen. t.l, p. 237."
+        },
+        {
+          "num": 597,
+          "text": "Об эволюции образов античных богов из хтонических существ см.: Лосев А.Ф. Указ. соч."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1500,
+        "year_to": -800,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "179",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ba"
+      }
+    },
+    {
+      "concept_id": "artemis-mistress-of-animals-virgin",
+      "period": "Архаическая Греция",
+      "era": "Железный век",
+      "territory": "Греция",
+      "precise_location": "Аркадия",
+      "religion": "Древнегреческая религия",
+      "statement": "Артемида, древняя Госпожа диких зверей (potnia theron) азиатского происхождения, объединяет парадоксальные черты девственности и материнства (богиня-повитуха), управляя сакральностью дикой жизни.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Госпожа Гор и Хозяйка Диких Зверей доисторического Средиземноморья быстро усвоила свойства и привычки богинь-матерей, не утратив своих более древних... свойств... Артемида управляет сакральностью дикой жизни, которой свойственны плодородие и материнство, но не любовь и брак.»",
+      "source_ref": "Том 1, Глава XI, § 93",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "minoan-mistress-of-animals",
+          "label": "наследует образ Хозяйки Зверей"
+        }
+      ],
+      "references": [
+        {
+          "num": 598,
+          "text": "Ср.: Rose. Handbook, p. 131, п. 59."
+        },
+        {
+          "num": 599,
+          "text": "Jeanmaire. Dionysos, p. 212 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1200,
+        "year_to": -500,
+        "mapping_confidence": "low",
+        "nga_id": "1",
+        "polity_id": "179",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ba"
+      }
+    },
+    {
+      "concept_id": "athena-palace-goddess-wisdom",
+      "period": "Микенский период",
+      "era": "Бронзовый век",
+      "territory": "Греция",
+      "precise_location": "Афины",
+      "religion": "Древнегреческая религия",
+      "statement": "Афина, изначально микенская Хозяйка Дворца, становится покровительницей ремесел, мореплавания и мудрости, сакрализуя технологические изобретения и интеллект.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Афина была Хозяйкой Дворца, защитницей укрепленных дворцов микенских царей... Афина же раскрывает сакральный характер или божественное происхождение определенных ремесел и занятий, которые требуют не только ума... но и самообладания... уверенности в логичности мироздания...»",
+      "source_ref": "Том 1, Глава XI, § 94",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "pre-hellenic-religious-synthesis",
+          "label": "происходит от микенской дворцовой богини"
+        }
+      ],
+      "references": [
+        {
+          "num": 602,
+          "text": "См.: Otto. Homeric Gods, p. 51. Гомер не упоминает этот миф (он также ничего не говорит об истории с Кроном), но называет Афину \"дочерью могущественного отца\" (obrimopatre)."
+        },
+        {
+          "num": 604,
+          "text": "См.: M. Détienne. Le navire d'Athena."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1600,
+        "year_to": -800,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "179",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ba"
+      }
+    },
+    {
+      "concept_id": "aphrodite-eastern-love-goddess",
+      "period": "Архаическая Греция",
+      "era": "Железный век",
+      "territory": "Греция",
+      "precise_location": "Кипр",
+      "religion": "Древнегреческая религия",
+      "statement": "Афродита, богиня восточного происхождения, сакрализует физическую любовь и иррациональное вожделение как трансцендентную категорию, общую для животных, людей и богов.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«Богиня эта определенно восточного происхождения... Под внешностью фривольного божества скрывается один из наиболее глубоких источников религиозных переживаний — откровение сексуальности как таинства и трансцендентной категории.»",
+      "source_ref": "Том 1, Глава XI, § 94",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 606,
+          "text": "Раковина, символ одновременно водный и сексуальный, — один из ее священных предметов."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1200,
+        "year_to": -500,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "179",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ba"
+      }
+    },
+    {
+      "concept_id": "greek-hero-cult",
+      "period": "Архаическая Греция",
+      "era": "Железный век",
+      "territory": "Греция",
+      "religion": "Древнегреческая религия",
+      "statement": "Культ героев, существ сверхчеловеческой природы, действовавших в изначальное время; их смерть и останки обладают магико-религиозной силой, защищающей город, а сами они становятся образцом для обретения бессмертия через славу.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "«Именно смерть подтверждает и провозглашает их сверхчеловеческое состояние... Останки героев обладают грозными магико-религиозными силами. Их гробницы, их мощи... влияли на живущих людей веками... Умирая, герой становится духом-покровителем, который защищает город...»",
+      "source_ref": "Том 1, Глава XI, § 95",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "initiation-rites-paleolithic",
+          "label": "героические мифы отражают обряды инициации"
+        }
+      ],
+      "references": [
+        {
+          "num": 608,
+          "text": "A. Brelich. Gli eroi greci, p.313. Последующие страницы многим обязаны анализу Брелиха."
+        },
+        {
+          "num": 612,
+          "text": "H. Jeanmaire. Coiroi et Coirctes, p. 323 sq., 338 sq.; Eliade. Naissances mystiques, p. 228; ср. также: Brelich, p. 124 sq."
+        },
+        {
+          "num": 617,
+          "text": "Rode. Psyché, pp. 123–124; ср. также: Guthrie. Les Grecs et leur dieux, pp. 246–247."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -300,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    }
+  ]
+}

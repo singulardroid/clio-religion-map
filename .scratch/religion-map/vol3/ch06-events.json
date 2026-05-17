@@ -1,0 +1,239 @@
+{
+  "events": [
+    {
+      "concept_id": "mutazilism",
+      "year_from": 718,
+      "year_to": 767,
+      "territory": "Ирак / Месопотамия",
+      "precise_location": "Басра",
+      "description": "Возникновение мутазилитского калама (богословия), утверждающего единобожие, божественную справедливость, свободу воли и сотворенность Корана.",
+      "references": [
+        "аль-Ашари в переводе Corbin. Op. cit… p.158. См. общий очерк: H.A. Wolfson Philosophy of the Kalâm, p. 129 sq..; Cp. также: H. Laoust. Op. cit., s.v. mu'tazilisme, mu'tazilite."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "asharism",
+      "year_from": 873,
+      "year_to": 935,
+      "territory": "Ирак / Месопотамия",
+      "precise_location": "Басра",
+      "description": "Деятельность аль-Ашари, примирившего рациональное богословие и суннитский буквализм. Утверждение несотворенности Корана.",
+      "references": [
+        "Wolfson. Op. cit., p. 248 sq.; Laoust. pp. 127 sq., 177 sq., 200 sq.",
+        "Corbin Op. cit., p. 165 sq.",
+        "Corbin, ibid., p. 177. См. также Fazlur Rahman. Islam, p. 91 sq.; Wolfson. Op. cit., p. 526 sq.",
+        "Corbin, p. 177 \"Если ашаризм выдержал столько нападок и критики, то следует признать, что ислам суннитского толка утвердил себя в нем\" (р. 178)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "ismailism-great-resurrection",
+      "year_from": 1164,
+      "year_to": 1164,
+      "territory": "Иран / Персия",
+      "precise_location": "Аламут",
+      "description": "Провозглашение Великого Воскресения (8 апреля 1164 г.) в Аламуте, ознаменовавшее наступление эры духовного ислама, освобожденного от рабства перед Законом.",
+      "references": [
+        "Укрепленный замок в Аламуте и связанное с ним реформированное исмаилитство породили на Западе многочисленные легенды и толки вокруг «ассасинов» (по мнению Сильвестра де Саси, этот термин происходит от hashshâshîn, так как, предположительно, правоверные употребляли гашиш, hashish). Об этих легендах см.: L. Olschki Marco Polo's Asia, p. 368 sq., и др. труды, отмеченные в нашей библиографии к § 274."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "sufism",
+      "year_from": 728,
+      "year_to": 801,
+      "territory": "Аравия / Ближний Восток",
+      "precise_location": "Басра",
+      "description": "Зарождение суфизма как аскетического и мистического течения в исламе. Деятельность Хасана аль-Басри и Рабии, внесшей идею абсолютной любви к Богу.",
+      "references": [
+        "L. Massignion. Salman Р â с et les prémices de l'Islam iranien; Anne-Marie Sclummel. Mystical Dimensions of Islam, p. 28 sq.",
+        "В III в. по хиджре большинство суфиев были женаты; через двести лет женатые суфии составляли меньшинство.",
+        "Позже многие суфии отождествили «власть» со «злом»; ср.: Schummel, p. 30. Следует также учитывать влияния христианского монашества; ср.: Marjan Molé. Les mystiques musulmans, p. 8 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "sufi-martyrdom-hallaj",
+      "year_from": 922,
+      "year_to": 922,
+      "territory": "Ирак / Месопотамия",
+      "precise_location": "Багдад",
+      "description": "Казнь суфийского мистика аль-Халладжа, проповедовавшего мистическое слияние с Богом через любовь и произнесшего 'Я есмь Истина'.",
+      "references": [
+        "L. Massignion. La Passion d'al Hallâj) (2-е éd.), vol. I, p. 177 sq.",
+        "Диван, р. XXI.",
+        "См.: Massignion. Passion, vol. I, p. 385 sq. (обвинение), 502 sq. (суд), 607 sq. (мученичество).",
+        "Диван, pp. XXI–XXII, перев Massignion."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "kalam-sufism-reconciliation",
+      "year_from": 1095,
+      "year_to": 1111,
+      "territory": "Ирак / Месопотамия",
+      "precise_location": "Багдад",
+      "description": "Деятельность аль-Газали, примирившего суфизм с ортодоксальным суннитским богословием в своем труде 'Воскрешение наук о вере'.",
+      "references": [
+        "Цит по: A.M. Schimmel, p. 95.",
+        "Обратившись, аль-Газали пишет свое духовное жизнеописание \"Избавляющий от заблуждений\", однако в нем он не дает описания своего внутреннего опыта, главное для него — критика философов."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "islamic-neoplatonism-avicenna",
+      "year_from": 980,
+      "year_to": 1037,
+      "territory": "Иран / Средняя Азия",
+      "precise_location": "Бухара / Хамадан",
+      "description": "Развитие исламской философии и метафизики Ибн Синой (Авиценной), учение об эманации Разумов и 'восточная философия'.",
+      "references": [
+        "Le livre des directives et remarquies [Книга Спасения] и Le livre de Science [Книга Знания], перев. А.М. Goichon. О переводах других трудов Авиценны см. ниже.",
+        "Процесс этот описан в \"Метафизике исцеления\" (IX, 6), перев Anawati.",
+        "Henry Corbin. Avicenne et le récit visionnaire. Перевод и подробный комментарий."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "islamic-aristotelianism-averroes",
+      "year_from": 1126,
+      "year_to": 1198,
+      "territory": "Испания / Андалузия",
+      "precise_location": "Кордова",
+      "description": "Деятельность Ибн Рушда (Аверроэса), возродившего аристотелизм и критиковавшего аль-Газали в 'Опровержении опровержения'.",
+      "references": [
+        "См. критический анализ этого тезиса в: Corbin. Op. cit., р. 340 sq.",
+        "Первые переводы на латинский язык комментариев Аверроэса к трудам Аристотеля были сделаны прибл. в 1230–1235 гг. Но \"латинский аверроэсизм\", столь важный для западного средневековья, на самом деле представляет собой новое толкование, разработанное в перспективе богословия бл. Августина."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "wahdat-al-wujud-ibn-arabi",
+      "year_from": 1165,
+      "year_to": 1240,
+      "territory": "Испания / Сирия",
+      "precise_location": "Дамаск",
+      "description": "Формирование учения Ибн Араби о Единобытии (Wahdat al-Wujud), Творческом Воображении и Совершенном Человеке.",
+      "references": [
+        "См. его автобиографические труды, переведенные R.W.J. Austin под названием \"Sufis of Andalusia\".",
+        "Ср.: Sufis of Andalusia, p. 157.",
+        "The Bezels of Wisdora, p. 153. Ибн Араби уточняет, что каждый полюс — духовный и космический — подразумевает потенциальное и латентное присутствие другого полюса.",
+        "Ibid., pp. 28, 121. См. также весьма содержательную книгу: Henry Corbin. Imagination créatrice dans le soufisme d'Ibn Arabi, особ. гл II–III."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "ishraq-illuminationism-suhrawardi",
+      "year_from": 1155,
+      "year_to": 1191,
+      "territory": "Иран / Сирия",
+      "precise_location": "Халеб",
+      "description": "Создание Сухраварди 'Восточной теософии' (Ишрак), объединившей исламский мистицизм с древнеиранскими учениями о Свете.",
+      "references": [
+        "Цит. по переводу: Henry Corbin. En Islam iranien, vol. II: Sohrawardi et les platoniciens de Perse, p. 29; ср. также: Histoire de la philosophie islamique, p. 287.",
+        "Цит. по: Corbin. Histoire de la philosophie, pp. 288-89. Другая версия: En Islam iranien, II, p. 100.",
+        "Corbin. Histoire, p. 296."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "mawlawiya-sufi-order",
+      "year_from": 1244,
+      "year_to": 1273,
+      "territory": "Анатолия / Турция",
+      "precise_location": "Конья",
+      "description": "Деятельность Джалал ад-дина Руми, создание 'Месневи' и основание суфийского братства маулавийя ('дервишей-волчков').",
+      "references": [
+        "Eva de Vitray-Meyerovitch. Rûmi et le soufisme, p. 20.",
+        "Цит. по: de Vitray-Meyerovitc. Op. cit., p. 118.",
+        "См. тексты в переводе Marjan Molé. La danse extatique en islam, pp. 208–213."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "islamic-alchemy-jabir",
+      "year_from": 750,
+      "year_to": 950,
+      "territory": "Ирак / Месопотамия",
+      "precise_location": "Харран",
+      "description": "Развитие исламской алхимии и герметизма, связанное с именем Джабира ибн Хайана (Гебера), как духовного и эзотерического деяния.",
+      "references": [
+        "Histoire de la philosopie islamique, p. 184 sq., и особ. Le livre Glorieux de Jâbir ibn Hayyân."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "events": [
+    {
+      "concept_id": "wolf-demiurge-ancestor",
+      "territory": "Евразийская степь",
+      "precise_location": "Алтайские горы",
+      "year_from": -1000,
+      "year_to": 400,
+      "is_first_occurrence": true,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "182",
+        "polity_name": "it_roman_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "tengri-sky-god",
+      "territory": "Центральная Азия",
+      "precise_location": "Монголия",
+      "year_from": -200,
+      "year_to": 1400,
+      "is_first_occurrence": true,
+      "references": [
+        "5 Jean-Paul Roux. Tangri. Essai sur le ciel-dieu des peuples altaiques (статья I), p. 49.",
+        "6 См.: ibid., статья II, p. 200.",
+        "7 Ibid., p. 221.",
+        "8 Цитируется начало т. н. Большой надписи в честь Кюль-тегина, тюркского полководца VII в.: см. Поэзия древних тюрков VI–XII вв. Стихотворная реконструкция И.В. Стеблевой. Пер. А. Преловского. М., 1933.",
+        "9 См. источники, цит. в нашей работе Le Chamanisme… (2-е éd), p. 71, n 4. В народных верованиях монголов Тэнгри \"создал все\": огонь, молоко и т. п. См.: W.Heissing. La religion des Mongols, p. 404. Однако здесь не упоминается космология в собственном смысле этого термина.",
+        "10 J.-P. Roux. Ор. cit. (статья III), р. 27. То же самое поверье зафиксировано в эпоху монголов: \"Он был Хан силой и волей Вечного Неба\". См.: R. Crousset. L'Empire des Steppes., p. 182."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "tengri-deus-otiosus-fragmentation",
+      "territory": "Центральная Азия",
+      "year_from": 400,
+      "year_to": 1400,
+      "is_first_occurrence": true,
+      "references": [
+        "11 J.-P. Roux. La religion des Turcs de l'Orkhon des VII-e et VIII-e siècles (статья 1), p. 20.",
+        "12 К вопросу о названиях уранических богов — «Хозяин», «Господин», «Отец», \"Творец\", \"Великий\", «Свет» и т. п. — см.: Eliade. Traité d'Histoire des Religions, § 18; Uno Harva. Die religiösen Vorstellungen der altaischen Völker, p. 140 sq.",
+        "13 См.: Eliade. Traité, § 18; Harva. Ор. cit., p. 151 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "world-tree-axis-mundi-altaic",
+      "territory": "Центральная Азия",
+      "precise_location": "Алтай",
+      "year_from": -1000,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "18 См.: ibid, pp. 49, 220 sq.; этот мифический мотив встречается в Африке и в Индонезии, ср. р. 221, n 1. Другая тема, зародившаяся в Месопотамии, — тема Древа — Книги судеб; ср.: ibid. pp. 221–222."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "cosmogonic-dive-dualistic",
+      "territory": "Евразия",
+      "precise_location": "Центральная и Северная Азия, Восточная Европа",
+      "year_from": -1000,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "19 Буркан, Бурхан — модификация слова «Будда» (\"Будда-хан\") в тюркских традициях, обозначение бога вообще (ср. Мифы народов мира. Т. 1. М., 1980. С. 196).",
+        "20 См. нашу работу Le Diable et le Bon Dieu (=De Zalmoxis à Gengis Khan, pp. 81-130), p. 106 sq., где проанализировано несколько якутских и бурятских вариантов.",
+        "21 W.Radlov, цит. в: Le Diable et le Bon Dieu, p. 103.",
+        "22 Radlov, цит. в: ibid, p. 104. Далее рассказывается о сотворении человека. Эрлик Хан требует себе столько земли, сколько сможет отмерить посохом. Он бьет о землю, и появляются вредные животные. В конце концов Бог посылает его в подземное царство. Антагонизм между Богом и Эрликом не сводится непременно к «дуалистической» концепции. В палеотюркских надписях Эрлик фигурирует как Бог Смерти; ср.: Annemarie V. Gabain. Inhalt und Magische Bedeutung der alttürkischen Inschriften.",
+        "23 Potanin, цит. в: ibid., р. 105.",
+        "24 Дуалистические легенды о мироздании характерны для фольклора восточных и южных, но не западных славян: см. Йордан Иванов. Богомилски книги и легенди. София, 1929 (2-е изд. 1970); Всселовский А.Н. Разыскания в области русского духовного стиха. ХI. Вып. пятый. СПб., 1889; Кузнецова В.Г. Дуалистические легенды о сотворении мира в восточнославянской фольклорной традиции. Новосибирск. 1998.",
+        "25 См.: Eliade. Ор. cit., р. 126 sq.",
+        "26 В классической работе A.M. Золотарева \"Родовой строй и первобытная мифология\" (М., 1964) дуалистические легенды о мироздании увязываются с дуальной организацией родового общества: универсально распространенное деление племени на две экзогамные половины, каждая из которых соотносилась с дуальной системой символов (небо — земля, правое — левое и т. д.), оказывалось основой и будущих дуалистических идеологий."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "shamanic-initiation-dismemberment",
+      "territory": "Сибирь",
+      "year_from": -1000,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "30 См. примеры в: Eliade. Le Chamanisme, pp. 45 sq., 73 sq., 102 sq.",
+        "31 G.V. Ksenofontov, цит. в: Eliade. Le Chamanisme, p. 105."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "shamanic-ascent-birch-tree",
+      "territory": "Алтай",
+      "year_from": -1000,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "32 Eliade. Le Chamanisme, pp. 106-1 i 1, по данным N.N. Agapitov, M.N. Changalov и Norma Partanen. Как свидетельствует Uno ¡larva (Relig. Vorstell., p. 492 sq.), этот обряд напоминает некоторые мистерии Митры. Очищение неофита козлиной кровью напоминает taurobolium, а его подъем на березу — митраистское таинство восхождения по семи ступеням лестницы, символизирующим семь небесных орбит (см. § 217). Как мы утке отмечали, влияние древнего Ближнего Востока отчетливо видно почти повсеместно в Центральной Азии и в Сибири; таинство посвящения бурятского шамана должно, вероятнее всего, стать одним из свидетельств этого влияния. Следует заметить, однако, что символика Мирового Древа и ритуал инициатического подъема на березу предшествовали элементам культуры, мигрировавшим из Месопотамии и Ирана.",
+        "39 Radlov. Aus Sibirien, II; резюме см.: Le Chamanisme, pp. 160–165."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "shamanic-descent-underworld",
+      "territory": "Алтай",
+      "precise_location": "Сибирь",
+      "year_from": -1000,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "40 Вот одна из впечатляющих подробностей его перехода по мосту: он балансирует и едва не падает вниз, успевая заметить на дне моря кости многих шаманов-неудачников: грешнику не дано перейти этот мост.",
+        "41 Potanin; резюме см.: Le Chamanisme, pp. 168–170.",
+        "42 См. примеры в: Le Chamanisme, pp. 174–176.",
+        "43 См. примеры ibid., p. 180 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "num-sky-god-samoyed",
+      "territory": "Северная Азия",
+      "year_from": -1000,
+      "year_to": 1835,
+      "is_first_occurrence": true,
+      "references": [
+        "50 Castren. Reiseerinnerungen, I, p. 253 sq.",
+        "51 A.C. Schrenkt, Lehtisalo, резюме: Paulson, p. 61 sq.",
+        "52 Pettazzoni. L'onniscienza di Dio, p. 383. О соляризации верховных существ см.: Eliade. Traité, § 37.",
+        "53 Существует предположение, что само слово «Нум» было заимствовано самодийцами (при тюркском посредстве) из согдийского (иранского) языка, где сходная лексема обозначала \"веру, религиозный закон\" (см. Мифы народов мира. Т. 2. С. 227).",
+        "54 Lehtisalo, резюме см.: Eliade. De Zalmoxis, p. 101. В другом предании самоедов описывается изначальная вражда между Нумом и Смертью (Hraa), ibid., р. 102."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "baltic-sky-god-dievs",
+      "territory": "Прибалтика",
+      "year_from": -1000,
+      "year_to": 1500,
+      "is_first_occurrence": true,
+      "references": [
+        "64 См.: Harold Biezais. Die Göttesgestalt der lettischen Volksreligion, особ. pp. 90 sq., 182 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "70",
+        "polity_name": "it_roman_principate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "baltic-thunder-god-perkunas",
+      "territory": "Прибалтика",
+      "year_from": -1000,
+      "year_to": 1500,
+      "is_first_occurrence": true,
+      "references": [
+        "65 Перкунас упоминается в «Хрониках» И. Малалы (1261), а также неоднократно — христианскими авторами XVI в. Что касается Перконса, источники и анализ см.: Н. Biezais. Die himmlische Götterfamilie der alten Letten, pp. 92 sq., 103 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "70",
+        "polity_name": "it_roman_principate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "slavic-thunder-god-perun",
+      "territory": "Восточная Европа",
+      "year_from": 500,
+      "year_to": 988,
+      "is_first_occurrence": true,
+      "references": [
+        "77 Примеры см.: Gasparini. Il matriarcato slavo, p. 537 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "slavic-secondary-burial",
+      "territory": "Восточная Европа",
+      "year_from": 500,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "92 Оно встречается только у тех народов, которые подверглись влиянию славян: это немцы, румыны и другие народы Юго-Восточной Европы.",
+        "93 См.: Gasparini. Studies in Old Slavic Religion: Ubrus; idem. Matriarcato Slavo, pp. 597–630."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "slavic-dualistic-cosmogony-dive",
+      "territory": "Восточная Европа",
+      "year_from": 500,
+      "year_to": 1900,
+      "is_first_occurrence": true,
+      "references": [
+        "98 См.: Eliade. De Zalmoxis à Gengis Khan, p. 97 sq.",
+        "99 Он неизвестен также в Германии и на Западе, хотя катары и патаринцы распространили в Южной Франции, в Германии и на Пиренеях фольклорные мотивы манихейского и богомильского происхождения; см.: Eliade. De Zalmoxis, p. 109 sq.",
+        "100 Однако в тех иранских традициях, которые ведут начало от зурванизма (ср. § 213), есть два основополагающих мотива: братство Бог (Христос) — Сатана и — в балканских легендах — душевная инертность Бога после Сотворения Мира.",
+        "101 Проблема источника славянских (и евразийских) дуалистических легенд остается сложной задачей современного сравнительного литературоведения. Вопреки утверждениям М. Элиаде, они известны в Венгрии (ср. Петрухин В.Я. Мифы финно-угорских народов. М., 2002): на Руси же все отчетливее (начиная с текстов \"Повести временных лет\") прослеживаются следы богомильского влияния."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "events": [
+    {
+      "concept_id": "tibetan-mi-chos-religion-of-men",
+      "name": "Религия людей (mi-chos) и мифы о первоначалах",
+      "description": "Автохтонная тибетская традиция, предшествовавшая бон и буддизму. Основным источником сведений служат космогонические и генеалогические мифы, оглашаемые во время обрядов для актуализации преемства с мифической эпохой первоначал.",
+      "territory": "Тибет",
+      "year_from": null,
+      "year_to": 700,
+      "references": [
+        "Том 3, Глава XXXIX, § 312",
+        "Eliade. Aspects du mythe, p. 33 sq.",
+        "G. Tucci. Les religions de Tibet, p. 296 sq.",
+        "R.A. Stein. La civilisation tibétaine, pp. 163–165"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "mu-cord-axis-mundi",
+      "name": "Вервие му и божественное происхождение царей",
+      "description": "Миф о первых тибетских царях, которые были бессмертны и восходили на небо с помощью волшебного светового вервия (му). После того как царь Дригум нечаянно перерезал вервие, цари стали смертными. Вервие му выполняло функцию axis mundi, соединяя небо с землей.",
+      "territory": "Тибет",
+      "year_from": null,
+      "year_to": 700,
+      "references": [
+        "Том 3, Глава XXXIX, § 312",
+        "Том 3, Глава XXXIX, § 313",
+        "Macdonald. Une lecture des Pelliot tibétains… p. 339 sq.",
+        "R. Stein. La civilisation tibétaine, pp. 189–190",
+        "G. Tucci. The Tombs of the Tibetan Kings"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "tibetan-new-year-cosmic-renewal",
+      "name": "Тибетский новогодний мифо-ритуальный комплекс",
+      "description": "Новогодние празднества, включавшие ритуальные состязания и повествующие о сражении небесных богов с демонами. Победа богов означала обновление жизни, а совместное участие богов и людей служило залогом прочности социума.",
+      "territory": "Тибет",
+      "year_from": null,
+      "year_to": 700,
+      "references": [
+        "Том 3, Глава XXXIX, § 313",
+        "A.A. Stein. Recherches sur l'épopée et le barde au Tibet, pp. 140–141"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "bon-religion-syncretism",
+      "name": "Формирование религии бон",
+      "description": "Синкретическая тибетская религия, основанная легендарным Шенрабом-мибо, испытавшая иранское и индийское влияние. Включала как традиционные шаманские и магические практики, так и развитую метафизику, близкую к буддийской.",
+      "territory": "Тибет",
+      "precise_location": "Шаншун",
+      "year_from": 1000,
+      "year_to": 1100,
+      "references": [
+        "Том 3, Глава XXXIX, § 314",
+        "A.M. Blondeau. Les religions du Tibet, p. 245",
+        "R. Stein. Recherches sur l'épopée et le barde au Tibet, p. 381 sq.",
+        "D.I. Snellgrove. The Nine Ways of Bon"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "samye-debate-indian-chinese-buddhism",
+      "name": "Диспут в монастыре Самье",
+      "description": "Знаменитая дискуссия между последователями индийской школы (поэтапный путь к Освобождению) и китайской школы чань/дзэн (молниеносное просветление). Царь Тисонг-дэцэн поддержал индийскую школу.",
+      "territory": "Тибет",
+      "precise_location": "Монастырь Самье",
+      "year_from": 792,
+      "year_to": 794,
+      "references": [
+        "Том 3, Глава XXXIX, § 315",
+        "Le dict de Padma (пер. Туссена)"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "tibetan-buddhism-second-wave-atisha",
+      "name": "Вторая волна распространения буддизма и реформа Атиши",
+      "description": "Возрождение буддизма после гонений. Деятельность Ринчен-зангпо по переводу канонических текстов и прибытие индийского учителя Атиши, заложившего основы школы гэлукпа (реформаторов), требовавшей строгой монашеской дисциплины.",
+      "territory": "Тибет",
+      "precise_location": "Западный Тибет",
+      "year_from": 970,
+      "year_to": 1042,
+      "references": [
+        "Том 3, Глава XXXIX, § 315"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "lamaism-guru-veneration",
+      "name": "Почитание гуру (ламы) в тибетском буддизме",
+      "description": "Исключительный авторитет духовных наставников, обучавших неофитов медитативным техникам и тантрическим обрядам. Гуру обретали почти божественное достоинство, а ученик был обязан полностью доверять учителю.",
+      "territory": "Тибет",
+      "year_from": 1000,
+      "year_to": 1700,
+      "references": [
+        "Том 3, Глава XXXIX, § 316",
+        "R. Stein. La civilisation tibétaine, p. 145"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "chod-ritual-dismemberment",
+      "name": "Медитация чод (расчленение)",
+      "description": "Опасная тантрическая медитация, во время которой аскет мысленно отдает свое тело на растерзание демонам. Обряд имеет сходство с шаманской инициацией и направлен на осознание нереальности мира и собственного Я.",
+      "territory": "Тибет",
+      "year_from": 1000,
+      "year_to": 1700,
+      "references": [
+        "Том 3, Глава XXXIX, § 316",
+        "R. Bleichsteiner. L'Église Jaune, pp. 194–195",
+        "Eliade. Le Chamanisme, p. 385"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "tibetan-mysticism-of-light",
+      "name": "Мистика Света в тибетской сотериологии",
+      "description": "Отождествление Разума (sems) и Света. Учение о том, что высшая реальность и человеческое сознание по своей природе светоносны. Включает манихейские и индо-иранские влияния, а также автохтонные антропогонические мифы.",
+      "territory": "Тибет",
+      "year_from": null,
+      "year_to": 1700,
+      "references": [
+        "Том 3, Глава XXXIX, § 317",
+        "G. Tucci. Les religions du Tibet, p. 97",
+        "G. Tucci. Some glosses upon Guhyasamaja, p. 349"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "bardo-thodol-book-of-dead",
+      "name": "Тибетская книга мертвых (Bardo Tho'dol)",
+      "description": "Священный текст, читаемый умирающему или усопшему, призывающий распознать свое истинное Я в ослепительном Свете и достичь Освобождения, избежав новых перерождений.",
+      "territory": "Тибет",
+      "year_from": 1000,
+      "year_to": 1400,
+      "references": [
+        "Том 3, Глава XXXIX, § 317",
+        "Том 3, Глава XXXIX, § 318",
+        "Evans-Wents. The Tibetan Book of the Dead, p. 106"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "shambhala-kalachakra-tantra",
+      "name": "Учение Калачакры и миф о Шамбале",
+      "description": "Тантрическое течение Калачакра («Колесо Времен»), утвердившееся в Тибете. Связано с мифом о Шамбале — мистической стране, где хранятся священные тексты школы.",
+      "territory": "Тибет",
+      "precise_location": "Шамбала",
+      "year_from": 1020,
+      "year_to": 1100,
+      "references": [
+        "Том 3, Глава XXXIX, § 318",
+        "H. Hoffman. The Religions of Tibet, p. 126 sq.",
+        "Edwin Bernbaum. The Way to Shambala, p. 205 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "milarepa-mystic-poet",
+      "name": "Жизнеописание и поэзия Миларепы",
+      "description": "Деятельность великого тибетского йогина, мистика и поэта Миларепы, который достиг прижизненного Освобождения. Его песни (doha) адаптировали буддийское учение к народной традиции.",
+      "territory": "Тибет",
+      "year_from": 1052,
+      "year_to": 1135,
+      "references": [
+        "Том 3, Глава XXXIX, § 318",
+        "The Hundred Thousand Songs of Malarepa (trans. Garma C.C. Chang)",
+        "R. Stein. Civilisation tibétaine, p. 223"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "gesar-epic-hero",
+      "name": "Тибето-монгольский эпос о Гесере",
+      "description": "Эпические сказания о великом царе Гесере, победителе демонов и властителе четырех стран света. Эпос отражает преображение героя через многочисленные испытания.",
+      "territory": "Тибет",
+      "year_from": 1000,
+      "year_to": 1400,
+      "references": [
+        "Том 3, Глава XXXIX, § 318",
+        "R. Stein. L'Épopée et le barde, p. 543 sq.",
+        "С.Н. Неклюдов. Героический эпос монгольских народов"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    }
+  ]
+}

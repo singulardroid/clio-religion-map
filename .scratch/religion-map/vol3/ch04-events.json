@@ -1,0 +1,236 @@
+{
+  "events": [
+    {
+      "concept": "allah-deus-otiosus",
+      "name": "Аллах как deus otiosus и доисламский политеизм",
+      "description": "Почитание Аллаха как Высшего Бога (deus otiosus) в сочетании с культом местночтимых богинь (ал-Лат, ал-Узза, Манат) в доисламской Аравии. Кааба служила церемониальным центром.",
+      "territory": "Аравия",
+      "precise_location": "Мекка",
+      "year_from": 500,
+      "year_to": 610,
+      "references": [
+        "159 Впрочем, этот процесс наблюдается повсеместно; см.: Paul Wheatley. The Pivot of the Four Quarters (Chicago, 1971), passim.",
+        "160 См.: J. Henniger. Les fêtes de printemps chez les Sémites, p. 42. sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "islamic-prophecy-revelation",
+      "name": "Первые откровения Магомета",
+      "description": "Экстатические переживания и видения Магомета в пещере возле Мекки, приведшие к началу его пророческой миссии и первым откровениям через ангела Джибрила.",
+      "territory": "Аравия",
+      "precise_location": "гора возле Мекки",
+      "year_from": 610,
+      "year_to": 612,
+      "references": [
+        "167 Ибн Исхак в переводе: Tor Andrae. Mohammed, pp. 43–44. См. другой перевод: Blachère. Le problème de Mahomet, pp. 39–40.",
+        "168 Некоторые современные историки полагают, что две фазы — онирическое видение в пещере и видение ангела Джибрила, возникшее на горизонте, не являются одним и тем же религиозным опытом; ср.: Tor Andrae. Mohammed, p. 45 sq. Однако это возражение неубедительно.",
+        "169 «16(16). Не шевели свой язык с этим, чтобы ускорить его [откровение]. 17(17). Поистине, на Нас лежит собирание и чтение его [Корана].18(18). И когда Мы читаем его, то следуй за его чтением» (75:16–18). Иначе говоря, правоверному запрещена какая бы то ни было собственная «импровизация»."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "miraj-heavenly-ascent",
+      "name": "Ночное путешествие и вознесение на небо (мирадж)",
+      "description": "Экстатическое путешествие Магомета в Иерусалим и вознесение на небо, во время которого он предстает перед Аллахом и получает Коран. Этот сценарий интегрируется в общую ближневосточную традицию вознесения пророков.",
+      "territory": "Аравия",
+      "precise_location": "Мекка / Иерусалим",
+      "year_from": 617,
+      "year_to": 619,
+      "references": [
+        "177 См.: G. Widengren. The Ascension of the Apostle and the Heavenly Book, p. 7 sq. et passim; idem. Muhammad, The Apostle of God, and his Ascension, p. 115 et passim.",
+        "179 См. перевод текстов с комментариями в: Widengren. Muhammad, the Apostle of God, p. 102 sq. Перевод больших фрагментов текста al-Baghawî и Suyūti см. в: Arthur Jeffrey. Islam, pp. 35–46. Некоторые ученые считают, что Данте, создавая Божественную комедию, использовал многие описания из латинского перевода арабского текста о ми-радже. См.: Asín Palacios. La escatologia musulmana en la Divina Comedia; E. Cerulli. Il «Libro della Scala»."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "hijra-umma-foundation",
+      "name": "Хиджра и создание уммы",
+      "description": "Переселение Магомета и его последователей из Мекки в Медину. Упразднение племенного деления и создание единой мусульманской общины (уммы) по теократическому принципу.",
+      "territory": "Аравия",
+      "precise_location": "Медина (Ясриб)",
+      "year_from": 622,
+      "year_to": 623,
+      "references": [
+        "181 О смысле и истории этого термина см.: FM. Denny. The Meaning of Ummah in the Qur'ân.",
+        "182 Эмигранты — мухаджиры, буквально — \"совершившие хиджру\", сторонники Мухаммада, переселившиеся в Медину; «помощники» — ансары, представители местных племен, заключившие договор с Мухаммадом в 622 г.",
+        "184 Ср.: Watt. Mohammad at Medina, p. 199 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "qibla-change-mecca",
+      "name": "Изменение киблы на Мекку",
+      "description": "Разрыв с иудаизмом и предписание мусульманам обращаться во время молитвы в сторону Мекки, а не Иерусалима, с провозглашением Каабы древним святилищем Авраама.",
+      "territory": "Аравия",
+      "precise_location": "Медина",
+      "year_from": 624,
+      "year_to": 624,
+      "references": [
+        "185 Blachère. Le problème de Mahomet, p. 104.",
+        "186 Cм. напр., Henry Corbin. La Configuration du Temple de la Ka'ba comme secret de la vie spirituelle."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "five-pillars-of-islam",
+      "name": "Пять столпов ислама",
+      "description": "Формирование институций ислама, регламентирующих религиозную жизнь: молитва (салат), подаяние (закат), пост (саум), паломничество (хадж) и исповедание веры (шахада).",
+      "territory": "Аравия",
+      "precise_location": "Медина",
+      "year_from": 622,
+      "year_to": 632,
+      "references": [
+        "190 Однако правоверным предписано собираться в полдень в пятницу в общественном месте (62:9).",
+        "191 Эта формула не засвидетельствована в Коране буквально, но смысл ее присутствует там повсюду; ср.: Watt. Muhammad at Medina, p. 308."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "conquest-of-mecca",
+      "name": "Завоевание Мекки",
+      "description": "Магомет с войском занимает Мекку, очищает Каабу от идолов и объявляет многобожию тотальную войну, утверждая ислам на всей территории Аравии.",
+      "territory": "Аравия",
+      "precise_location": "Мекка",
+      "year_from": 630,
+      "year_to": 632,
+      "references": [
+        "187 Что же касается монотеистов, «народов Книги», Магомет напоминает им по другому поводу, что следует хранить заповеди «72(68)…Торы и Евангелия и того, что низведено вам от вашего Господа (…) 73(69). Поистине, те, которые уверовали и которые исповедуют иудейство, и сабии, и христиане, — кто уверовал в Аллаха и последний день и творил благое, — нет страха над ними, и не будут они печальны!» (5:68–69)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "caliphate-institution",
+      "name": "Основание халифата",
+      "description": "Смерть Магомета и кризис преемственности. Избрание Абу Бакра первым халифом (преемником), что положило начало мусульманской теократической империи.",
+      "territory": "Аравия",
+      "precise_location": "Медина",
+      "year_from": 632,
+      "year_to": 632,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "arab-conquests",
+      "name": "Арабские завоевания",
+      "description": "Военная экспансия мусульман при первых халифах (Омаре и др.), приведшая к завоеванию Сирии, Египта, Месопотамии и Персии, распространив ислам за пределы Аравии.",
+      "territory": "Ближний Восток",
+      "precise_location": "Сирия, Египет, Персия",
+      "year_from": 634,
+      "year_to": 715,
+      "references": [
+        "193 С полным основанием этот головокружительный натиск арабов описывается как последняя волна варварских завоеваний, потрясших Западную Римскую империю. Все же, в отличие от варваров, арабы поселяются в новых городках-гарнизонах, возводимых на границе пустыни. Ценой определенной дани покоренное население могло сохранить свою религию и обычаи. Но ситуация ощутимо изменится, когда часть городского населения, и прежде всего чиновники и интеллектуалы, примет ислам."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "shia-sunni-schism",
+      "name": "Раскол ислама на суннитов, шиитов и хариджитов",
+      "description": "Убийство Османа, избрание Али, гражданская война и мученическая смерть Хусейна в Кербеле, разделившая умму на три основные ветви.",
+      "territory": "Ближний Восток",
+      "precise_location": "Ирак (Кербела)",
+      "year_from": 656,
+      "year_to": 680,
+      "references": [
+        "194 См. также: Earle H. Waugli. Muharram Rites: Community Death and Rebirth."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "187",
+        "polity_name": "it_ravenna_exarchate",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "baghdad-imago-mundi",
+      "name": "Основание Багдада как imago mundi",
+      "description": "Аббасиды строят новую столицу Багдад в форме круга, разделенного крестом (imago mundi). Усиление персидского влияния в мусульманской империи.",
+      "territory": "Ближний Восток",
+      "precise_location": "Багдад",
+      "year_from": 762,
+      "year_to": 762,
+      "references": [
+        "198 См. источники, приведенные в: Charles Wendell. Baghdad: Imago Mundi, p. 122."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "abbasid-translation-movement",
+      "name": "Аббасидский ренессанс и переводы",
+      "description": "Эпоха перевода античных греческих философских и научных текстов, ассимиляция культурного наследия Востока и Средиземноморья при Гарун-аль-Рашиде.",
+      "territory": "Ближний Восток",
+      "precise_location": "Багдад",
+      "year_from": 788,
+      "year_to": 809,
+      "references": [
+        "199 Естественно, речь идет о творениях неисчерпаемого иранского синкретизма (ср. § 212)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    }
+  ]
+}

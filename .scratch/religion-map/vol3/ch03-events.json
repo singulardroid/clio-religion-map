@@ -1,0 +1,299 @@
+{
+  "events": [
+    {
+      "concept_id": "sack-of-rome-alaric",
+      "event_name": "Захват Рима Аларихом",
+      "event_description": "Готы под предводительством Алариха захватывают и опустошают Рим, что вызывает потрясение в Империи и истолковывается язычниками как кара за принятие христианства.",
+      "territory": "Europe",
+      "precise_location": "Rome",
+      "year_from": 410,
+      "year_to": 410,
+      "references": [
+        "104 См.: P. De Labriolle. La réaction paienne; Waller Emil Kaegi. Byzantium and the Decline of Rome, pp. 59 sq., 99 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "augustine-city-of-god",
+      "event_name": "Написание трактата «О Граде Божием»",
+      "event_description": "Августин Гиппонский пишет «De Civitate Dei contra paganos», где излагает теологию истории, критикует язычество и развивает концепцию двух градов — Земного и Божьего.",
+      "territory": "North Africa",
+      "precise_location": "Hippo",
+      "year_from": 412,
+      "year_to": 426,
+      "references": [
+        "105 Однако Августин не берется размышлять о дате Второго пришествия, в отличие от своего соотечественника Лактанция (240–320), полагавшего, что оно должно произойти около 500 года.",
+        "106 О Граде Божием, XVIII, 46. Согласно Августину, империи и государства не являются творением дьявола. Тем не менее, они суть последствия первородного греха."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "vandals-capture-north-africa",
+      "event_name": "Захват вандалами Римской Африки",
+      "event_description": "Вандалы переправляются через Гибралтар, опустошают Мавританию и Нумидию, осаждают Гиппон и приводят к падению Римской Африки.",
+      "territory": "North Africa",
+      "precise_location": "Mauretania, Numidia, Hippo",
+      "year_from": 429,
+      "year_to": 431,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "augustine-conversion-baptism",
+      "event_name": "Обращение и крещение Августина",
+      "event_description": "Августин переживает духовный кризис, слышит голос «tolle, lege!» и впоследствии принимает крещение от епископа Амвросия в Милане.",
+      "territory": "Europe",
+      "precise_location": "Milan",
+      "year_from": 386,
+      "year_to": 387,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "augustine-bishop-of-hippo",
+      "event_name": "Назначение Августина епископом Гиппона",
+      "event_description": "Августин рукоположен в священники, а затем становится епископом Гиппона, защищая единство церкви и развивая христианскую доктрину.",
+      "territory": "North Africa",
+      "precise_location": "Hippo",
+      "year_from": 396,
+      "year_to": 430,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "origen-literal-interpretation-castration",
+      "event_name": "Самооскопление Оригена",
+      "event_description": "Ориген буквально истолковывает слова Евангелия от Матфея и подвергает себя оскоплению ради избавления от похоти.",
+      "territory": "North Africa",
+      "precise_location": "Alexandria",
+      "year_from": 210,
+      "year_to": 210,
+      "references": [
+        "110 «Ибо есть скопцы, которые сами себя сделали скопцами для Царствия» (Мф 19:12)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "70",
+        "polity_name": "it_roman_principate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "condemnation-of-origenism",
+      "event_name": "Осуждение Оригена на Пятом Вселенском соборе",
+      "event_description": "Пятый Вселенский собор по требованию императора Юстиниана окончательно осуждает учение Оригена, включая теорию апокатастасиса.",
+      "territory": "Anatolia",
+      "precise_location": "Constantinople",
+      "year_from": 553,
+      "year_to": 553,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "186",
+        "polity_name": "it_ostrogoth_k",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "augustine-writes-confessions",
+      "event_name": "Написание «Исповеди»",
+      "event_description": "Августин пишет свою духовную автобиографию «Исповедь», стремясь примириться с собой и постичь тайну Божественной природы.",
+      "territory": "North Africa",
+      "precise_location": "Hippo",
+      "year_from": 397,
+      "year_to": 397,
+      "references": [
+        "114 Именно после Петрарки стали цитировать знаменитый отрывок: «Я еще не был влюблен, как уже был возлюбленным любви… Я стал искать случая влюбиться, потому что безумно любил Идею любви» (III, 1, I).",
+        "115 Именно после Петрарки стали цитировать знаменитый отрывок: «Я еще не был влюблен, как уже был возлюбленным любви… Я стал искать случая влюбиться, потому что безумно любил Идею любви» (III, 1, I)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "pelagianism-condemnation",
+      "event_name": "Осуждение пелагианства",
+      "event_description": "Учение Пелагия о свободе воли и отрицании первородного греха окончательно осуждается на соборе в Оранже.",
+      "territory": "Europe",
+      "precise_location": "Orange",
+      "year_from": 529,
+      "year_to": 529,
+      "references": [
+        "118 Лучший ученик Пелагия, Целестий, возможно, еще больше усугубил его учение. Согласно Павлу Миланскому, который в 411 или 412 гг. заклеймил эту ересь, пелагиане утверждают, что Адам якобы был сотворен смертным и что он умер бы, даже не согрешив, и что один лишь Адам (а не весь человеческий род) понес наказание за свое прегрешение; дети по своей природе те же, что и Адам до грехопадения; более того, даже до Иисуса Христа существовали чистые, безгрешные люди.",
+        "119 Собор в Оранже проходил в 529 г. и подтвердил истинность учения Августина; уже на Эфесском соборе 431 пелагианство осуждалось как ересь, на соборе в Оранже было осуждено так называемое полупелагинство.",
+        "120 Ср.: Peter Brown. Augustin of Hippo, p. 348."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "186",
+        "polity_name": "it_ostrogoth_k",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "translation-st-stephen-relics-hippo",
+      "event_name": "Перенос мощей св. Стефана в Гиппон",
+      "event_description": "Мощи святого Стефана переносятся в Гиппон, после чего Августин меняет свое мнение о почитании мучеников и начинает оправдывать культ мощей.",
+      "territory": "North Africa",
+      "precise_location": "Hippo",
+      "year_from": 425,
+      "year_to": 430,
+      "references": [
+        "125 В 401 г. он обрушился на монахов, «продававших кости мучеников, и хорошо, если действительно мучеников»; De opere monachorum; цит. по изд.: Victor Saxer. Morts, martyrs, reliques, p. 240.",
+        "126 Ср.: ibid, p. 255 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "carolingian-relic-translation",
+      "event_name": "Массовый перенос мощей при Каролингах",
+      "event_description": "Огромное число мощей римских святых переносится в Галлию и Германию при первых Каролингах, распространяя культ святых на Западе.",
+      "territory": "Europe",
+      "precise_location": "Gaul and Germany",
+      "year_from": 740,
+      "year_to": 899,
+      "references": [
+        "136 Ср.: Patrick J. Geary. The Ninth Century Relic Trade, p. 10 sq. Папы охотно позволяли перевозить мощи, потому что это способствовало величию Рима, столицы Империи и очага христианства."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "constantinople-council-patriarchates",
+      "event_name": "Второй Вселенский Собор в Константинополе",
+      "event_description": "Восточная церковь объявляет о создании четырех региональных юрисдикций с собственными патриаршими престолами.",
+      "territory": "Anatolia",
+      "precise_location": "Constantinople",
+      "year_from": 381,
+      "year_to": 381,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "chalcedon-council-christology",
+      "event_name": "Халкидонский собор",
+      "event_description": "Четвертый Вселенский Собор принимает христологическую формулу о двух неслиянных и нераздельных природах Христа, что приводит к отделению монофизитских церквей.",
+      "territory": "Anatolia",
+      "precise_location": "Chalcedon",
+      "year_from": 451,
+      "year_to": 451,
+      "references": [
+        "138 Монофизиты считали, что если Иисус Христос состоит «из двух природ» — Божественной и человеческой, — то из их соединения образуется одна; следовательно, «одна природа у Слова Воплощенного»."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "iconoclasm-prohibition-leo-iii",
+      "event_name": "Запрет почитания икон Львом III",
+      "event_description": "Император Лев III официально запрещает почитание икон, положив начало иконоборческому кризису.",
+      "territory": "Anatolia",
+      "precise_location": "Constantinople",
+      "year_from": 726,
+      "year_to": 726,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "iconoclast-council-constantinople",
+      "event_name": "Иконоборческий собор 754 года",
+      "event_description": "Собор в Константинополе предает почитание икон анафеме, утверждая, что поклонение им косвенно предполагает идолопоклонство.",
+      "territory": "Anatolia",
+      "precise_location": "Constantinople",
+      "year_from": 754,
+      "year_to": 754,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "second-iconoclast-council",
+      "event_name": "Второй иконоборческий собор",
+      "event_description": "Собор 815 года отвергает почитание икон во имя Христово, приводя богословские аргументы против изображения божественной природы.",
+      "territory": "Anatolia",
+      "precise_location": "Constantinople",
+      "year_from": 815,
+      "year_to": 815,
+      "references": [
+        "149 См.: Jaroslav Pelikan. The Spirit of Eastern Christendom, p. 129. Ср.: Stephan Gero. Byzantine Iconoclasm during the Reign of Constantine V, p. 74."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    }
+  ]
+}

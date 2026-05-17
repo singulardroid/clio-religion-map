@@ -1,0 +1,3070 @@
+{
+  "concepts": {
+    "buddha-birth-immaculate-conception": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 147"
+    },
+    "buddha-great-departure": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 148"
+    },
+    "buddha-enlightenment-bodhi": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 148"
+    },
+    "buddha-first-sermon-wheel-of-law": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 149"
+    },
+    "devadatta-schism-buddhism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 150"
+    },
+    "buddha-parinirvana": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 150"
+    },
+    "sramana-ascetic-schools": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 151"
+    },
+    "mahavira-jainism-founder": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 152"
+    },
+    "ajivika-fatalism-niyati": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XVIII БУДДА И ЕГО СОВРЕМЕННИКИ",
+      "source_ref": "Том 2, Глава XVIII, § 154"
+    },
+    "fire-domestication-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §1"
+    },
+    "mystical-solidarity-hunter-prey": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §1"
+    },
+    "burial-ritual-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §3"
+    },
+    "red-ochre-ritual": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §3"
+    },
+    "afterlife-belief-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §3"
+    },
+    "bear-cult-alpine": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §4"
+    },
+    "bone-regeneration-belief": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §4"
+    },
+    "cave-art-franco-cantabrian": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §5"
+    },
+    "hunting-magic-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §5"
+    },
+    "shamanism-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §5"
+    },
+    "xray-art-shamanic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §5"
+    },
+    "paleolithic-venus-figurines": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §6"
+    },
+    "gender-binary-cosmology-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §6"
+    },
+    "lunar-calendar-upper-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §7"
+    },
+    "initiation-rites-paleolithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §7"
+    },
+    "cosmogonic-myth-primordial-waters": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 1,
+      "first_seen_chapter_title": "Глава I. Вначале… Магико-религиозное поведение человека эпохи палеолита",
+      "source_ref": "Том 1, Глава I, §7"
+    },
+    "water-sacrifice-and-idols": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 8"
+    },
+    "ancestor-cult-churinga": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 8"
+    },
+    "skull-cult-soul-brain": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 9"
+    },
+    "agriculture-origin-myth-murder": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 11"
+    },
+    "human-plant-solidarity": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 12"
+    },
+    "cosmic-renewal-world-tree": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 12"
+    },
+    "dwelling-imago-mundi": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 12"
+    },
+    "jericho-skull-cult": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 13"
+    },
+    "catal-hoyuk-goddess-bull": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 13"
+    },
+    "halaf-bull-thunder-god": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 13"
+    },
+    "ubaid-monumental-temples": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 13"
+    },
+    "old-europe-sacred-pillar": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 14"
+    },
+    "metallurgy-telluric-sacredness": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 2,
+      "first_seen_chapter_title": "Глава II САМАЯ ДОЛГАЯ РЕВОЛЮЦИЯ: ОТКРЫТИЕ ЗЕМЛЕДЕЛИЯ — МЕЗОЛИТ И НЕОЛИТ",
+      "source_ref": "Том 1, Глава II, § 15"
+    },
+    "sumerian-astral-pantheon": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 16"
+    },
+    "human-created-to-serve-gods": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 17"
+    },
+    "new-year-cosmic-renewal": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 17"
+    },
+    "sacred-marriage-king-goddess": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 17"
+    },
+    "celestial-archetypes-cities": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 17"
+    },
+    "divine-origin-kingship": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 17"
+    },
+    "flood-myth-mesopotamia": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 18"
+    },
+    "dying-and-rising-god-dumuzi": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 19"
+    },
+    "personal-prayer-penitence": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 20"
+    },
+    "creation-from-demonic-matter": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 21"
+    },
+    "akitu-king-humiliation": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 22"
+    },
+    "heroic-failure-immortality": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 23"
+    },
+    "divination-and-astrology": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 24"
+    },
+    "macrocosm-microcosm-correspondence": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава III РЕЛИГИИ МЕСОПОТАМИИ",
+      "source_ref": "Том 1, Глава III, § 24"
+    },
+    "writing-system-egypt": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 25"
+    },
+    "state-unification-cosmogony": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 25"
+    },
+    "zep-tepi-golden-age": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 25"
+    },
+    "primordial-hill-creation": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 26"
+    },
+    "ptah-logos-creation": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 26"
+    },
+    "humans-from-divine-tears": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 26"
+    },
+    "maat-cosmic-order": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 27"
+    },
+    "pharaoh-repels-apophis": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 27"
+    },
+    "afterlife-celestial-ascent-egypt": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 28"
+    },
+    "osiris-slain-god-fertility": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 29"
+    },
+    "democratization-osirification": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 29"
+    },
+    "egyptian-literature-of-despair": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 30"
+    },
+    "amun-ra-solarization": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 31"
+    },
+    "atenism-solar-monotheism": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 32"
+    },
+    "ra-osiris-fusion": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 33"
+    },
+    "judgment-of-dead-psychostasia": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава IV РЕЛИГИОЗНЫЕ ИДЕИ И ПОЛИТИЧЕСКИЕ КРИЗИСЫ В ДРЕВНЕМ ЕГИПТЕ",
+      "source_ref": "Том 1, Глава IV, § 33"
+    },
+    "megalithic-cult-of-dead": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 34"
+    },
+    "maltese-goddess-cult-megalithic": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 35"
+    },
+    "indus-valley-preharappan-ceremonial-centers": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 38"
+    },
+    "harappan-proto-shiva-goddess-cult": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 39"
+    },
+    "minoan-cave-labyrinth-initiation": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 40"
+    },
+    "minoan-mistress-of-animals": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 40"
+    },
+    "minoan-bull-leaping-initiation": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 41"
+    },
+    "pre-hellenic-religious-synthesis": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 5,
+      "first_seen_chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+      "source_ref": "Том 1, Глава V, § 42"
+    },
+    "hittite-religious-syncretism": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 43"
+    },
+    "storm-god-and-great-goddess-couple": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 43"
+    },
+    "solarization-of-great-goddess": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 43"
+    },
+    "hittite-divine-kingship-posthumous": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 43"
+    },
+    "hiding-god-telepinus": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 44"
+    },
+    "storm-god-defeats-dragon-illuyanka": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 45"
+    },
+    "succession-of-divine-generations-kumarbi": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 46"
+    },
+    "petra-genitrix-ullikummi": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 46"
+    },
+    "divine-succession-justifies-world-order": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 47"
+    },
+    "el-as-deus-otiosus": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 48"
+    },
+    "baal-storm-fertility-god": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 48"
+    },
+    "baal-defeats-yammu-sea": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 49"
+    },
+    "bloodthirsty-fertility-goddess-anat": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 50"
+    },
+    "temple-building-as-cosmogony-baal": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 50"
+    },
+    "baal-descent-and-death": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 51"
+    },
+    "ritual-destruction-of-death-mutu": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 51"
+    },
+    "integration-of-death-into-cosmic-rhythm": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 52"
+    },
+    "yahweh-vs-baal-conflict": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 6,
+      "first_seen_chapter_title": "Глава VI РЕЛИГИЯ ХЕТТОВ И ХАНААНЕЕВ",
+      "source_ref": "Том 1, Глава VI, § 52"
+    },
+    "creation-by-word-good-world": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 53"
+    },
+    "desert-creation-myth-yahwist": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 53"
+    },
+    "primordial-androgyny": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 53"
+    },
+    "hubris-as-original-sin": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 54"
+    },
+    "farmer-shepherd-conflict-cain-abel": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 54"
+    },
+    "flood-as-moral-punishment": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 55"
+    },
+    "tower-of-babel-demythologization": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 55"
+    },
+    "god-of-the-father": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 56"
+    },
+    "god-of-father-el-synthesis": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 56"
+    },
+    "abrahamic-faith-absurd-sacrifice": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 57"
+    },
+    "passover-cosmic-to-historical": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 58"
+    },
+    "revelation-of-yahweh-name": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 59"
+    },
+    "aniconic-cult-of-yahweh": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 59"
+    },
+    "yahweh-baal-syncretism": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 60"
+    },
+    "israelite-ecstatic-prophecy": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 7,
+      "first_seen_chapter_title": "Глава VII «КОГДА ИЗРАИЛЬ БЫЛ МЛАДЕНЦЕМ…»",
+      "source_ref": "Том 1, Глава VII, § 60"
+    },
+    "indoeuropean-kurgan-culture": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 61"
+    },
+    "indoeuropean-sky-god-father": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 62"
+    },
+    "tripartite-ideology-indoeuropean": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 63"
+    },
+    "aryan-invasion-india": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 64"
+    },
+    "varuna-rta-maya": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 66"
+    },
+    "indra-vritra-cosmogony": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 68"
+    },
+    "agni-sacrificial-fire": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 69"
+    },
+    "soma-ecstatic-drink": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 70"
+    },
+    "rudra-shiva-ambivalence": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 71"
+    },
+    "vishnu-cosmic-axis": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава VIII РЕЛИГИЯ ИНДОЕВРОПЕЙЦЕВ. ВЕДИЙСКИЕ БОГИ",
+      "source_ref": "Том 1, Глава VIII, § 71"
+    },
+    "upanayana-second-birth": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "agnicayana-cosmic-altar": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "ashvamedha-horse-sacrifice": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "purushamedha-human-sacrifice": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "diksha-initiatory-rebirth": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "rajasuya-royal-consecration": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "purusha-dismemberment-cosmogony": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "creation-from-non-being-tad-ekam": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "prajapati-exhaustion-restoration": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "atman-brahman-identity-ritual": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "interiorization-of-sacrifice": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "tapas-ascetic-heat": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "ecstatic-ascetics-muni-vratya": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "samsara-karma-cycle": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "moksha-through-jnana": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "atman-brahman-identity-upanishads": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "brahman-two-modalities-maya": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 9,
+      "first_seen_chapter_title": "Глава IX ИНДИЯ ДО ГАУТАМЫ БУДДЫ: ОТ КОСМИЧЕСКОГО ЖЕРТВОПРИНОШЕНИЯ ДО ВЫСШЕГО ТОЖДЕСТВА \"АТМАН-БРАХМАН\"",
+      "source_ref": "Том 1, Глава IX"
+    },
+    "poseidon-earth-husband-to-sea-god": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 88"
+    },
+    "hephaestus-smith-magician-shaman": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 88"
+    },
+    "apollo-replaces-prehellenic-deities": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 89"
+    },
+    "apollo-shamanic-ecstasy-to-wisdom": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 91"
+    },
+    "hermes-trickster-psychopomp": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 92"
+    },
+    "hera-earth-mother-to-marriage-goddess": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 93"
+    },
+    "artemis-mistress-of-animals-virgin": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 93"
+    },
+    "athena-palace-goddess-wisdom": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 94"
+    },
+    "aphrodite-eastern-love-goddess": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 94"
+    },
+    "greek-hero-cult": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XI ОЛИМПИЙЦЫ И ГЕРОИ",
+      "source_ref": "Том 1, Глава XI, § 95"
+    },
+    "immortality-through-fire": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 12,
+      "first_seen_chapter_title": "Глава XII ЭЛЕВСИНСКИЕ МИСТЕРИИ",
+      "source_ref": "Том 1, Глава XII, § 96"
+    },
+    "persephone-mediator-hades-olympus": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 12,
+      "first_seen_chapter_title": "Глава XII ЭЛЕВСИНСКИЕ МИСТЕРИИ",
+      "source_ref": "Том 1, Глава XII, § 96"
+    },
+    "eleusinian-mysteries-origin": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 12,
+      "first_seen_chapter_title": "Глава XII ЭЛЕВСИНСКИЕ МИСТЕРИИ",
+      "source_ref": "Том 1, Глава XII, § 96"
+    },
+    "eleusinian-initiation-degrees": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 12,
+      "first_seen_chapter_title": "Глава XII ЭЛЕВСИНСКИЕ МИСТЕРИИ",
+      "source_ref": "Том 1, Глава XII, § 97"
+    },
+    "epopteia-revelation-light": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 12,
+      "first_seen_chapter_title": "Глава XII ЭЛЕВСИНСКИЕ МИСТЕРИИ",
+      "source_ref": "Том 1, Глава XII, § 98"
+    },
+    "mystery-as-religious-value": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 12,
+      "first_seen_chapter_title": "Глава XII ЭЛЕВСИНСКИЕ МИСТЕРИИ",
+      "source_ref": "Том 1, Глава XII, § 99"
+    },
+    "twice-born-dionysus": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 15,
+      "first_seen_chapter_title": "Глава XV ДИОНИС, ИЛИ ВОЗВРАЩЕННОЕ БЛАЖЕНСТВО",
+      "source_ref": "Том 1, Глава XV, § 122"
+    },
+    "dionysus-appearances-disappearances": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 15,
+      "first_seen_chapter_title": "Глава XV ДИОНИС, ИЛИ ВОЗВРАЩЕННОЕ БЛАЖЕНСТВО",
+      "source_ref": "Том 1, Глава XV, § 122"
+    },
+    "anthesteria-festival": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 15,
+      "first_seen_chapter_title": "Глава XV ДИОНИС, ИЛИ ВОЗВРАЩЕННОЕ БЛАЖЕНСТВО",
+      "source_ref": "Том 1, Глава XV, § 123"
+    },
+    "dionysian-orgiastic-cult": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 15,
+      "first_seen_chapter_title": "Глава XV ДИОНИС, ИЛИ ВОЗВРАЩЕННОЕ БЛАЖЕНСТВО",
+      "source_ref": "Том 1, Глава XV, § 124"
+    },
+    "dionysus-zagreus-dismemberment": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 15,
+      "first_seen_chapter_title": "Глава XV ДИОНИС, ИЛИ ВОЗВРАЩЕННОЕ БЛАЖЕНСТВО",
+      "source_ref": "Том 1, Глава XV, § 125"
+    },
+    "zarathustra-revelation-free-will": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 103"
+    },
+    "eschatological-transfiguration-fraso-kereti": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 104"
+    },
+    "interiorization-of-sacrifice-zoroastrian": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 104"
+    },
+    "achaemenid-new-year-navruz": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 106"
+    },
+    "scythian-shamanic-hemp-ecstasy": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 107"
+    },
+    "haoma-cult-integration": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 108"
+    },
+    "mithra-exaltation-zoroastrian": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 109"
+    },
+    "cinvat-bridge-judgment": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 111"
+    },
+    "daena-encounter-afterlife": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 111"
+    },
+    "resurrection-of-the-flesh-zoroastrian": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 13,
+      "first_seen_chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+      "source_ref": "Том 1, Глава XIII, § 112"
+    },
+    "greek-theogony-succession-of-gods": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "gigantomachy-myth": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "zeus-kouros-dying-god": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "zeus-golden-chain-omnipotence": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "five-ages-of-man-hesiod": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "prometheus-sacrifice-mecone": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "pandora-origin-of-evil": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "prometheus-cult-athens": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "anthropogony-clay-prometheus": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "greek-pessimism-human-condition": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "greek-joy-of-existence": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "sacralization-of-human-limits-asia": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 10,
+      "first_seen_chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+      "source_ref": "Том 1, Глава X"
+    },
+    "israelite-sacred-kingship-syncretism": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 113"
+    },
+    "jerusalem-temple-cult-center": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 113"
+    },
+    "jeroboam-golden-calves-syncretism": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 113"
+    },
+    "job-theodicy-mystery-of-evil": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 115"
+    },
+    "classical-biblical-prophecy": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 116"
+    },
+    "amos-ethical-prophecy-over-cult": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 117"
+    },
+    "hosea-marital-symbolism-covenant": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 117"
+    },
+    "isaiah-messianism-and-remnant": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 118"
+    },
+    "jeremiah-new-covenant-interiority": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 119"
+    },
+    "ezekiel-individual-responsibility-resurrection": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 120"
+    },
+    "prophetic-valorization-of-history": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XIV РЕЛИГИЯ ИЗРАИЛЯ ВО ВРЕМЕНА ЦАРЕЙ И ПРОРОКОВ",
+      "source_ref": "Том 1, Глава XIV, § 121"
+    },
+    "eye-goddess-temple-brak": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 17,
+      "first_seen_chapter_title": "Глава XVII Критическая библиография",
+      "source_ref": "Том 1, Глава 17, Критическая библиография"
+    },
+    "messianic-king-descent-from-heaven": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 17,
+      "first_seen_chapter_title": "Глава XVII Критическая библиография",
+      "source_ref": "Том 1, Глава 17, Критическая библиография"
+    },
+    "ritual-bisection-sacrifice": {
+      "first_seen_volume": 1,
+      "first_seen_chapter": 17,
+      "first_seen_chapter_title": "Глава XVII Критическая библиография",
+      "source_ref": "Том 1, Глава 17, Критическая библиография"
+    },
+    "buddha-first-sermon-four-noble-truths": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 19,
+      "first_seen_chapter_title": "Глава ХIХ ПОСЛАНИЕ БУДДЫ: ОТ СТРАХА ВЕЧНОГО ВОЗВРАЩЕНИЯ К БЛАЖЕНСТВУ НЕСКАЗАННОГО",
+      "source_ref": "Том 2, Глава XIX, § 156"
+    },
+    "buddha-anatta-doctrine": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 19,
+      "first_seen_chapter_title": "Глава ХIХ ПОСЛАНИЕ БУДДЫ: ОТ СТРАХА ВЕЧНОГО ВОЗВРАЩЕНИЯ К БЛАЖЕНСТВУ НЕСКАЗАННОГО",
+      "source_ref": "Том 2, Глава XIX, § 157"
+    },
+    "buddha-path-to-nirvana": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 19,
+      "first_seen_chapter_title": "Глава ХIХ ПОСЛАНИЕ БУДДЫ: ОТ СТРАХА ВЕЧНОГО ВОЗВРАЩЕНИЯ К БЛАЖЕНСТВУ НЕСКАЗАННОГО",
+      "source_ref": "Том 2, Глава XIX, § 158"
+    },
+    "buddha-prajna-meditation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 19,
+      "first_seen_chapter_title": "Глава ХIХ ПОСЛАНИЕ БУДДЫ: ОТ СТРАХА ВЕЧНОГО ВОЗВРАЩЕНИЯ К БЛАЖЕНСТВУ НЕСКАЗАННОГО",
+      "source_ref": "Том 2, Глава XIX, § 159"
+    },
+    "buddha-unconditioned-paradox": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 19,
+      "first_seen_chapter_title": "Глава ХIХ ПОСЛАНИЕ БУДДЫ: ОТ СТРАХА ВЕЧНОГО ВОЗВРАЩЕНИЯ К БЛАЖЕНСТВУ НЕСКАЗАННОГО",
+      "source_ref": "Том 2, Глава XIX, § 160"
+    },
+    "spread-of-brahmanism-ceylon": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "spread-of-hinduism-southeast-asia": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "buddha-universal-suffering": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "samkhya-ishvarakrishna": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "brahma-sutra-badarayana": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "gaudapada-maya-doctrine": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "shankara-advaita-vedanta": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "yoga-sutras-patanjali": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "eight-limbs-of-yoga": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "ishvara-in-yoga": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "samadhi-yogic-enstasy": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "vyasa-yoga-bhashya": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "jivanmukta-liberation-in-life": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XVII БРАХМАНИЗМ И ИНДУИЗМ: ПЕРВЫЕ ФИЛОСОФСКИЕ ДОКТРИНЫ И СПОСОБЫ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава XVII"
+    },
+    "yangshao-cosmology-afterlife": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "death-pattern-regeneration-symbolism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "patriarchal-ancestor-cult-phallic": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "shang-di-supreme-sky-god": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "royal-ancestor-cult-mediator": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "royal-tomb-human-sacrifice": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "foundation-human-sacrifice": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "mandate-of-heaven": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "son-of-heaven-tian": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "ancestor-tablet-impersonator-ritual": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "earth-soil-deities-altar": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "pangu-primordial-giant-dismemberment": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "separation-heaven-earth-myth": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "nuwa-fuxi-flood-creation-myth": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "yu-great-flood-taming-demiurge": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "ming-tang-imago-mundi-calendar": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "yin-yang-polarity-seasonal-hierogamy": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "dao-primordial-totality-creation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "confucian-ritual-li-superior-man": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "laozi-daodejing-wu-wei": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "zhuangzi-ecstatic-knowledge-relativity": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "daoist-physical-immortality-corpse-liberation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "daoist-embryonic-breathing-tai-xi": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "daoist-sexual-techniques-fang-zhong": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "chinese-alchemy-elixir-immortality": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "inner-alchemy-neidan": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "tianshi-dao-celestial-masters": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "yellow-turban-rebellion-messianism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 16,
+      "first_seen_chapter_title": "Глава XVI РЕЛИГИИ ДРЕВНЕГО КИТАЯ",
+      "source_ref": "Том 2, Глава XVI"
+    },
+    "arsacid-hellenization-syncretism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 27,
+      "first_seen_chapter_title": "Глава XXVII НОВЫЙ ИРАНСКИЙ СИНТЕЗ",
+      "source_ref": "Том 2, Глава XXVII, § 212"
+    },
+    "mithra-mysteries-spread": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 27,
+      "first_seen_chapter_title": "Глава XXVII НОВЫЙ ИРАНСКИЙ СИНТЕЗ",
+      "source_ref": "Том 2, Глава XXVII, § 212"
+    },
+    "oracle-of-hystaspes-apocalypticism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 27,
+      "first_seen_chapter_title": "Глава XXVII НОВЫЙ ИРАНСКИЙ СИНТЕЗ",
+      "source_ref": "Том 2, Глава XXVII, § 212"
+    },
+    "zurvan-infinite-time-space-twins": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 27,
+      "first_seen_chapter_title": "Глава XXVII НОВЫЙ ИРАНСКИЙ СИНТЕЗ",
+      "source_ref": "Том 2, Глава XXVII, § 213"
+    },
+    "mazdaism-state-religion-sassanid": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 27,
+      "first_seen_chapter_title": "Глава XXVII НОВЫЙ ИРАНСКИЙ СИНТЕЗ",
+      "source_ref": "Том 2, Глава XXVII, § 214"
+    },
+    "mithraism-roman-empire-decline": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 27,
+      "first_seen_chapter_title": "Глава XXVII НОВЫЙ ИРАНСКИЙ СИНТЕЗ",
+      "source_ref": "Том 2, Глава XXVII, § 218"
+    },
+    "second-isaiah-eschatology": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "suffering-servant-redemption": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "second-temple-restoration-messianism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "eschatological-cosmic-renewal": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "post-exilic-legalism-torah": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "personification-of-wisdom-hokma": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "wisdom-literature-crisis-kohelet-ben-sira": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "apocalyptic-literature-daniel-enoch": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "apocalyptic-resurrection-and-judgment": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "torah-as-ontological-reality": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 11,
+      "first_seen_chapter_title": "Глава XXV ИСПЫТАНИЯ ДЛЯ ИУДЕЙСТВА: ОТ АПОКАЛИПСИСОВ ДО ВОЗВЫШЕНИЯ ТОРЫ",
+      "source_ref": "Том 2, Глава XXV"
+    },
+    "mahabharata-war": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 24,
+      "first_seen_chapter_title": "Глава XXIV СИНТЕЗ ИНДУИЗМА: «МАХАБХАРАТА» И \"БХАГАВАД-ГИТА\"",
+      "source_ref": "Том 2, Глава XXIV, § 191"
+    },
+    "eschatological-war-pralaya": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 24,
+      "first_seen_chapter_title": "Глава XXIV СИНТЕЗ ИНДУИЗМА: «МАХАБХАРАТА» И \"БХАГАВАД-ГИТА\"",
+      "source_ref": "Том 2, Глава XXIV, § 192"
+    },
+    "krishna-revelation-bhagavad-gita": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 24,
+      "first_seen_chapter_title": "Глава XXIV СИНТЕЗ ИНДУИЗМА: «МАХАБХАРАТА» И \"БХАГАВАД-ГИТА\"",
+      "source_ref": "Том 2, Глава XXIV, § 193"
+    },
+    "renunciation-fruits-of-action": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 24,
+      "first_seen_chapter_title": "Глава XXIV СИНТЕЗ ИНДУИЗМА: «МАХАБХАРАТА» И \"БХАГАВАД-ГИТА\"",
+      "source_ref": "Том 2, Глава XXIV, § 194"
+    },
+    "bhakti-yoga": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 24,
+      "first_seen_chapter_title": "Глава XXIV СИНТЕЗ ИНДУИЗМА: «МАХАБХАРАТА» И \"БХАГАВАД-ГИТА\"",
+      "source_ref": "Том 2, Глава XXIV, § 194"
+    },
+    "hindu-synthesis-world-sacralization": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 24,
+      "first_seen_chapter_title": "Глава XXIV СИНТЕЗ ИНДУИЗМА: «МАХАБХАРАТА» И \"БХАГАВАД-ГИТА\"",
+      "source_ref": "Том 2, Глава XXIV, § 195"
+    },
+    "pax-aeterna-augustus": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 225"
+    },
+    "emperor-apotheosis-cult": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 226"
+    },
+    "sol-invictus-cult": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 226"
+    },
+    "christian-esotericism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 227"
+    },
+    "gnostic-dualism-cosmos": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 228"
+    },
+    "simon-magus-gnosticism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 229"
+    },
+    "marcionism-dualism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 229"
+    },
+    "valentinian-gnosis": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 229"
+    },
+    "hymn-of-the-pearl-anamnesis": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 230"
+    },
+    "manichaeism-revelation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 231"
+    },
+    "manichaean-cosmology-dualism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 233"
+    },
+    "uyghur-manichaeism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 29,
+      "first_seen_chapter_title": "Глава ХХIХ ЯЗЫЧЕСТВО, ХРИСТИАНСТВО И ГНОЗИС В ЭПОХУ ИМПЕРАТОРОВ",
+      "source_ref": "Том 2, Глава ХХIХ, § 234"
+    },
+    "mutazilism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 272"
+    },
+    "asharism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 272"
+    },
+    "ismailism-great-resurrection": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 274"
+    },
+    "sufism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 275"
+    },
+    "sufi-martyrdom-hallaj": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 277"
+    },
+    "kalam-sufism-reconciliation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 278"
+    },
+    "islamic-neoplatonism-avicenna": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 279"
+    },
+    "islamic-aristotelianism-averroes": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 280"
+    },
+    "wahdat-al-wujud-ibn-arabi": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 280"
+    },
+    "ishraq-illuminationism-suhrawardi": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 281"
+    },
+    "mawlawiya-sufi-order": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 282"
+    },
+    "islamic-alchemy-jabir": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 35,
+      "first_seen_chapter_title": "Глава XXXV МУСУЛЬМАНСКОЕ БОГОСЛОВИЕ И МИСТИКА",
+      "source_ref": "Том 3, Глава XXXV, § 283"
+    },
+    "saul-paul-vision-damascus": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-baptism-jordan": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-temptation-wilderness": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-galilee-preaching-kingdom": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-multiplication-of-loaves": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-entry-jerusalem-and-temple-cleansing": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-last-supper-eucharist": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-crucifixion": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "jesus-resurrection-belief": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 219"
+    },
+    "pentecost-holy-spirit": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 221"
+    },
+    "stephen-martyrdom": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 221"
+    },
+    "antioch-first-christians": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 221"
+    },
+    "paul-missionary-journeys": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 221"
+    },
+    "paul-martyrdom-rome": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 221"
+    },
+    "qumran-community-destruction": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 223"
+    },
+    "jerusalem-temple-destruction-70": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 224"
+    },
+    "yavneh-rabbinic-school-johanan": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 14,
+      "first_seen_chapter_title": "Глава XXVIII РОЖДЕНИЕ ХРИСТИАНСТВА",
+      "source_ref": "Том 2, Глава 14, § 224"
+    },
+    "urnfield-culture-proto-celts": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 169"
+    },
+    "hallstatt-culture-chariot-burials": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 169"
+    },
+    "la-tene-culture-zenith": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 169"
+    },
+    "celtic-ritual-wells-underworld": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 169"
+    },
+    "celtic-cult-of-severed-heads": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 169"
+    },
+    "druidic-assembly-carnutes": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 172"
+    },
+    "celtic-human-sacrifice-triad": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 171"
+    },
+    "irish-royal-consecration-mare-hierogamy": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 171"
+    },
+    "couvade-ritual-celts": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 171"
+    },
+    "coligny-calendar-druidic-astronomy": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 172"
+    },
+    "germanic-cosmogony-ymir-yggdrasil": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 173"
+    },
+    "odin-shamanic-initiation-runes": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 174"
+    },
+    "berserker-ecstatic-warrior-initiation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 175"
+    },
+    "death-of-baldr-ragnarok": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 176"
+    },
+    "nerthus-earth-mother-procession": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 177"
+    },
+    "thracian-sabazius-orgiastic-cult": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 178"
+    },
+    "zalmoxis-immortalization-mystery": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 179"
+    },
+    "zalmoxis-messenger-sacrifice": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 179"
+    },
+    "zalmoxis-high-priest-asceticism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 21,
+      "first_seen_chapter_title": "Глава ХХI КЕЛЬТЫ, ГЕРМАНЦЫ, ФРАКИЙЦЫ И ГЕТЫ",
+      "source_ref": "Том 2, Глава ХХI, § 179"
+    },
+    "fall-of-western-roman-empire": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "western-monasticism-benedict": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "charlemagne-coronation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "year-1000-eschatology": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "truce-of-god": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "gregorian-reform": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "carthusian-order-foundation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "first-crusade": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "cistercian-order-foundation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "christian-knighthood-consecration": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "courtly-love-troubadours": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "fedeli-d-amore": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "premonstratensian-order-foundation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "second-crusade": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "grail-mythology": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "third-crusade": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "joachim-of-fiore-theology": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "mendicant-orders-foundation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "fourth-crusade": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "childrens-crusade": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "eternal-gospel-scandal": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "joachim-condemnation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 34,
+      "first_seen_chapter_title": "Глава XXXIV ЗАПАДНОЕ КАТОЛИЧЕСТВО ОТ КАРЛА ВЕЛИКОГО ДО ИОАХИМА ФЛОРСКОГО",
+      "source_ref": "Том 3, Глава XXXIV"
+    },
+    "wolf-demiurge-ancestor": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "tengri-sky-god": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "tengri-deus-otiosus-fragmentation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "world-tree-axis-mundi-altaic": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "cosmogonic-dive-dualistic": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "shamanic-initiation-dismemberment": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "shamanic-ascent-birch-tree": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "shamanic-descent-underworld": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "num-sky-god-samoyed": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "baltic-sky-god-dievs": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "baltic-thunder-god-perkunas": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "slavic-thunder-god-perun": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "slavic-secondary-burial": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "slavic-dualistic-cosmogony-dive": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 31,
+      "first_seen_chapter_title": "Глава XXXI РЕЛИГИИ ДРЕВНЕЙ ЕВРАЗИИ: ТЮРКО-МОНГОЛЫ, ФИННО-УГРЫ, БАЛТО-СЛАВЯНЕ",
+      "source_ref": "Том 3, Глава XXXI"
+    },
+    "allah-deus-otiosus": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 259"
+    },
+    "islamic-prophecy-revelation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 259"
+    },
+    "miraj-heavenly-ascent": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 261"
+    },
+    "hijra-umma-foundation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 262"
+    },
+    "qibla-change-mecca": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 262"
+    },
+    "five-pillars-of-islam": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 264"
+    },
+    "conquest-of-mecca": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 263"
+    },
+    "caliphate-institution": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 263"
+    },
+    "arab-conquests": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 265"
+    },
+    "shia-sunni-schism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 265"
+    },
+    "baghdad-imago-mundi": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 265"
+    },
+    "abbasid-translation-movement": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 4,
+      "first_seen_chapter_title": "Глава XXXIII МАГОМЕТ И РАСЦВЕТ ИСЛАМА",
+      "source_ref": "Том 3, Глава XXXIII, § 265"
+    },
+    "first-buddhist-council": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 185"
+    },
+    "second-buddhist-council": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 185"
+    },
+    "mahasanghika-schism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 185"
+    },
+    "anthropomorphic-buddha-gandhara": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 186"
+    },
+    "pudgalavada-sect": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 186"
+    },
+    "sarvastivada-schism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 186"
+    },
+    "ashoka-buddhist-conversion-missions": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 186"
+    },
+    "stupa-veneration": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 187"
+    },
+    "abhidharmapitaka-formation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 187"
+    },
+    "mahayana-prajnaparamita-bodhisattva": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 188"
+    },
+    "amitabha-sukhavati-cult": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 188"
+    },
+    "nagarjuna-shunyatavada": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 189"
+    },
+    "jain-schism-shvetambara-digambara": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 190"
+    },
+    "second-jain-council-valabhi": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 190"
+    },
+    "jain-syadvada-cosmology": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 23,
+      "first_seen_chapter_title": "Глава ХХIII ИСТОРИЯ БУДДИЗМА ОТ МАХАКАШЬЯПЫ ДО НАГАРДЖУНЫ",
+      "source_ref": "Том 2, Глава XXIII, § 190"
+    },
+    "tibetan-mi-chos-religion-of-men": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 312"
+    },
+    "mu-cord-axis-mundi": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 312"
+    },
+    "tibetan-new-year-cosmic-renewal": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 313"
+    },
+    "bon-religion-syncretism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 314"
+    },
+    "samye-debate-indian-chinese-buddhism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 315"
+    },
+    "tibetan-buddhism-second-wave-atisha": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 315"
+    },
+    "lamaism-guru-veneration": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 316"
+    },
+    "chod-ritual-dismemberment": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 316"
+    },
+    "tibetan-mysticism-of-light": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 317"
+    },
+    "bardo-thodol-book-of-dead": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 317"
+    },
+    "shambhala-kalachakra-tantra": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 318"
+    },
+    "milarepa-mystic-poet": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 318"
+    },
+    "gesar-epic-hero": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 39,
+      "first_seen_chapter_title": "Глава XXXIX ТИБЕТСКИЕ РЕЛИГИИ",
+      "source_ref": "Том 3, Глава XXXIX, § 318"
+    },
+    "orphism-mysteries-and-orpheus": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 180"
+    },
+    "orphic-anthropogony-soma-sema": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 181"
+    },
+    "orphic-theogony-phanes": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 181"
+    },
+    "orphic-eschatology-mnemosyne": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 182"
+    },
+    "pythagorean-holistic-synthesis": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 182"
+    },
+    "platonic-anamnesis-astral-immortality": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 183"
+    },
+    "hellenistic-cosmopolitanism-syncretism": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава ХХII ОРФЕЙ, ПИФАГОР И НОВАЯ ЭСХАТОЛОГИЯ",
+      "source_ref": "Том 2, Глава XXII, § 184"
+    },
+    "bogomil-dualist-heresy": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 293"
+    },
+    "bogomil-apocrypha-dualism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 293"
+    },
+    "cathar-dualism-albigensian": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 294"
+    },
+    "franciscan-poverty-mysticism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 295"
+    },
+    "coincidentia-oppositorum-bonaventure": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 296"
+    },
+    "scholasticism-faith-reason-synthesis": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 297"
+    },
+    "occam-divine-freedom-nominalism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 297"
+    },
+    "eckhart-god-godhead-distinction": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 298"
+    },
+    "eckhart-unio-mystica-ground": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 298"
+    },
+    "beguines-popular-piety": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 299"
+    },
+    "free-spirit-heresy": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 299"
+    },
+    "flagellants-penance": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 300"
+    },
+    "devotio-moderna": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 300"
+    },
+    "macabre-death-dance": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 300"
+    },
+    "cusa-docta-ignorantia": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 301"
+    },
+    "cusa-concordantia": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 301"
+    },
+    "filioque-controversy": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 302"
+    },
+    "great-schism-1054": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 302"
+    },
+    "hesychasm-jesus-prayer": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 303"
+    },
+    "palamas-uncreated-light-energies": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 303"
+    },
+    "theosis-deification": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 8,
+      "first_seen_chapter_title": "Глава XXXVII РЕЛИГИОЗНЫЕ ТЕЧЕНИЯ В ЕВРОПЕ: ОТ ПОЗДНЕГО СРЕДНЕВЕКОВЬЯ ДО НАЧАЛА РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVII, § 303"
+    },
+    "earth-goddess-personification-china": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 128"
+    },
+    "alchemy-gold-making-prohibition": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 134"
+    },
+    "elixir-and-gold-alchemy-unification": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 134"
+    },
+    "terramare-culture-copper-cremation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 161"
+    },
+    "villanovan-culture-iron-cremation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 161"
+    },
+    "winter-prodigies-expiation-rome": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 163"
+    },
+    "astarte-uni-syncretism-pyrgi": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 167"
+    },
+    "evocatio-tanit-carthage": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 168"
+    },
+    "derveni-papyrus-orphic-cosmogony": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 181, прим. 380"
+    },
+    "jewish-philosophy-universalism-aristobulus": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, § 201"
+    },
+    "manichaeism-uighur-state-religion": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, прим. 767"
+    },
+    "elkesaite-judeo-christian-gnostic-sect": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 18,
+      "first_seen_chapter_title": "Глава XVIII Критическая библиография",
+      "source_ref": "Том 2, Глава 18, прим. 751"
+    },
+    "hellenistic-mystery-religions": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 26,
+      "first_seen_chapter_title": "Глава XXVI СИНКРЕТИЗМ И ТВОРЧЕСТВО В ЭЛЛИНИСТИЧЕСКУЮ ЭПОХУ: ОБЕЩАНИЕ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава 26, § 205"
+    },
+    "hellenistic-dionysus-mysteries": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 26,
+      "first_seen_chapter_title": "Глава XXVI СИНКРЕТИЗМ И ТВОРЧЕСТВО В ЭЛЛИНИСТИЧЕСКУЮ ЭПОХУ: ОБЕЩАНИЕ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава 26, § 206"
+    },
+    "cybele-attis-mysteries": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 26,
+      "first_seen_chapter_title": "Глава XXVI СИНКРЕТИЗМ И ТВОРЧЕСТВО В ЭЛЛИНИСТИЧЕСКУЮ ЭПОХУ: ОБЕЩАНИЕ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава 26, § 207"
+    },
+    "isis-serapis-mysteries": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 26,
+      "first_seen_chapter_title": "Глава XXVI СИНКРЕТИЗМ И ТВОРЧЕСТВО В ЭЛЛИНИСТИЧЕСКУЮ ЭПОХУ: ОБЕЩАНИЕ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава 26, § 208"
+    },
+    "hermeticism-revelation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 26,
+      "first_seen_chapter_title": "Глава XXVI СИНКРЕТИЗМ И ТВОРЧЕСТВО В ЭЛЛИНИСТИЧЕСКУЮ ЭПОХУ: ОБЕЩАНИЕ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава 26, § 209-210"
+    },
+    "hellenistic-alchemy-transmutation": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 26,
+      "first_seen_chapter_title": "Глава XXVI СИНКРЕТИЗМ И ТВОРЧЕСТВО В ЭЛЛИНИСТИЧЕСКУЮ ЭПОХУ: ОБЕЩАНИЕ СПАСЕНИЯ",
+      "source_ref": "Том 2, Глава 26, § 211"
+    },
+    "yavneh-academy-foundation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 284"
+    },
+    "bar-kokhba-revolt": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 284"
+    },
+    "mishnah-compilation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 284"
+    },
+    "talmud-compilation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 285"
+    },
+    "karaite-movement": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 285"
+    },
+    "jewish-medieval-philosophy-saadia": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 286"
+    },
+    "jewish-neoplatonism-gabirol": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 286"
+    },
+    "jewish-spiritual-morality-bahya": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 286"
+    },
+    "jewish-anti-philosophy-halevi": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 286"
+    },
+    "maimonides-aristotelian-synthesis": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 287"
+    },
+    "merkavah-mysticism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 288"
+    },
+    "sefer-yetsirah-cosmogony": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 288"
+    },
+    "hasidei-ashkenaz-pietism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 288"
+    },
+    "kabbalah-bahir": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 289"
+    },
+    "ecstatic-kabbalah-abulafia": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 289"
+    },
+    "zohar-kabbalah": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 289"
+    },
+    "lurianic-kabbalah": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 290"
+    },
+    "sabbatean-messianism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 291"
+    },
+    "hasidism-baal-shem-tov": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 36,
+      "first_seen_chapter_title": "Глава XXXVI ИУДАИЗМ ОТ ВОССТАНИЯ БАР КОХБЫ ДО ХАСИДИЗМА",
+      "source_ref": "Том 3, Глава XXXVI, § 292"
+    },
+    "sack-of-rome-alaric": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 252"
+    },
+    "augustine-city-of-god": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 252"
+    },
+    "vandals-capture-north-africa": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 252"
+    },
+    "augustine-conversion-baptism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 253"
+    },
+    "augustine-bishop-of-hippo": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 253"
+    },
+    "origen-literal-interpretation-castration": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 254"
+    },
+    "condemnation-of-origenism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 254"
+    },
+    "augustine-writes-confessions": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 255"
+    },
+    "pelagianism-condemnation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 255"
+    },
+    "translation-st-stephen-relics-hippo": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 256"
+    },
+    "carolingian-relic-translation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 256"
+    },
+    "constantinople-council-patriarchates": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 257"
+    },
+    "chalcedon-council-christology": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 257"
+    },
+    "iconoclasm-prohibition-leo-iii": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 258"
+    },
+    "iconoclast-council-constantinople": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 258"
+    },
+    "second-iconoclast-council": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 3,
+      "first_seen_chapter_title": "Глава XXXII ХРИСТИАНСКИЕ ЦЕРКВИ ДО ИКОНОБОРЧЕСКОЙ СМУТЫ (VIII–IX ВВ.)",
+      "source_ref": "Том 3, Глава XXXII, § 258"
+    },
+    "kallikantzari-winter-monsters": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 304"
+    },
+    "anastenaria-fire-walking": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 304"
+    },
+    "colinde-winter-carols": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 304"
+    },
+    "calusari-purifying-dance": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 305"
+    },
+    "witch-hunts-europe": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 306"
+    },
+    "diana-oriente-cult": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 306"
+    },
+    "benandanti-fertility-battles": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 306"
+    },
+    "strigoi-night-battles": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 306"
+    },
+    "romanian-diana-zine-cult": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 306"
+    },
+    "columbus-eschatological-discovery": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 307"
+    },
+    "luther-reformation-sola-fide": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 307"
+    },
+    "luther-erasmus-free-will-debate": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 308"
+    },
+    "zwingli-reformation-eucharist": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 309"
+    },
+    "anabaptism-adult-baptism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 309"
+    },
+    "calvin-reformation-predestination": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 309"
+    },
+    "council-of-trent-counter-reformation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 309"
+    },
+    "ignatius-loyola-spiritual-exercises": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 309"
+    },
+    "corpus-hermeticum-translation": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 310"
+    },
+    "giordano-bruno-hermetic-heliocentrism": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 310"
+    },
+    "renaissance-alchemy-redemption-of-nature": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 311"
+    },
+    "rosicrucian-manifestos-reform": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 311"
+    },
+    "newton-alchemy-mechanical-philosophy": {
+      "first_seen_volume": 3,
+      "first_seen_chapter": 38,
+      "first_seen_chapter_title": "Глава XXXVIII РЕЛИГИЯ, МАГИЯ И ГЕРМЕТИЧЕСКАЯ ТРАДИЦИЯ ДО И ПОСЛЕ РЕФОРМАЦИИ",
+      "source_ref": "Том 3, Глава XXXVIII, § 311"
+    },
+    "foundation-sacrifice-remus": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 161"
+    },
+    "historicization-indoeuropean-myths-rome": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 162"
+    },
+    "roman-pragmatism-prodigies": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 163"
+    },
+    "roman-domestic-cult-pietas": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 164"
+    },
+    "devotio-sacrifice-decius": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 164"
+    },
+    "roman-priesthood-colleges": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 165"
+    },
+    "capitoline-triad-etruscan-influence": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 166"
+    },
+    "etruscan-divination-haruspicy": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 167"
+    },
+    "human-sacrifice-cannae-crisis": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 168"
+    },
+    "cybele-magna-mater-rome": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 168"
+    },
+    "bacchanalia-suppression-rome": {
+      "first_seen_volume": 2,
+      "first_seen_chapter": 20,
+      "first_seen_chapter_title": "Глава XX РИМСКАЯ РЕЛИГИЯ: ОТ ИСТОКОВ ДО ВАКХАНАЛИЙ (прибл. 186 г. до н. э.)",
+      "source_ref": "Том 2, Глава XX, § 168"
+    }
+  }
+}

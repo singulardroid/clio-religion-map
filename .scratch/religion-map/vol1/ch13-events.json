@@ -1,0 +1,351 @@
+{
+  "volume": 1,
+  "chapter_num": 13,
+  "chapter_title": "Глава XIII ЗАРАТУСТРА И РЕЛИГИЯ ИРАНЦЕВ",
+  "source_file": "data/vol1/chapters/ch14.txt",
+  "events": [
+    {
+      "concept_id": "zarathustra-revelation-free-will",
+      "period": "1000–551 до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Заратустра провозглашает новую религию, где Ахурамазда и духи-близнецы сделали изначальный выбор между Добром и Злом. Человек наделен свободой воли и призывается выбрать Добро.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "Заратустра получает откровение новой религии прямо от Ахурамазды. Принимая эту религию, он имитирует изначальный акт Господа — выбирает Добро... и не просит иного от своих учеников. Суть зороастрийской реформы заключается в imitatio dei. Человека призывают последовать примеру Ахурамазды, однако в своем выборе он волен.",
+      "source_ref": "Том 1, Глава XIII, § 103",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 654,
+          "text": "654 Эти сущности — или, как их также называли, «Архангелы» — связаны с определенными космическими стихиями (огнем, металлами, землей и т. д.)."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -551,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "eschatological-transfiguration-fraso-kereti",
+      "period": "1000–551 до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Заратустра отвергает сценарий циклического обновления мира и провозглашает радикальную, окончательную «трансфигурацию» (фрашо-керети), которая произойдет раз и навсегда в конце времен.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "Заратустра отвергает этот архаический сценарий, по которому мир возрождается ежегодно, и провозглашает радикальную и окончательную «трансфигурацию», происходящую раз и навсегда... Пророк сделал все возможное для упразднения древней идеологии периодического обновления космического цикла и провозгласил неминуемый и бесповоротный eschaton...",
+      "source_ref": "Том 1, Глава XIII, § 104",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "new-year-cosmic-renewal",
+          "label": "отвергает циклическое обновление в пользу линейной эсхатологии"
+        }
+      ],
+      "references": [
+        {
+          "num": 658,
+          "text": "658 Моле и Ньоли доказывают, что немедленное обновление мира может представляться результатом жертвоприношений (yasna), сотворенных жрецами."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -551,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "interiorization-of-sacrifice-zoroastrian",
+      "period": "1000–551 до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Кровавые обряды заменяются духовным культом: жертвоприношение становится «опорой» теологической медитации перед алтарным огнем.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Этот культ настолько духовен, что даже термин «жертвоприношение» (yasna) в гатах по своему смыслу эквивалентен термину \"мысль\"... Жертвоприношение — это момент, а вернее «опора» теологической медитации. И как бы впоследствии ни толковали все это священнослужители, важно, что центром маздеизма стал и поныне остается огненный алтарь.",
+      "source_ref": "Том 1, Глава XIII, § 104",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "interiorization-of-sacrifice",
+          "label": "независимая параллель спиритуализации ритуала"
+        }
+      ],
+      "references": [
+        {
+          "num": 660,
+          "text": "660 Meillet. Trois conférences sur les Gatha, p. 56; Duchesne-Guillemin. Zoroastre, p. 151."
+        },
+        {
+          "num": 661,
+          "text": "661 См. работы Ньоли, особ. Lo stato di maga и La gnosi iranica, p. 287 sq."
+        },
+        {
+          "num": 662,
+          "text": "662 Ср.: Gnoli. Questioni sull interpretazione, p. 349 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -551,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "achaemenid-new-year-navruz",
+      "period": "VI–V вв. до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "precise_location": "Персеполь",
+      "religion": "Религия Ахеменидов",
+      "statement": "Празднование Нового Года (Навруз) в священной столице Персеполе обновляло мир символическим повторением космогонии; царь брал на себя ответственность за возрождение мира.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Дарий замыслил и построил Персеполь как священную столицу, где предполагалось проводить празднование Нового Года — Навруз... Навруз, подобно любому другому празднованию Нового Года, обновлял мир символическим повторением космогонии... на иранского царя возлагалась ответственность за сохранение и возрождение мира.",
+      "source_ref": "Том 1, Глава XIII, § 106",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "new-year-cosmic-renewal",
+          "label": "развитие месопотамского сценария"
+        },
+        {
+          "target_concept_id": "eschatological-transfiguration-fraso-kereti",
+          "label": "интегрируется в зороастрийскую эсхатологию"
+        }
+      ],
+      "references": [
+        {
+          "num": 674,
+          "text": "674 R.Girshman. À propos de Persepolis, pp. 265, 277; см. также: A. U. Pope. Persepolis, a Ritual City."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -600,
+        "year_to": -400,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "181",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_k"
+      }
+    },
+    {
+      "concept_id": "scythian-shamanic-hemp-ecstasy",
+      "period": "V в. до н. э.",
+      "era": "Осевое время",
+      "territory": "Евразийская степь",
+      "religion": "Скифская религия",
+      "statement": "Скифы использовали шаманские техники экстаза, вдыхая дым конопли на раскаленных камнях, что вызывало у них мистическое ликование.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Наконец, важно отметить шаманистский характер одного из обрядов: скифы бросали семена конопли на раскаленные докрасна камни, и, добавляет Геродот, не понимавший религиозной природы действа, дым делал их \"столь счастливыми, что они выли от радости\" (IV, 75).",
+      "source_ref": "Том 1, Глава XIII, § 107",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "shamanism-paleolithic",
+          "label": "позднее развитие экстатических техник"
+        }
+      ],
+      "references": [
+        {
+          "num": 686,
+          "text": "686 \"Шаманистский\" экстаз достигался здесь при посредстве конопли как наркотика; в одном из скифских пазырыкских курганов (Алтай) обнаружена курильница для конопли."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -500,
+        "year_to": -400,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "182",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_rep_1"
+      }
+    },
+    {
+      "concept_id": "haoma-cult-integration",
+      "period": "VI–IV вв. до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Интеграция древнего индоиранского наследия: в литургии восхваляется Хаома — экстатический напиток бессмертия.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Важное место в культе получает и Хаома: \"Мы поклоняемся славному золотому Хаоме... благодаря которому жизнь процветает, мы поклоняемся Хаоме, которого бежит смерть\"... речь скорее идет не о синкретизме, а о возвышении в его учении ценностей древней индоиранской космической религии.",
+      "source_ref": "Том 1, Глава XIII, § 108",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "soma-ecstatic-drink",
+          "label": "иранский эквивалент сомы"
+        }
+      ],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -600,
+        "year_to": -300,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "181",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_k"
+      }
+    },
+    {
+      "concept_id": "mithra-exaltation-zoroastrian",
+      "period": "VI–IV вв. до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Митра возвеличивается в маздеизме как бог-победитель, которому Ахурамазда передает функцию сокрушения дэвов.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Митра выдвинулся в маздеизме именно как бог победитель в борьбе против дэвов и нечестивых. Тот факт, что Ахурамазда полностью передает Митре эту функцию, указывает на некоторую тенденцию к otiositas в первом.",
+      "source_ref": "Том 1, Глава XIII, § 109",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -600,
+        "year_to": -300,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "181",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_k"
+      }
+    },
+    {
+      "concept_id": "cinvat-bridge-judgment",
+      "period": "1000–551 до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Душа пересекает Мост Чинват, который расширяется для праведников и сужается для грешников, служа местом индивидуального суда.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Дорога в мир иной проходит по Мосту Чинват, и именно на нем происходит отделение праведников от грешников... переход через мост, сопоставимый с инициатическим испытанием, — это уже суд, потому что, по поверью, мост расширяется под ногами праведников и становится не шире лезвия бритвы, когда к нему приближаются нечестивые.",
+      "source_ref": "Том 1, Глава XIII, § 111",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 708,
+          "text": "708 Videvdat 19. 28–32; Soederblom. La vie future, pp. 89–90. В «Видевдат» (13.19) сказано, что мост охраняют собаки; ср. собак Йимы."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -551,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "daena-encounter-afterlife",
+      "period": "1000–551 до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Встреча души со своей «даэной» — собственным предсуществующим Я, персонификацией земных мыслей и дел.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "Что касается жизни души после смерти, то здесь мы встречаем... нечто новое — тему встречи с Самим Собой... даэна говорит: \"Как я ни была мила, ты сделал меня еще милее своими добрыми мыслями, своими добрыми словами, своими добрыми делами\".",
+      "source_ref": "Том 1, Глава XIII, § 111",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "cinvat-bridge-judgment",
+          "label": "сопровождает душу по мосту"
+        }
+      ],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1000,
+        "year_to": -551,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "resurrection-of-the-flesh-zoroastrian",
+      "period": "VI–IV вв. до н. э.",
+      "era": "Осевое время",
+      "territory": "Иран",
+      "religion": "Зороастризм (маздеизм)",
+      "statement": "Провозглашается доктрина телесного воскресения: в конце времен плоть станет нетленной и бессмертной в обновленном мире.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "Добавилось и еще одно эсхатологическое понятие — воскресение плоти... а воскресение и его следствие — нетленность плоти — это смелое развитие эсхатологической мысли Заратустры; оно представляет собой действительно новую концепцию бессмертия.",
+      "source_ref": "Том 1, Глава XIII, § 112",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "eschatological-transfiguration-fraso-kereti",
+          "label": "кульминация эсхатологического обновления"
+        }
+      ],
+      "references": [
+        {
+          "num": 717,
+          "text": "717 Оба вида творения — духовное (mēnōk) и материальное (gētik), a также мифология, связанная с первобытным человеком, рассматриваются во II томе."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -600,
+        "year_to": -300,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "181",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_k"
+      }
+    }
+  ]
+}

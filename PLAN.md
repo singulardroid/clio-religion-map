@@ -1,0 +1,151 @@
+# Clio Religion Map — Plan
+
+## What this project does
+
+Reads Mircea Eliade's three-volume "История веры и религиозных идей" chapter by chapter, extracts structured religious events (time period, geography, key idea, first occurrences, influence connections), and renders an interactive 2D evolution map. Time runs left (oldest) to right (newest) on the X-axis. Cultural-geographic regions are horizontal swimlanes on the Y-axis.
+
+## Grilling Decisions (locked)
+
+| # | Decision | Choice |
+|---|----------|--------|
+| 1 | Board layout | 2D: X = time (oldest left → newest right), Y = territory rows |
+| 2 | Territory granularity | Cultural-region (Mesopotamia, Egypt, Iran, India, Greece, Israel, etc.) + source reference on each node |
+| 3 | Connections | Only explicit Eliade-stated influence; dead-end orphan nodes included; each arrow labeled with transferred concept |
+| 4 | Node surface | Period + religion/tradition + statement + ★ badge if first occurrence |
+| 5 | Node interior | Source reference (Vol, Ch, §) + original Russian quote |
+| 6 | X-axis | Era bands (colored background: Палеолит, Неолит, Бронзовый век, Осевое время, …) |
+| 7 | Extraction threshold | Reading-order-aware: explicit firsts/transformations + implicit firsts (anything not yet in registry) — must have named period AND territory |
+| 8 | Concept registry | Single persistent file `.scratch/religion-map/concept-registry.json`, updated after each chapter |
+| 9 | Miro publishing | After each chapter; rollback via `.scratch/religion-map/miro-items.json` (tracks all created item IDs) |
+| 10 | Registry scope | Single registry across all three volumes |
+
+## Pipeline
+
+```
+inputs/*.fb2
+    → scripts/parse_fb2.py
+    → data/vol1/chapters/chNN.txt
+    → [agent reads + extracts]
+    → .scratch/religion-map/vol1/chNN-events.json
+    → .scratch/religion-map/concept-registry.json (updated)
+    → scripts/compile_events.py
+    → app/src/data/events.json   ← React Flow SPA reads this
+    → [Miro MCP push]            ← quick validation
+    → scripts/enrich_from_seshat.py  ← Phase 4, post Vol. 1
+```
+
+## Event JSON Schema
+
+```json
+{
+  "concept_id": "burial-ritual-paleolithic",
+  "period": "40 000–10 000 до н.э.",
+  "era": "Палеолит",
+  "territory": "Европа",
+  "precise_location": "Чатал-Хююк",
+  "religion": "Доисторические верования",
+  "statement": "Первые захоронения свидетельствуют о вере в загробную жизнь",
+  "is_first_occurrence": true,
+  "first_occurrence_type": "explicit | implicit",
+  "quote": "«оригинальная цитата из Элиаде...»",
+  "source_ref": "Том 1, Глава 1, §3",
+  "is_dead_end": false,
+  "connections": [
+    { "target_concept_id": "afterlife-mesopotamia", "label": "представление о загробной жизни" }
+  ],
+  "references": [
+    { "num": 12, "text": "Lévy-Bruhl L. La Mythologie primitive. Paris, 1935." }
+  ],
+  "seshat": {
+    "nga_name": "...",
+    "polity_name": null,
+    "year_from": -40000,
+    "year_to": -10000,
+    "mapping_confidence": "low | medium | high",
+    "nga_id": null,
+    "polity_id": null,
+    "religion_id": null,
+    "enriched": false
+  }
+}
+```
+
+## Extraction Rules
+
+- Capture if Eliade explicitly says "впервые", "зарождается", "A превращается в B", or equivalent
+- Capture if the concept key is absent from `concept-registry.json` (implicit first occurrence)
+- Must have a named time period AND a named territory to qualify
+- If the text mentions a specific archaeological site, city, or precise region (e.g., 'Чжоу-Коу-Тянь', 'Чатал-Хююк'), extract it to `precise_location`. Otherwise, omit the field.
+- Dead-end nodes (no outgoing connections) included and flagged `is_dead_end: true`
+- All text (statement, quote) stays in Russian
+- For each event, record which `[N]` reference markers appear in the cited passage; look up full bibliographic text in `data/vol{N}/chapters/refs.json` and populate `references` array with `{num, text}` entries using the original book numbering
+
+## Miro Board
+
+URL: `https://miro.com/app/board/uXjVHSThVzc=/`
+Password: testtest
+
+Era bands (X-axis, left to right):
+- Палеолит (до 10 000 до н.э.)
+- Неолит (10 000–3 500 до н.э.)
+- Ранняя бронза (3 500–2 000 до н.э.)
+- Поздняя бронза (2 000–1 200 до н.э.)
+- Осевое время (800–200 до н.э.)
+- Эллинистический период (300 до н.э. – 300 н.э.)
+
+Territory lanes (Y-axis, top to bottom):
+- Доисторический / Глобальный
+- Месопотамия
+- Египет
+- Иран / Персия
+- Индия (Ведийская)
+- Греция
+- Израиль / Ханаан
+- Рим
+- Аравия
+
+## SPA (Primary Visualization)
+
+Stack: React + React Flow + Vite in `app/`
+
+- `app/src/config.ts` — ERAS and TERRITORIES arrays
+- `app/src/layout.ts` — `timeToX(year)` and `territoryToY(territory)` pure functions
+- `app/src/components/EventNode.tsx` — surface + expand panel
+- `app/src/components/InfluenceEdge.tsx` — animated dotted labeled edge
+- `app/src/components/EraBand.tsx` — background era panel
+- `app/src/components/TerritoryLane.tsx` — left-edge territory label
+- `app/src/data/events.json` — compiled events (gitignored, generated by `compile_events.py`)
+
+Node drag positions persist in `localStorage` under `clio-node-positions`.
+
+Clicking a node expands it to show: original Russian quote, volume/chapter/section reference,
+outgoing concept connections, and a "Литература" section listing the bibliographic sources cited
+in the passage (from Eliade's footnotes, original reference numbers preserved).
+
+## Seshat Compatibility
+
+Each event carries a `seshat` stub object. After Vol. 1 is complete, `scripts/enrich_from_seshat.py` queries:
+- `GET https://seshat-db.com/api/core/ngas/` — NGA lookup
+- `GET https://seshat-db.com/api/core/nga-polity-relations/` — polity active in NGA during year range
+- `GET https://seshat-db.com/api/core/religions/` — religion ID lookup
+
+## Issue Backlog
+
+| # | Issue | Type | Blocked by |
+|---|-------|------|-----------|
+| 01 | Project scaffolding | AFK | — |
+| 02 | Miro board initialization | AFK | — |
+| 03 | SPA scaffold + layout functions | AFK | — |
+| 04 | FB2 parser | AFK | #01 |
+| 05 | Chapter 1 analysis | HITL | #04 |
+| 06 | Miro chapter push + reset script | AFK | #05, #02 |
+| 07 | Event compiler + SPA data wiring | AFK | #05, #03 |
+| 08 | EventNode full design | AFK | #07 |
+| 09 | InfluenceEdge + connections | AFK | #07 |
+| 10 | Node position persistence | AFK | #08 |
+| 11 | Full Vol. 1 chapter analysis | HITL | #05✓, #06, #07 |
+| 12 | Seshat enrichment script | AFK | #11 |
+| 13 | Bibliographic references in event nodes | AFK | #04✓ |
+
+Full issue files: `.scratch/religion-map/issues/`
+PRD: `.scratch/religion-map/PRD.md`

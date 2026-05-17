@@ -1,0 +1,293 @@
+{
+  "volume": 1,
+  "chapter_num": 5,
+  "chapter_title": "Глава V МЕГАЛИТЫ, ХРАМЫ, ЦЕРЕМОНИАЛЬНЫЕ ЦЕНТРЫ: ЗАПАД ЕВРОПЫ, СРЕДИЗЕМНОМОРЬЕ, ДОЛИНА ИНДА",
+  "source_file": "data/vol1/chapters/ch06.txt",
+  "events": [
+    {
+      "concept_id": "megalithic-cult-of-dead",
+      "period": "V–III тысячелетие до н.э.",
+      "era": "Неолит",
+      "territory": "Европа",
+      "religion": "Мегалитическая религия",
+      "statement": "Возникает мегалитический культ мертвых, основанный на идее трансмутации предков в камень для обретения вечного существования и обеспечения плодовитости живых.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "«трансмутация» предков в камень... умерший одухотворял камень; он обретал новое тело — каменное, а значит, неразрушимое. Именно это делало менгир или мегалитическую могилу неистощимым источником жизненности и силы.",
+      "source_ref": "Том 1, Глава V, § 34",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 258,
+          "text": "Horst Kirchner. Die Menhire in Mitteleuropa und der Menhirgedanke, p. 698 sq."
+        },
+        {
+          "num": 261,
+          "text": "См. некоторые примеры и библиографию в: Eliade. Traité, § 77, к чему следует добавить: Kirchner. Die Menhire, p. 650 sq."
+        },
+        {
+          "num": 280,
+          "text": "R. Heine-Geldern. Prehistoric Research in the Netherlands Indies, p. 149; idem. Das Megalithproblem, p. 167 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -5000,
+        "year_to": -2000,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      },
+      "precise_location": "Западная Европа"
+    },
+    {
+      "concept_id": "maltese-goddess-cult-megalithic",
+      "period": "III тысячелетие до н.э.",
+      "era": "Неолит",
+      "territory": "Мальта",
+      "religion": "Мегалитическая религия",
+      "statement": "На Мальте сооружаются гигантские каменные храмы, посвященные хтонической Великой Богине, где вхождение в святилище символизирует возвращение в лоно земли.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "вхождение в святилище было эквивалентно вхождению во «внутренности земли», т. е. в чрево хтонической Богини. ... эти монументы были сценой для «культа-мистерии в точном смысле этого термина».",
+      "source_ref": "Том 1, Глава V, § 35",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 265,
+          "text": "Günther Zuntz. Persephone, p. 4, n. 1."
+        },
+        {
+          "num": 268,
+          "text": "Zuntz. Persephone, pp. 8, 25."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -3000,
+        "year_to": -2000,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      },
+      "precise_location": "Мальта"
+    },
+    {
+      "concept_id": "indus-valley-preharappan-ceremonial-centers",
+      "period": "до 2500 г. до н.э.",
+      "era": "Медно-каменный век",
+      "territory": "Индия",
+      "religion": "Дохараппские культы",
+      "statement": "В долине Инда появляются древнейшие города, которые изначально строятся как церемониальные комплексы вокруг святилищ — Центров Мира.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Культовое происхождение дохараппских поселений (т. е. древнейших городов!) бесспорно... Самые древние города строились вокруг святилищ, т. е. около священного места — Центра Мира",
+      "source_ref": "Том 1, Глава V, § 38",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 286,
+          "text": "Paul Wheatley. The Pivot of the Four Quarters, особ. pp. 20 sq., 107 sq., 225 sq."
+        },
+        {
+          "num": 287,
+          "text": "Eliade. Le Mythe de l'étemel retour, chap. 1; idem. Centre du Monde, Temple, Maison."
+        },
+        {
+          "num": 288,
+          "text": "Древнейшие города, построенные в этом регионе, были подобны \"священным городам\", т. е. \"Центрам Мира\"; ср.: Werner Müller. Die heilige Stadt, passim."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -3000,
+        "year_to": -2500,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      },
+      "precise_location": "долина Инда"
+    },
+    {
+      "concept_id": "harappan-proto-shiva-goddess-cult",
+      "period": "ок. 2500–1750 гг. до н.э.",
+      "era": "Ранняя бронза",
+      "territory": "Индия",
+      "religion": "Хараппская религия",
+      "statement": "В религии Мохенджо-Даро и Хараппы центральное место занимают Великая Богиня-Мать и Великий бог в «йоговской» позе (прототип Шивы), а также культ деревьев и лингама.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "фигура с фаллосом, сидящая в «йоговской» позе и окруженная дикими зверями, представляет Великого бога, возможно, прототип Шивы... Большое число «хараппских» элементов в индуизме можно объяснить только начавшимся значительно раньше контактом...",
+      "source_ref": "Том 1, Глава V, § 39",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 289,
+          "text": "Sir John Marshall Mohendjo-daro, vol. 1, p. 52; ср.: Eliade. Yoga, pp. 349–350. Камни в форме лингама были также найдены в этих городах; см.: Allchin. The Birth of Indian Civilisazion, p. 312."
+        },
+        {
+          "num": 296,
+          "text": "Yoga, pp. 352–353."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -2500,
+        "year_to": -1750,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      },
+      "precise_location": "Мохенджо-Даро и Хараппа"
+    },
+    {
+      "concept_id": "minoan-cave-labyrinth-initiation",
+      "period": "II тысячелетие до н.э.",
+      "era": "Бронзовый век",
+      "territory": "Крит",
+      "religion": "Минойская религия",
+      "statement": "Священные пещеры и лабиринты служат местами для мистерий и инициаций, символизируя ритуальную смерть и нисхождение в подземный мир.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "вхождение в пещеру или лабиринт было эквивалентно спуску в Аид, иными словами — ритуальной смерти инициатического типа.",
+      "source_ref": "Том 1, Глава V, § 40",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 301,
+          "text": "О священных пещерах см.: М.Р. Nilsson. The Minoan Mycenaean Religion, p. 53 sq.; Charles Picard. Les religions préhelléniques, pp. 58 sq., 130–131; Wiletts. Ор. cit., p. 141 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -2000,
+        "year_to": -1000,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      }
+    },
+    {
+      "concept_id": "minoan-mistress-of-animals",
+      "period": "II тысячелетие до н.э.",
+      "era": "Бронзовый век",
+      "territory": "Крит",
+      "religion": "Минойская религия",
+      "statement": "На Крите доминирует культ богинь, в частности «Хозяйки Диких Зверей» (potnia theron), почитаемой на горных вершинах и в дворцовых часовнях.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Другие изображения представляют их как Хозяек Диких Зверей (potnia theron)... Как мы увидим, Хозяйка Диких Зверей перейдет в греческую мифологию и религию",
+      "source_ref": "Том 1, Глава V, § 40",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 304,
+          "text": "Evans. Palace of Minos, vol. 2, p. 838 sq.; Picard. Op. cit., p. 74; Nilsson. Ор. cit., p. 296 sq. Богини иногда заменены колоннами; ср.; Picard, p. 77; Nilsson, p. 250 sq."
+        },
+        {
+          "num": 305,
+          "text": "Picard, p. 63. Но Нильссон считает эти изображения сравнительно поздними, а Хатчинсон — микенскими (ср.: Prehistoric Crete, p. 206)."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -2000,
+        "year_to": -1000,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      },
+      "precise_location": "Крит"
+    },
+    {
+      "concept_id": "minoan-bull-leaping-initiation",
+      "period": "II тысячелетие до н.э.",
+      "era": "Бронзовый век",
+      "territory": "Крит",
+      "religion": "Минойская религия",
+      "statement": "Дворцовые игры с быками выступают не только зрелищем, но и важным инициатическим испытанием.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "религиозное значение «акробатов» не вызывает сомнений: перепрыгнуть через бегущего быка — превосходное инициатическое испытание.",
+      "source_ref": "Том 1, Глава V, § 41",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 312,
+          "text": "Evans. Ор. cit., vol. 3, p. 220, fig. 154: Picard, pp. 144, 199; Persson, p. 93 sq.; J.W. Graham. The Palaces of Crete, p. 73 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -2000,
+        "year_to": -1000,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "178",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ca"
+      }
+    },
+    {
+      "concept_id": "pre-hellenic-religious-synthesis",
+      "period": "ок. 1500–1150 гг. до н.э.",
+      "era": "Бронзовый век",
+      "territory": "Греция",
+      "religion": "Эгейско-микенская религия",
+      "statement": "Греческая религия формируется как синтез доэллинских средиземноморских культов плодородия и верований индоарийских (микенских) завоевателей.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "Эллинизм уходит корнями в Египет и в Азию; но именно вклад микенских завоевателей создает «греческое чудо».",
+      "source_ref": "Том 1, Глава V, § 42",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 317,
+          "text": "Следует отметить, что влияния осуществлялись и в противоположном направлении."
+        },
+        {
+          "num": 319,
+          "text": "Ibid., p. 142"
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -1500,
+        "year_to": -1150,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "179",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ba"
+      }
+    }
+  ]
+}

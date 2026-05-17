@@ -1,0 +1,362 @@
+{
+  "volume": 1,
+  "chapter_num": 10,
+  "chapter_title": "Глава X ЗЕВС И ГРЕЧЕСКАЯ РЕЛИГИЯ",
+  "source_file": "data/vol1/chapters/ch11.txt",
+  "events": [
+    {
+      "concept_id": "greek-theogony-succession-of-gods",
+      "period": "Мифическое время",
+      "era": "Мифическое время",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Греческая теогония описывает борьбу между поколениями богов за верховную власть: Крон оскопляет Урана, а затем Зевс свергает Крона и титанов, пересоздавая Вселенную.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Согласно Гесиоду, вначале не существовало ничего, кроме Хаоса, из которого вышли Гея (Земля) и Эрос. ... Кастрация Урана положила конец его беспредельной плодовитости... Крон становится властелином. ... Зевс заставил Крона изрыгнуть своих братьев и сестер. ... Зевс сделается властителем «разом богов и людей» (\"Теогония\", 493–506).",
+      "source_ref": "Том 1, Глава X, § 83",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "succession-of-divine-generations-kumarbi",
+          "label": "греческий вариант мифа о смене поколений богов"
+        }
+      ],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": null,
+        "year_to": null,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": null,
+        "religion_id": null,
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "gigantomachy-myth",
+      "period": "V в. до н. э.",
+      "era": "Классическая эпоха",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Миф о гигантомахии, где гиганты выступают против Зевса, впервые упоминается Пиндаром и отражает недовольство изначального божества Геи утверждением нового порядка.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "А согласно гигантомахии, мифологическому эпизоду, не известному ни Гомеру, ни Гесиоду, а впервые упомянутому Пиндаром (\"Немейские песни\", I, 67), гиганты, явившиеся из оросившей Гею крови Урана, также выступили против Зевса и его братьев.",
+      "source_ref": "Том 1, Глава X, § 83",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -500,
+        "year_to": -400,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "182",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_rep_1"
+      }
+    },
+    {
+      "concept_id": "zeus-kouros-dying-god",
+      "period": "IV–III вв. до н. э.",
+      "era": "Эллинистический период",
+      "territory": "Греция",
+      "precise_location": "Палекастро",
+      "religion": "Греческая религия",
+      "statement": "Гимн Палекастро славит Зевса как «верховного курета», а на Крите показывали его могилу, что отождествляет Зевса с умирающими и возрождающимися богами и свидетельствует об эгейском влиянии.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Гимн Палекастро (IV–III вв. до н. э.) славит прыжки Зевса, «верховного курета».[532] ... на том же Крите показывали его могилу, тем самым отождествляя Зевса с умирающими и возрождающимся богами.[534]",
+      "source_ref": "Том 1, Глава X, § 84",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 532,
+          "text": "Ср: H. Jeanmaire. Couroï et Courètes. p. 427 sq."
+        },
+        {
+          "num": 534,
+          "text": "Традиция представлять богов людьми, наделенными выдающимися способностями и обожествленными после смерти, восходит к греческому автору IV в. до н. э. Евгемеру (отсюда термин — эвгемеризм); едва ли эта традиция дает основания усматривать в образе Зевса черты умирающего бога."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -400,
+        "year_to": -200,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "182",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_rep_1"
+      }
+    },
+    {
+      "concept_id": "zeus-golden-chain-omnipotence",
+      "period": "Мифическое время",
+      "era": "Мифическое время",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Мифологический образ «золотой веревки», с помощью которой Зевс может поднять землю и море, символизирует его абсолютное всемогущество и превосходство над другими богами.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Веру во всемогущество Зевса вдохновенно выражают знаменитые строфы «Илиады» (VIII, 18–27), где он бросает вызов Олимпийцам: ... И моею десницею окрест вершины Олимпа / Цепь обовью; и вселенная вся на высоких повиснет ветрах — / Столько превыше богов и столько превыше я смертных! ... Мифологический образ «золотой веревки» породил бесчисленные попытки толкования...[537]",
+      "source_ref": "Том 1, Глава X, § 84",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 537,
+          "text": "На эту тему см. главу \"Веревки и куклы\" (в нашей работе \"Méphistophélès et Androgyne\", pp. 200–237), особенно р. 225 sq."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": null,
+        "year_to": null,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": null,
+        "religion_id": null,
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "five-ages-of-man-hesiod",
+      "period": "VIII-VII вв. до н. э.",
+      "era": "Архаическая эпоха",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Согласно Гесиоду, история человечества делится на пять генераций, начиная с райского «золотого века» правления Крона и заканчивая упадком в «железном веке».",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Как сменилось несколько поколений богов, так же насчитывается пять генераций смертных: поколения «золотого века», «серебряного века», «бронзового века», поколение героев и наконец поколение «железного века» («Труды», 109).",
+      "source_ref": "Том 1, Глава X, § 85",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -800,
+        "year_to": -600,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "prometheus-sacrifice-mecone",
+      "period": "Мифическое время",
+      "era": "Мифическое время",
+      "territory": "Греция",
+      "precise_location": "Мекона",
+      "religion": "Греческая религия",
+      "statement": "В Меконе Прометей обманул Зевса при разделе жертвенного быка, что привело к разрыву между богами и смертными и установило обычай сжигать кости в качестве жертвы богам.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "explicit",
+      "quote": "По неизвестной причине боги и люди, собравшись в Меконе, решили мирно размежеваться («Теогония», 535). Люди принесли первую жертву, дабы установить новые отношения с богами. В связи с этим событием впервые упоминается Прометей.[542] ... Именно отсюда, утверждает Гесиод, пошел обычай в качестве жертвы бессмертным богам сжигать кости («Теогония», 556).",
+      "source_ref": "Том 1, Глава X, § 85",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 542,
+          "text": "Гомер его не упоминает."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": null,
+        "year_to": null,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": null,
+        "religion_id": null,
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "pandora-origin-of-evil",
+      "period": "Мифическое время",
+      "era": "Мифическое время",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "В отместку за похищение огня Прометеем Зевс посылает на землю первую женщину, Пандору, что служит объяснением вторжения зла в мироздание.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "А в отместку людям Зевс послал на землю «красивое зло» («Теогония», 585) — женщину, названную Пандорой... Для Гесиода миф о Пандоре служит объяснением вторжения в мироздание «зла», как мести Зевса человеку.[545]",
+      "source_ref": "Том 1, Глава X, § 85",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [
+        {
+          "num": 545,
+          "text": "Гесиод категоричен: \"Быв обманут прометеевой плутней, Зевс тотчас замыслил горькие беды\" (\"Теогония\", 47)."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": null,
+        "year_to": null,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": null,
+        "religion_id": null,
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "prometheus-cult-athens",
+      "period": "V в. до н. э.",
+      "era": "Классическая эпоха",
+      "territory": "Греция",
+      "precise_location": "Афины",
+      "religion": "Греческая религия",
+      "statement": "В Афинах справляется ежегодный праздник, посвященный Прометею, где его образ ассоциируется с Гефестом и Афиной.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Но уже в V веке в Афинах справляется ежегодный праздник, посвященный Прометею, к тому же его образ ассоциируется с Гефестом и Афиной.",
+      "source_ref": "Том 1, Глава X, § 86",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -500,
+        "year_to": -400,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "182",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_rep_1"
+      }
+    },
+    {
+      "concept_id": "anthropogony-clay-prometheus",
+      "period": "IV в. до н. э.",
+      "era": "Классическая эпоха",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Согласно поздней традиции, Прометей вылепил человека из глины.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Наконец, согласно поздней традиции (IV в. до н. э.), Прометей вылепил человека из глины.",
+      "source_ref": "Том 1, Глава X, § 85",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -400,
+        "year_to": -300,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "182",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_rep_1"
+      }
+    },
+    {
+      "concept_id": "greek-pessimism-human-condition",
+      "period": "VII в. до н. э.",
+      "era": "Архаическая эпоха",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Поэт Мимнерм Колофонский составляет перечень человеческих несчастий, утверждая, что Зевс наслал беды на каждого человека, что отражает пессимистический взгляд на человеческое существование.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Метафору подхватывает поэт Мимнерм Колофонский (VII в.), составивший длинный перечень человеческих несчастий: бедность, болезни, смерть близких, старость и т. д. «Не отыскать человека, на которого Зевс не наслал многие беды».",
+      "source_ref": "Том 1, Глава X, § 87",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -700,
+        "year_to": -600,
+        "mapping_confidence": "high",
+        "nga_id": "1",
+        "polity_id": "181",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_k"
+      }
+    },
+    {
+      "concept_id": "greek-joy-of-existence",
+      "period": "Античность",
+      "era": "Античность",
+      "territory": "Греция",
+      "religion": "Греческая религия",
+      "statement": "Осознав пределы своих возможностей и бренность существования, греки открыли сакральный смысл «радости бытия», обожествив человеческие свойства, телесную красоту и коллективные развлечения.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Поскольку боги положили предел его возможностям, человек в конце концов начал превозносить и даже обожествлять чисто человеческие свойства. Иными словами, он вновь открыл для себя сакральный смысл «радости бытия», религиозную ценность эротики и телесной красоты, сакрализовав все коллективные развлечения... Познанная греками «радость бытия» отнюдь не профанная: ее порождает блаженное чувство следования, пускай скоротечного, вселенскому закону и причастности к величию мироздания.",
+      "source_ref": "Том 1, Глава X, § 87",
+      "is_dead_end": false,
+      "connections": [],
+      "references": [],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": -800,
+        "year_to": 400,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "180",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_latium_ia"
+      }
+    },
+    {
+      "concept_id": "sacralization-of-human-limits-asia",
+      "period": "I тысячелетие н. э.",
+      "era": "Средневековье",
+      "territory": "Китай и Япония",
+      "religion": "Светская эстетика",
+      "statement": "Сакрализация положенных природой пределов и обстоятельств, ограничивающих человеческие возможности, оказала глубокое влияние на культуры Китая и Японии, найдя воплощение в светской эстетике.",
+      "is_first_occurrence": true,
+      "first_occurrence_type": "implicit",
+      "quote": "Но в Китае и Японии I тысячелетия нашей эры сакрализация положенных природой «пределов» и «обстоятельств», ограничивающих человеческие возможности, оказала наиболее глубокое влияние на данные культуры. Подобное преображение «природного дара», как и в Древней Греции, нашло воплощение в «светской» эстетике.[561][562]",
+      "source_ref": "Том 1, Глава X, § 87",
+      "is_dead_end": false,
+      "connections": [
+        {
+          "target_concept_id": "greek-joy-of-existence",
+          "label": "параллель сакрализации пределов"
+        }
+      ],
+      "references": [
+        {
+          "num": 561,
+          "text": "См. том III настоящего издания."
+        },
+        {
+          "num": 562,
+          "text": "Ср. Вернан Ж.-П. Происхождение древнегреческой мысли. М., 1988."
+        }
+      ],
+      "seshat": {
+        "nga_name": "Latium",
+        "year_from": 1,
+        "year_to": 1000,
+        "mapping_confidence": "medium",
+        "nga_id": "1",
+        "polity_id": "70",
+        "religion_id": null,
+        "enriched": true,
+        "polity_name": "it_roman_principate"
+      }
+    }
+  ]
+}

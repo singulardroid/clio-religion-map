@@ -1,0 +1,104 @@
+{
+  "events": [
+    {
+      "concept": "arsacid-hellenization-syncretism",
+      "territory": "Иран / Персия",
+      "precise_location": "Парфия",
+      "year_from": -247,
+      "year_to": -220,
+      "references": [
+        "J. Duchesne-Guillemin. La religion de l'Iran ancien, р. 225, (с библиографией)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "183",
+        "polity_name": "it_roman_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "mithra-mysteries-spread",
+      "territory": "Иран / Персия",
+      "precise_location": "Средиземноморье",
+      "year_from": -100,
+      "year_to": -67,
+      "references": [
+        "Все прочие литературные, эпиграфические и археологические источники, касающиеся этого культа и его проникновении на Запад, датируются не ранее, чем первыми веками христианской эры."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "184",
+        "polity_name": "it_roman_rep_3",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "oracle-of-hystaspes-apocalypticism",
+      "territory": "Иран / Персия",
+      "year_from": -200,
+      "year_to": -1,
+      "references": [
+        "Bidez, Р. Cumont. Les Mages hellenises, 1, р. 217; G. Widengren. Les religions de l'Iran, 8 sq.; J.R. Hinnels. Тhе Zoroastrian Doctrine of Salvation, р. 147 sq.",
+        "F. Cumont. La Fin du monde selon les mages occidentaux, р. 93 sq.; J.Bidez, F.Cumont. Les Mages hellenises, 1, р. 218 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "184",
+        "polity_name": "it_roman_rep_3",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "zurvan-infinite-time-space-twins",
+      "territory": "Иран / Персия",
+      "year_from": -350,
+      "year_to": -300,
+      "references": [
+        "Текст Эвдемия был издан в: Bidez, Cumont. Les Mages hellenises, II, рр. 69–70; ср.: 1, р. 62 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "182",
+        "polity_name": "it_roman_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "mazdaism-state-religion-sassanid",
+      "territory": "Иран / Персия",
+      "year_from": 226,
+      "year_to": 635,
+      "references": [
+        "Виденгрен выявил связи между зурванизмом и мидийскими магами; ср.: Rel. De l'Iran, р. 320 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "mithraism-roman-empire-decline",
+      "territory": "Иран / Персия",
+      "precise_location": "Римская Империя",
+      "year_from": 307,
+      "year_to": 382,
+      "references": [
+        "Widengren. The Mithraic Mysteries р. 453."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Source book files — do not publish
+inputs/
+input/
+
+# Generated data
+data/
+app/src/data/events.json
+
+# Node modules
+app/node_modules/
+app/dist/
+
+app/playwright-report/
+app/test-results/
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local / machine-specific
+.local/
+**/.local/
+.env*.local
+
+# OS
+.DS_Store

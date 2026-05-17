@@ -1,0 +1,192 @@
+{
+  "volume": 2,
+  "chapter_num": 30,
+  "chapter_title": "Глава XXX СУМЕРКИ БОГОВ",
+  "events": [
+    {
+      "concept_id": "patristic-orthodoxy-vs-gnostic-heresy-2ad",
+      "name": "Систематическое богословие против гностических ересей",
+      "description": "К отцам Церкви II в. противостояние гностическому антикосмическому дуализму и опасению воплощения рождает ортодоксальную доктрину, опирающуюся на богословие Ветхого Завета, историю творения и телесность человека.",
+      "territory": "Рим",
+      "precise_location": "Эдесса, Александрия, Малая Азия, Рим",
+      "year_from": 100,
+      "year_to": 220,
+      "references": [
+        "768 Мы следуем здесь за мыслью великолепного интерпретатора древнееврейских текстов Тремонтана (La metaphisique du christianisme, р. 53 sq. Essai sur la pensee ralque, ch. l, 2.).",
+        "773 См.: Benoit. Le Judaismе et le Christianism antique.",
+        "774 См.: Turner по цит.: Benoit, р. 303."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "70",
+        "polity_name": "it_roman_principate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "christian-baptism-cosmic-death-resurrection-motifs",
+      "name": "Крещение как символическая смерть и победа над «чудовищем бездны»",
+      "description": "Развёрнута символика крещения: сошествие в воды, искушение морским чудовищем, ритуальная нагота и обновление, параллельная архаическим мифологиям вод и центра.",
+      "territory": "Израиль / Ханаан",
+      "year_from": 100,
+      "year_to": 250,
+      "references": [
+        "775 См.: Eliade. Traite, §§ 64, 65; Images et Symboles, рр. 199–212."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "70",
+        "polity_name": "it_roman_principate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "christian-cross-world-tree-sacramental-fertility",
+      "name": "Крест как Космическое Древо и источник таинственных даров природы",
+      "description": "Патристическая и литургическая традиция отождествляет крест с Древом Жизни: центр космоса, восхождение к небу, связь земли и неба; кровь со Креста толкуется как источник благ земледелия и таинственных символов (вино, елея, хлеба).",
+      "territory": "Рим",
+      "precise_location": "Голгофа, Римская империя",
+      "year_from": 200,
+      "year_to": 500,
+      "references": [
+        "778 см. патристические и литургические тексты § 236"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "christian-cosmic-redemption-liturgical-universe",
+      "name": "«Космическое христианство» и гомологизация дохристианских символов",
+      "description": "Универсализация христианского послания усваивает космологические символы и народный фольклор; святое становится свойственным всей природе вслед за пасхальной тайной, при этом фольклор может отступать от библейской космогонии (дуалистичные «народные» версии и т. п.).",
+      "territory": "Западная Европа",
+      "year_from": 200,
+      "year_to": 600,
+      "references": [
+        "785 Мы следуем за Элиаде § 237 о «космическом христианстве» и всеобщности искупления."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "185",
+        "polity_name": "it_western_roman_emp",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "christian-incarnation-as-culminating-hierophany",
+      "name": "Воплощение как высшая иерофания и оправдание священной диалектики истории",
+      "description": "Богословие воплощения трактует kenosis как кульминацию присутствия священного в космосе и истории и как основание для признания «всеобщей диалектики священного» в дорелигиозных формах.",
+      "territory": "Рим",
+      "year_from": 180,
+      "year_to": 450,
+      "references": [
+        "791 Исторический пафос был свойствен уже ветхозаветной библейской традиции, когда «священная история» стала «историей нации» (сокр.)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "nicaea-homoousios-trinitarian-crisis",
+      "name": "Арианский спор и Никейское исповедание (325)",
+      "description": "Спор об единосущности Сына Отцу приводит к символу веры Никеи; развивались Афанасием и Августином; имел последствия для понимания искупления.",
+      "territory": "Рим",
+      "precise_location": "Никея",
+      "year_from": 318,
+      "year_to": 381,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "mariology-theotokos-parthenogenesis-synthesis",
+      "name": "Мариология: Theotокос и переработка архаической тайны женственности",
+      "description": "Догматические формулы о Деве Марии («рождении Бога», Богоматерь, девственность) переосмысляют древнейшие средиземноморско-азиатские партеногенетические культы Великих Богинь в христологическом ключе.",
+      "territory": "Израиль / Ханаан",
+      "precise_location": "Эфес",
+      "year_from": 200,
+      "year_to": 450,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "sol-invictus-aurelian-constantinian-synthesis",
+      "name": "Sol Invictus, 25 декабря и переход Константина к христианскому символу",
+      "description": "Солярный монотеизм конца III в. поддерживается имперской политикой (Аврелиан и др.); Константин сохраняет солярный символизм как образ Верховного Бога вплоть до символической победы христианского знака.",
+      "territory": "Рим",
+      "precise_location": "Рим, Мильвийский мост",
+      "year_from": 270,
+      "year_to": 337,
+      "references": [
+        "797 Ср.: Р. Altheim. La religion romaine antique, р. 323 sq.; idem. Der unbesiegte Gott, сh. 5.",
+        "798 См. О современном состоянии исследований этого вопроса в: Benoit. Le Judаismе et lе Christianism antique, р. 308 sq..."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "late-antique-monasticism-cenobitic-violence",
+      "name": "Монашество III–IV вв. как социально-религиозная сила империи",
+      "description": "Киновиальное монашество Пахомия и традиция Антония становятся влиятельными; монахи участвуют в насильственном закрытии языческих культов и синагог.",
+      "territory": "Египет",
+      "precise_location": "Фиваида, Александрия",
+      "year_from": 270,
+      "year_to": 420,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "71",
+        "polity_name": "tr_roman_dominate",
+        "enriched": true
+      }
+    },
+    {
+      "concept_id": "eleusis-fall-demeter-survival-modern-folklore",
+      "name": "Крах Элевсина (396) и живучесть «святой Деметры» в народной памяти",
+      "description": "Сожжение святилища готами и христианизация Афин не истребляют элевсинского слоя образов: устойчива народная топика Деметры/Коры, сохранявшаяся до XX в.",
+      "territory": "Греция",
+      "precise_location": "Элевсин",
+      "year_from": 396,
+      "year_to": 1940,
+      "references": [
+        "803 Eunapius. Bioisophiston, р. 42 sq. (ed. Boissade, 1822); ср.: G.E. Мylonас. Eleusis.",
+        "807 Мы цитируем заметку из «Hestia» от 7 февраля 1940 г., переведенную Пикаром: Деметра, Сила пророчества, стр. 102–10..."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    }
+  ]
+}

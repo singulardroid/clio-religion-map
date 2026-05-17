@@ -1,0 +1,381 @@
+{
+  "events": [
+    {
+      "concept": "fall-of-western-roman-empire",
+      "territory": "Западная Европа",
+      "year_from": 474,
+      "year_to": 474,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "western-monasticism-benedict",
+      "territory": "Западная Европа",
+      "year_from": 480,
+      "year_to": 540,
+      "references": [
+        "202 К 700 г. западная культура укрывалась в монастырях Ирландии и Нортумбрии. Именно оттуда, век спустя, вышли ученые, богословы и художники.",
+        "203 См. описание этих инноваций в кн.: Bark, p. 80 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "186",
+        "polity_name": "it_ostrogoth_k",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "charlemagne-coronation",
+      "territory": "Западная Европа",
+      "precise_location": "Рим",
+      "year_from": 800,
+      "year_to": 800,
+      "references": [
+        "205 Ср.: Carl Stephenson. Mediaeval Feudalism, pp. 1-14."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "188",
+        "polity_name": "it_st_peter_rep_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "year-1000-eschatology",
+      "territory": "Западная Европа",
+      "year_from": 990,
+      "year_to": 1033,
+      "references": [
+        "208 В современной историографии (ср. Поньон Э. Повседневная жизнь Европы в 1000 году. М., 1999. С. 18 и сл.) эсхатологические предчувствия — \"ужасы тысячного года\" — считаются преувеличенными; вместе с тем в это время очевиден всплеск миссионерской активности в Северной и Восточной Европе — крещение Польши, Руси, Скандинавских стран воспринималось как завершение христианской истории перед грядущим Вторым пришествием.",
+        "209 См. тексты, приведенные в: Georges Duby. L'An Mil, p. 105 sq.",
+        "210 «Именно в тысячном году западная церковь принимает, наконец, древние верования в загробную жизнь, мало чем отличающуюся от телесной жизни»; Duby. Ibid., p. 76.",
+        "212 Текст приведен в: Duby, р. 179.",
+        "213 Текст см. в: Duby, pp. 183-84."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "truce-of-god",
+      "territory": "Западная Европа",
+      "year_from": 990,
+      "year_to": 1050,
+      "references": [
+        "211 Текст клятвы см. в: Duby, р. 171 sq."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "gregorian-reform",
+      "territory": "Западная Европа",
+      "precise_location": "Рим",
+      "year_from": 1073,
+      "year_to": 1085,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "carthusian-order-foundation",
+      "territory": "Западная Европа",
+      "year_from": 1084,
+      "year_to": 1084,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "first-crusade",
+      "territory": "Западная Европа",
+      "precise_location": "Константинополь, Антиохия, Триполи, Эдесса, Иерусалим",
+      "year_from": 1095,
+      "year_to": 1099,
+      "references": [
+        "232 Византийский император Алексей I Комнин обратился с просьбой о помощи против вторгшихся в Малую Азию турок-сельджуков. Папа Урбан II выступил с идеей крестового похода на соборе 1095 г. в Пьяченце. где обсуждалась просьба Алексея (см. русский перевод оксфордского издания: История крестовых походов. М., 1998. С. 9)."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "cistercian-order-foundation",
+      "territory": "Западная Европа",
+      "precise_location": "Сито, близ Дижона",
+      "year_from": 1098,
+      "year_to": 1098,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "christian-knighthood-consecration",
+      "territory": "Западная Европа",
+      "year_from": 1100,
+      "year_to": 1200,
+      "references": [
+        "228 Согласно некоторым источникам, этот кодекс содержал четыре правила: ежедневная месса, готовность отдать жизнь за святую веру, защита церкви, защита вдов, сирот и обездоленных. Другие документы добавляют, что рыцарь должен помогать «дамам и девицам, которые в этом нуждаются», «почитать женщин […] отстаивать их права»."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "courtly-love-troubadours",
+      "territory": "Западная Европа",
+      "precise_location": "Пуатье, Прованс, Шампань",
+      "year_from": 1100,
+      "year_to": 1200,
+      "references": [
+        "251 Они сохранились в кн.: André Le Chapelain. De arte amandi. Перевод с комментариями этого небольшого трактата см. в: J. Laffite-Houssat. Troubadours et Cours d'Amour, pp. 43–65.",
+        "252 Friedrich Heer. The Medieval World, p. 174.",
+        "253 См. документы и критический анализ в: Moshé Lazar. Amour courtois et Fin' Amors dans la littérature du XII-e siècle. Мария Шампанская к тому же недвусмысленно уточнила разницу между брачным союзом и союзом влюбленных: «Любовники соединяются исключительно по взаимному согласию и безо всяких обязательств. Супруги же долгом понуждаемы терпеть волю другого и никогда друг другу не отказывать»",
+        "254 Во многих гностических текстах Богородицу называют Мистическим Безмолвием, Святым Духом, Мудростью. «Я Мысль, обитающая во Свете прежде всех веков. Я действую в каждом тварном существе… Я — незримое Одно во Всем…» (цит. по: Elaine Pagels. The Gnostic Gospels, p. 65 sq.). В гностической поэме «Гром. Совершенный Ум» некая сила провозглашает: «Я первая и последняя… Я жена и дева… Я мать и дочь», и т. д. (ibid., р. 66).",
+        "255 См, в частности: Menéndez Pidal. Poesia arabe у poesia europea; Garcia Gómez. La lirica hispano-árabe y la aparición de la lirica romance, a также работы, цит. в: Claudio Sánchez-Albornoz. El Islam de España y el Occidente, p. 178–79, прим. 56."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "fedeli-d-amore",
+      "territory": "Западная Европа",
+      "precise_location": "Прованс, Италия, Франция, Бельгия",
+      "year_from": 1100,
+      "year_to": 1300,
+      "references": [
+        "258 Ср.: Luigi Valli. Il linguaggio segreto di Dante e dei Fedeli d'Amore; R. Ricolfi. Studi su i «Fedeli d'Amore», vol. 1.",
+        "259 «D'Amur ne doivent révéler Les consiaus, mais très bien celer…» (C'est des fiez d'Amours, v. 499–500, цит. в: Ricolfi. Ор. cit., p. 68–69).",
+        "260 Цит. в: Ricolfi, p. 63."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "premonstratensian-order-foundation",
+      "territory": "Западная Европа",
+      "precise_location": "Премонтре",
+      "year_from": 1120,
+      "year_to": 1120,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "second-crusade",
+      "territory": "Западная Европа",
+      "precise_location": "Везеле, Константинополь, Икония, Дамаск",
+      "year_from": 1145,
+      "year_to": 1149,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "grail-mythology",
+      "territory": "Западная Европа",
+      "year_from": 1170,
+      "year_to": 1210,
+      "references": [
+        "266 J. Vandryès. Le Graal dans le cycle breton, p. 74.",
+        "267 К тому же 60 % текста занимают события, происходящие на Востоке.",
+        "268 Вероятно, образ Киота, нашедшего книгу о Парцифале и сказание о Граале на некоем «языческом» языке и переложившего их на французский, является таким же книжным по происхождению, как и обобщенный образ восточного мудреца Флегетаниса. Он был язычником (мусульманином) со стороны отца, но по материнской линии происходил из рода Соломона, почему и смог прочесть по звездам тайну Грааля (см. Веселовский А.Н. Соломон и Мерлин. М.-СПб., 2001. С. 428–429).",
+        "269 См.: Hermann Goetz. Der Orient der Kreuzzüge in Wolframs Parzival. По мнению автора, роман содержит новую и важную информацию по истории искусств; например, то, что Вольфрам сообщает о шелковом пути в Китай (веком раньше Марко Поло), о дворце поздних халифов в Багдаде и о ступе Канишки и т. д.",
+        "270 Даже этимология трех загадочных имен: Киот, Флегетанис и Треврицент, — имеет свое значение; см.: Критич. библ. к § 270.",
+        "271 Henry and Renée Kahane. The Krater and the Grail: Hermetic Sources of the Parzival, p. 13 sq. Эту гипотезу принял Анри Корбен: Henry Corbin. En Islam iranien, II, pp. 143–154.",
+        "274 Ср.: Coyajee, в: Journal of the К. R. Cama Institute, pp. 37-194; это сопоставление принято в книге: Jean Marx. La legende arthurienne, p. 244, п. 9.",
+        "275 H. Corbin. En Islam iranien, II, pp. 155–210."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "third-crusade",
+      "territory": "Западная Европа",
+      "precise_location": "Майнц, Акка, Иерусалим",
+      "year_from": 1188,
+      "year_to": 1192,
+      "references": [
+        "233 Paul Alpliaiidéry et A. Dupront. La chrétienté et l'idée de Croisade, II, p. 19. «Филиппа Августа мало интересовал успех экспедиции; его главной заботой было оставляемое им королевство» (ibid.)"
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "joachim-of-fiore-theology",
+      "territory": "Западная Европа",
+      "precise_location": "Калабрия, Кораццо, Сан-Джованни ди Фьоре",
+      "year_from": 1192,
+      "year_to": 1202,
+      "references": [
+        "279 Наиболее значительные из них были опубликованы в Венеции в начале XVI в.: Concordia novi ас veteris Testamenti (или Liber Concordiae), Expositio in Apocalypsim и Psalterium decem chordarum.",
+        "280 Текст приведен по кн.: Bernard McGinn. Visions of the End. p. 130.",
+        "281 Ср.: Marjorie Reeves. The Influence of Prophecy in the Later Middle Ages: A Study of Joachimism, pp. 7-11.",
+        "282 Речь идет о хорошо знакомом апокалиптическом сценарии иудеев и христиан.",
+        "283 Ср.: McGinn. Visions of the End, p. 129.",
+        "284 McGinn. Apocalypticism in the Middle Ages, p. 282, корректирует версию, выраженную в кн.: Reeves. The Influence of Prophecy, pp. 395-97.",
+        "285 McGinn. Apocalipticism, p. 282; ср.: библиография, цит. в примечании 82.",
+        "286 Именно поэтому полвека спустя после смерти Иоахима спиритуалы-францисканцы недоумевали, почему им не разрешают свободно практиковать «новую жизнь»; McGinn, ibid., p. 282.",
+        "287 McGinn. Visions of the End, p. 129."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "189",
+        "polity_name": "it_st_peter_rep_2",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "mendicant-orders-foundation",
+      "territory": "Западная Европа",
+      "year_from": 1200,
+      "year_to": 1221,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "fourth-crusade",
+      "territory": "Западная Европа",
+      "precise_location": "Константинополь",
+      "year_from": 1202,
+      "year_to": 1204,
+      "references": [
+        "234 Ibid., p. 40."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "childrens-crusade",
+      "territory": "Западная Европа",
+      "precise_location": "Северная Франция, Германия, Марсель, Рим",
+      "year_from": 1212,
+      "year_to": 1212,
+      "references": [
+        "236 Ibid., р. 118.",
+        "237 Ibid., р. 119.",
+        "238 Reiner, цит. по: Р. Alphandéry et A. Dupront. Ор. cit., p. 120.",
+        "239 Annales Schefteariensis, цит. по: Alphandéry et Dupront, p. 123.",
+        "240 Цит. по: Alphandéry et Dupront, p. 127.",
+        "241 «Тафюры» (бродяги) — нищие, которые, вооружившись ножами, дубинками и топорами, следовали за крестоносцами в их первых походах; ср.: Norman Cohn. The Pursuit of the Millenium, p. 67 sq.",
+        "242 P. Alphandéry et A. Dupront. Ор. cit., p. 145."
+      ],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "eternal-gospel-scandal",
+      "territory": "Западная Европа",
+      "precise_location": "Париж",
+      "year_from": 1254,
+      "year_to": 1254,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    },
+    {
+      "concept": "joachim-condemnation",
+      "territory": "Западная Европа",
+      "year_from": 1263,
+      "year_to": 1263,
+      "references": [],
+      "seshat": {
+        "nga_id": "1",
+        "nga_name": "Latium",
+        "polity_id": "190",
+        "polity_name": "it_papal_state_1",
+        "enriched": true
+      }
+    }
+  ]
+}

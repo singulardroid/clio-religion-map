@@ -6,7 +6,6 @@
       "event_name": "Космология и вера в загробную жизнь культуры Яншао",
       "event_description": "В поселении Баньпо обнаружены свидетельства космологических представлений в архитектуре и веры в посмертную жизнь, выраженные в захоронениях детей в керамических урнах с отверстиями для души.",
       "territory": "Китай",
-      "precise_location": "Баньпо (провинция Шэньси)",
       "year_from": -4365,
       "year_to": -3500,
       "references": [
@@ -16,7 +15,16 @@
         "nga_id": "1",
         "nga_name": "Latium",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Баньпо (провинция Шэньси)"
+        },
+        "en": {
+          "precise_location": "Баньпо (провинция Шэньси)"
+        }
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev02",
@@ -34,7 +42,12 @@
         "nga_id": "1",
         "nga_name": "Latium",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev03",
@@ -42,7 +55,6 @@
       "event_name": "Патриархальный культ предков культуры Луншань",
       "event_description": "Переход к патриархальному обществу с доминирующим культом предков, сопровождающийся умножением фаллических эмблем и каменных изваяний.",
       "territory": "Китай",
-      "precise_location": "Луншань",
       "year_from": -3000,
       "year_to": -2000,
       "references": [
@@ -55,7 +67,16 @@
         "polity_id": "178",
         "polity_name": "it_latium_ca",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Луншань"
+        },
+        "en": {
+          "precise_location": "Луншань"
+        }
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev04",
@@ -74,7 +95,12 @@
         "polity_id": "179",
         "polity_name": "it_latium_ba",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev05",
@@ -95,7 +121,12 @@
         "polity_id": "179",
         "polity_name": "it_latium_ba",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev06",
@@ -103,7 +134,6 @@
       "event_name": "Человеческие жертвоприношения в царских гробницах",
       "event_description": "Практика умерщвления людей (воинов, слуг) и животных для сопровождения повелителя в загробном мире в колоссальных гробницах эпохи Шан.",
       "territory": "Китай",
-      "precise_location": "Аньян",
       "year_from": -1751,
       "year_to": -1028,
       "references": [
@@ -116,7 +146,16 @@
         "polity_id": "179",
         "polity_name": "it_latium_ba",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Аньян"
+        },
+        "en": {
+          "precise_location": "Аньян"
+        }
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev07",
@@ -135,7 +174,12 @@
         "polity_id": "179",
         "polity_name": "it_latium_ba",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev08",
@@ -154,7 +198,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev09",
@@ -173,7 +222,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev10",
@@ -192,7 +246,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev11",
@@ -212,7 +271,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev12",
@@ -231,7 +295,12 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev13",
@@ -252,7 +321,12 @@
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev14",
@@ -272,7 +346,12 @@
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev15",
@@ -291,7 +370,12 @@
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev16",
@@ -315,7 +399,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev17",
@@ -339,7 +428,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev18",
@@ -365,7 +459,12 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev19",
@@ -387,7 +486,12 @@
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev20",
@@ -419,7 +523,12 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev21",
@@ -443,7 +552,12 @@
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev22",
@@ -467,7 +581,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev23",
@@ -488,7 +607,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev24",
@@ -510,7 +634,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev25",
@@ -542,7 +671,12 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev26",
@@ -561,7 +695,12 @@
         "polity_id": "71",
         "polity_name": "tr_roman_dominate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev27",
@@ -569,7 +708,6 @@
       "event_name": "Основание секты Небесных наставников",
       "event_description": "Создание Чжан Дао-линем независимого религиозного института даосизма ('даократии') в Сычуани с использованием психосоматической магии.",
       "territory": "Китай",
-      "precise_location": "Сычуань",
       "year_from": 150,
       "year_to": 200,
       "references": [],
@@ -579,7 +717,16 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Сычуань"
+        },
+        "en": {
+          "precise_location": "Сычуань"
+        }
+      },
+      "connections": []
     },
     {
       "event_id": "vol2-ch02-ev28",
@@ -596,7 +743,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     }
   ]
 }

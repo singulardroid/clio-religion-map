@@ -1,0 +1,27 @@
+{
+  "chapter_id": "phase2-fixture",
+  "volume": 99,
+  "chapter_num": 99,
+  "chapter_title": "Phase 2 fixture",
+  "events": [
+    {
+      "concept_id": "phase2-en-complete",
+      "territory": "Greece",
+      "year_from": -500,
+      "year_to": -400,
+      "religion": "Greek",
+      "locales": {
+        "en": {
+          "statement": "English statement for phase two.",
+          "quote": "EN quote",
+          "source_ref": "Eliade vol.1 (fixture)"
+        },
+        "ru": {
+          "statement": "Русское утверждение для фазы два.",
+          "quote": "RU quote",
+          "source_ref": "Элиаде т.1 (фикстура)"
+        }
+      }
+    }
+  ]
+}

@@ -3,7 +3,6 @@
     {
       "concept": "arsacid-hellenization-syncretism",
       "territory": "Иран / Персия",
-      "precise_location": "Парфия",
       "year_from": -247,
       "year_to": -220,
       "references": [
@@ -15,12 +14,20 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Парфия"
+        },
+        "en": {
+          "precise_location": "Парфия"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "mithra-mysteries-spread",
       "territory": "Иран / Персия",
-      "precise_location": "Средиземноморье",
       "year_from": -100,
       "year_to": -67,
       "references": [
@@ -32,7 +39,16 @@
         "polity_id": "184",
         "polity_name": "it_roman_rep_3",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Средиземноморье"
+        },
+        "en": {
+          "precise_location": "Средиземноморье"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "oracle-of-hystaspes-apocalypticism",
@@ -49,7 +65,12 @@
         "polity_id": "184",
         "polity_name": "it_roman_rep_3",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "zurvan-infinite-time-space-twins",
@@ -65,7 +86,12 @@
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "mazdaism-state-religion-sassanid",
@@ -81,12 +107,16 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "mithraism-roman-empire-decline",
       "territory": "Иран / Персия",
-      "precise_location": "Римская Империя",
       "year_from": 307,
       "year_to": 382,
       "references": [
@@ -98,7 +128,16 @@
         "polity_id": "71",
         "polity_name": "tr_roman_dominate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Римская Империя"
+        },
+        "en": {
+          "precise_location": "Римская Империя"
+        }
+      },
+      "connections": []
     }
   ]
 }

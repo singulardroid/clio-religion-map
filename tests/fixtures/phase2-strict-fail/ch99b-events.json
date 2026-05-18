@@ -1,0 +1,41 @@
+{
+  "chapter_id": "phase2-strict-fail",
+  "volume": 99,
+  "chapter_num": 100,
+  "chapter_title": "Phase 2 strict-en failure fixture",
+  "events": [
+    {
+      "concept_id": "phase2-en-complete",
+      "territory": "Greece",
+      "year_from": -500,
+      "year_to": -400,
+      "religion": "Greek",
+      "locales": {
+        "en": {
+          "statement": "English statement for phase two.",
+          "quote": "EN quote",
+          "source_ref": "Eliade vol.1 (fixture)"
+        },
+        "ru": {
+          "statement": "Русское утверждение для фазы два.",
+          "quote": "RU quote",
+          "source_ref": "Элиаде т.1 (фикстура)"
+        }
+      }
+    },
+    {
+      "concept_id": "phase2-en-incomplete",
+      "territory": "Greece",
+      "year_from": -300,
+      "year_to": -200,
+      "religion": "Greek",
+      "locales": {
+        "ru": {
+          "statement": "Только русский текст.",
+          "quote": "цитата"
+        },
+        "en": {}
+      }
+    }
+  ]
+}

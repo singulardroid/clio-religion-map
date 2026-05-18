@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback, useState, useEffect, type CSSProperties } from 'react'
+import React, { useMemo, useCallback, useState, useEffect, type MouseEvent } from 'react'
 import ReactFlow, {
   Controls,
   MiniMap,
@@ -6,6 +6,7 @@ import ReactFlow, {
   useEdgesState,
   ReactFlowProvider,
   NodeChange,
+  Node,
   applyNodeChanges,
   useReactFlow,
 } from 'reactflow'
@@ -14,84 +15,252 @@ import 'reactflow/dist/style.css'
 import { BackgroundLayers } from './components/BackgroundLayers'
 import { TimelineRuler } from './components/TimelineRuler'
 import { EventNode } from './components/EventNode'
+import { MapToolbar } from './components/MapToolbar'
+import { HighlightPanel } from './components/HighlightPanel'
+import { CompactFlowView } from './components/CompactFlowView'
+import { EditorialProvider } from './EditorialContext'
+import { EDITORIAL_READONLY } from './i18n'
+import { I18nProvider, useI18n } from './i18n'
 import type { ReligionEvent } from './types'
-import { TERRITORIES } from './config'
 import rawEvents from './data/events.json'
 import { buildGraph, refineChartSpecForEvents } from './graph'
-import { loadPositions, savePositions, clearPositions } from './persistence'
 import { ChartLayoutProvider } from './ChartLayoutContext'
+import { filterEventsForLocale, openIssueCount, resolveEventForLocale } from './locale'
+import {
+  collectGraphHighlight,
+  type HighlightDirection,
+} from './graphHighlight'
+import { downloadOverlayJson, newComment, newIssue, overlayFromEvents } from './editorial'
+import type { IssueTagId } from './types'
+import { POSITION_STORAGE_KEY } from './persistence'
+import { glassPanel, theme } from './theme'
 
-const events = rawEvents as ReligionEvent[]
+const sourceEvents = rawEvents as ReligionEvent[]
 const nodeTypes = { eventNode: EventNode }
 
-const filterSelectSx: CSSProperties = {
-  width: '100%',
-  maxWidth: '100%',
-  minWidth: 0,
-  boxSizing: 'border-box',
-  padding: '6px 28px 6px 8px',
-  fontSize: 13,
-  fontFamily: 'inherit',
-  borderRadius: 6,
-  border: '1px solid rgba(0,0,0,0.2)',
-  backgroundColor: '#f8f9fa',
-  color: '#222',
-  cursor: 'pointer',
+function eventsWithOverlay(
+  events: ReligionEvent[],
+  overlay: ReturnType<typeof overlayFromEvents>,
+): ReligionEvent[] {
+  return events.map((e) => {
+    const o = overlay.by_concept_id[e.concept_id]
+    if (!o) return e
+    return {
+      ...e,
+      editorial: {
+        comments: o.comments ?? e.editorial?.comments ?? [],
+        issues: o.issues ?? e.editorial?.issues ?? [],
+        position: o.position ?? e.editorial?.position,
+      },
+    }
+  })
 }
 
-// ─── inner canvas ─────────────────────────────────────────────────────────────
+const HIGHLIGHT_DEPTH_KEY = 'clio-highlight-depth'
+
+function storedPositionsFromEvents(evts: ReligionEvent[]) {
+  const out: Record<string, { x: number; y: number }> = {}
+  for (const e of evts) {
+    const p = e.editorial?.position
+    if (p) out[e.concept_id] = { x: p.x, y: p.y }
+  }
+  return out
+}
 
 function FlowCanvas() {
   const { fitView } = useReactFlow()
+  const { locale, t } = useI18n()
   const [volFilter, setVolFilter] = useState<'all' | 1 | 2 | 3>('all')
   const [terrFilter, setTerrFilter] = useState<string>('all')
   const [firstOnly, setFirstOnly] = useState(false)
+  const [openIssuesOnly, setOpenIssuesOnly] = useState(false)
+
+  const [overlayState, setOverlayState] = useState(() => overlayFromEvents(sourceEvents))
+
+  const mergedSource = useMemo(
+    () => eventsWithOverlay(sourceEvents, overlayState),
+    [overlayState],
+  )
+
+  const localeEvents = useMemo(
+    () => filterEventsForLocale(mergedSource, locale),
+    [mergedSource, locale],
+  )
 
   const filteredEvents = useMemo(() => {
-    return events.filter((e) => {
+    return localeEvents.filter((e) => {
       if (volFilter !== 'all' && e.volume !== volFilter) return false
       if (terrFilter !== 'all' && (e.territory ?? '') !== terrFilter) return false
       if (firstOnly && e.is_first_occurrence !== true) return false
+      if (openIssuesOnly && openIssueCount(e) === 0) return false
       return true
     })
-  }, [volFilter, terrFilter, firstOnly])
+  }, [localeEvents, volFilter, terrFilter, firstOnly, openIssuesOnly])
 
-  /** Horizontally scales to event years; lanes = only territories in this filtered set (+ height for stacking). */
   const chartLayoutSpec = useMemo(() => refineChartSpecForEvents(filteredEvents), [filteredEvents])
+
+  const [highlightRoot, setHighlightRoot] = useState<string | null>(null)
+  const [highlightDir, setHighlightDir] = useState<HighlightDirection | null>(null)
+  const [highlightDepth, setHighlightDepth] = useState(() => {
+    try {
+      const v = localStorage.getItem(HIGHLIGHT_DEPTH_KEY)
+      return v ? Math.min(10, Math.max(1, Number(v))) : 2
+    } catch {
+      return 2
+    }
+  })
+  const [includeSiblings, setIncludeSiblings] = useState(true)
+  const [compactOpen, setCompactOpen] = useState(false)
+  const [mapStatusOpen, setMapStatusOpen] = useState(false)
+  const [contextMenu, setContextMenu] = useState<{
+    x: number
+    y: number
+    nodeId: string
+  } | null>(null)
+
+  const highlightSet = useMemo(() => {
+    if (!highlightRoot || !highlightDir) return null
+    return collectGraphHighlight(highlightRoot, filteredEvents, {
+      direction: highlightDir,
+      maxDepth: highlightDepth,
+      includeSiblings,
+    })
+  }, [highlightRoot, highlightDir, highlightDepth, includeSiblings, filteredEvents])
+
+  const stored = useMemo(() => storedPositionsFromEvents(filteredEvents), [filteredEvents])
 
   const [nodes, setNodes] = useNodesState([])
   const [edges, setEdges, onEdgesChange] = useEdgesState([])
 
   useEffect(() => {
+    const g = buildGraph(filteredEvents, chartLayoutSpec, stored, true)
+    const hl = highlightSet
+    if (hl) {
+      for (const n of g.nodes) {
+        const on = hl.has(n.id)
+        n.style = {
+          ...n.style,
+          opacity: on ? 1 : 0.22,
+          filter: on ? undefined : 'grayscale(0.6)',
+        }
+      }
+      for (const e of g.edges) {
+        const on = hl.has(e.source) && hl.has(e.target)
+        e.style = {
+          ...e.style,
+          stroke: on ? '#e67e22' : '#ccc',
+          strokeWidth: on ? 3 : 1,
+          opacity: on ? 1 : 0.15,
+        }
+      }
+    }
+    setNodes(g.nodes)
+    setEdges(g.edges)
+  }, [filteredEvents, chartLayoutSpec, stored, highlightSet, fitView, setNodes, setEdges])
+
+  const applyHighlight = useCallback(
+    (nodeId: string, direction: HighlightDirection) => {
+      setHighlightRoot(nodeId)
+      setHighlightDir(direction)
+      setContextMenu(null)
+      try {
+        localStorage.setItem(HIGHLIGHT_DEPTH_KEY, String(highlightDepth))
+      } catch {
+        /* ignore */
+      }
+    },
+    [highlightDepth],
+  )
+
+  const clearHighlight = useCallback(() => {
+    setHighlightRoot(null)
+    setHighlightDir(null)
+    setCompactOpen(false)
+  }, [])
+
+  const onNodeContextMenu = useCallback((evt: MouseEvent, node: { id: string }) => {
+    evt.preventDefault()
+    setContextMenu({ x: evt.clientX, y: evt.clientY, nodeId: node.id })
+  }, [])
+
+  const persistNodePosition = useCallback((id: string, position: { x: number; y: number }) => {
+    try {
+      const raw = localStorage.getItem(POSITION_STORAGE_KEY)
+      const stored = raw ? (JSON.parse(raw) as Record<string, { x: number; y: number }>) : {}
+      stored[id] = { x: position.x, y: position.y }
+      localStorage.setItem(POSITION_STORAGE_KEY, JSON.stringify(stored))
+    } catch {
+      /* ignore legacy localStorage compatibility failures */
+    }
+    setOverlayState((prev) => {
+      const entry = { ...(prev.by_concept_id[id] ?? { comments: [], issues: [] }) }
+      entry.position = { x: position.x, y: position.y }
+      return {
+        by_concept_id: { ...prev.by_concept_id, [id]: entry },
+      }
+    })
+  }, [])
+
+  const onNodesChange = useCallback(
+    (changes: NodeChange[]) => {
+      if (EDITORIAL_READONLY) {
+        setNodes((nds) => applyNodeChanges(changes.filter((c) => c.type !== 'position'), nds))
+        return
+      }
+      setNodes((nds) => {
+        const updated = applyNodeChanges(changes, nds)
+        for (const c of changes) {
+          if (c.type === 'position' && !c.dragging && c.position) {
+            persistNodePosition(c.id, c.position)
+          }
+        }
+        return updated
+      })
+    },
+    [persistNodePosition, setNodes],
+  )
+
+  const editorialActions = useMemo(
+    () => ({
+      readonly: EDITORIAL_READONLY,
+      onAddComment: (conceptId: string, body: string) => {
+        if (EDITORIAL_READONLY) return
+        const c = newComment(body)
+        setOverlayState((prev) => {
+          const entry = { ...(prev.by_concept_id[conceptId] ?? { comments: [], issues: [] }) }
+          entry.comments = [...(entry.comments ?? []), c]
+          return { by_concept_id: { ...prev.by_concept_id, [conceptId]: entry } }
+        })
+      },
+      onToggleIssue: (conceptId: string, tag: IssueTagId) => {
+        if (EDITORIAL_READONLY) return
+        setOverlayState((prev) => {
+          const entry = { ...(prev.by_concept_id[conceptId] ?? { comments: [], issues: [] }) }
+          const issues = [...(entry.issues ?? [])]
+          const idx = issues.findIndex((i) => i.tag === tag && !i.resolved)
+          if (idx >= 0) {
+            issues[idx] = { ...issues[idx], resolved: true }
+          } else {
+            issues.push(newIssue(tag))
+          }
+          entry.issues = issues
+          return { by_concept_id: { ...prev.by_concept_id, [conceptId]: entry } }
+        })
+      },
+      onExportOverlay: () => downloadOverlayJson(overlayState),
+    }),
+    [overlayState],
+  )
+
+  const handleReset = useCallback(() => {
+    try {
+      localStorage.removeItem(POSITION_STORAGE_KEY)
+    } catch {
+      /* ignore */
+    }
     const g = buildGraph(filteredEvents, chartLayoutSpec, {}, false)
     setNodes(g.nodes)
     setEdges(g.edges)
-    const t = window.setTimeout(() => fitView({ padding: 0.12, duration: 350 }), 45)
-    return () => window.clearTimeout(t)
-  }, [filteredEvents, chartLayoutSpec, fitView, setNodes, setEdges])
-
-  // Persist positions after every drag (only for currently visible nodes)
-  const onNodesChange = useCallback(
-    (changes: NodeChange[]) => {
-      const updated = applyNodeChanges(changes, nodes)
-      setNodes(updated)
-      const hasDragStop = changes.some((c) => c.type === 'position' && !c.dragging)
-      if (hasDragStop) {
-        const prev = loadPositions()
-        const merged: Record<string, { x: number; y: number }> = { ...prev }
-        for (const n of updated) merged[n.id] = n.position
-        savePositions(merged)
-      }
-    },
-    [nodes, setNodes],
-  )
-
-  // Reset: clear saved positions, recompute auto-layout for filtered set
-  const handleReset = useCallback(() => {
-    clearPositions()
-    const { nodes: fresh, edges: freshEdges } = buildGraph(filteredEvents, chartLayoutSpec, {}, false)
-    setNodes(fresh)
-    setEdges(freshEdges)
     setTimeout(() => fitView({ padding: 0.12, duration: 400 }), 50)
   }, [filteredEvents, chartLayoutSpec, fitView, setNodes, setEdges])
 
@@ -99,7 +268,6 @@ function FlowCanvas() {
     fitView({ padding: 0.12, duration: 400 })
   }, [fitView])
 
-  /** Playwright: center a React Flow node in the viewport (global fit leaves wide graphs edge-clipped). */
   useEffect(() => {
     const w = window as Window & { __e2eFocusNode?: (nodeId: string) => void }
     w.__e2eFocusNode = (nodeId: string) => {
@@ -116,260 +284,228 @@ function FlowCanvas() {
     }
   }, [fitView])
 
+  useEffect(() => {
+    if (!highlightRoot || !highlightDir) return
+    collectGraphHighlight(highlightRoot, filteredEvents, {
+      direction: highlightDir,
+      maxDepth: highlightDepth,
+      includeSiblings,
+    })
+  }, [highlightDepth, highlightRoot, highlightDir, includeSiblings, filteredEvents])
+
   return (
-    <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
-      <ChartLayoutProvider spec={chartLayoutSpec}>
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          nodeTypes={nodeTypes}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          minZoom={0.04}
-          maxZoom={3}
-          fitView={false}
-          style={{ background: 'transparent' }}
-          edgesFocusable
-          edgesUpdatable={false}
-        >
-          <BackgroundLayers />
-          <Controls />
-          <MiniMap
-            zoomable
-            pannable
-            nodeColor={(n) => {
-              const ev = (n.data as { event: ReligionEvent }).event
-              return ev?.is_first_occurrence ? '#c0392b' : '#95a5a6'
+    <EditorialProvider value={editorialActions}>
+      <div
+        style={{
+          width: '100vw',
+          height: '100vh',
+          position: 'relative',
+          background:
+            'radial-gradient(circle at 20% 0%, rgba(37,99,235,0.10), transparent 34%), radial-gradient(circle at 82% 12%, rgba(217,119,6,0.10), transparent 32%)',
+        }}
+      >
+        <ChartLayoutProvider spec={chartLayoutSpec}>
+          <ReactFlow
+            nodes={nodes}
+            edges={edges}
+            nodeTypes={nodeTypes}
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            onNodeContextMenu={onNodeContextMenu}
+            onNodeDragStop={(_, node: Node) => persistNodePosition(node.id, node.position)}
+            onPaneClick={() => {
+              setContextMenu(null)
+              setMapStatusOpen(false)
             }}
-          />
-          <TimelineRuler />
-        </ReactFlow>
-      </ChartLayoutProvider>
+            nodesDraggable={!EDITORIAL_READONLY}
+            minZoom={0.04}
+            maxZoom={3}
+            fitView={false}
+            style={{ background: 'transparent' }}
+          >
+            <BackgroundLayers />
+            <Controls />
+            <MiniMap
+              zoomable
+              pannable
+              nodeColor={(n) => {
+                const ev = (n.data as { event: ReligionEvent }).event
+                return ev?.is_first_occurrence ? '#c0392b' : '#95a5a6'
+              }}
+            />
+            <TimelineRuler />
+          </ReactFlow>
+        </ChartLayoutProvider>
 
-      {/* Filter bar — grid + minmax(0,1fr) keeps long <option> labels from blowing out width */}
-      <div
-        data-testid="filter-panel"
-        style={{
-          position: 'fixed',
-          top: 12,
-          left: 12,
-          zIndex: 200,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 10,
-          padding: '14px 14px 16px',
-          background: 'rgba(255,255,255,0.97)',
-          border: '1px solid rgba(0,0,0,0.1)',
-          borderRadius: 10,
-          boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-          width: 'min(300px, calc(100vw - 24px))',
-          maxWidth: 'min(300px, calc(100vw - 24px))',
-          overflow: 'hidden',
-          boxSizing: 'border-box',
-          fontFamily:
-            'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-          fontSize: 13,
-          color: '#333',
-          WebkitFontSmoothing: 'antialiased',
-        }}
-      >
-        <div
-          style={{
-            fontWeight: 700,
-            fontSize: 11,
-            letterSpacing: '0.06em',
-            color: '#5c5c5c',
-            textTransform: 'uppercase',
+        <MapToolbar
+          volFilter={volFilter}
+          setVolFilter={setVolFilter}
+          terrFilter={terrFilter}
+          setTerrFilter={setTerrFilter}
+          firstOnly={firstOnly}
+          setFirstOnly={setFirstOnly}
+          openIssuesOnly={openIssuesOnly}
+          setOpenIssuesOnly={setOpenIssuesOnly}
+          onFit={handleFit}
+          onReset={handleReset}
+          showOpenIssuesFilter={!EDITORIAL_READONLY}
+          mapStatusOpen={mapStatusOpen}
+          onToggleMapStatus={() => setMapStatusOpen((v) => !v)}
+        />
+
+        <HighlightPanel
+          active={!!highlightSet}
+          direction={highlightDir}
+          depth={highlightDepth}
+          includeSiblings={includeSiblings}
+          count={highlightSet?.size ?? 0}
+          onDepthChange={(d) => {
+            setHighlightDepth(d)
+            try {
+              localStorage.setItem(HIGHLIGHT_DEPTH_KEY, String(d))
+            } catch {
+              /* ignore */
+            }
           }}
-        >
-          Фильтры
-        </div>
-        <label
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '72px minmax(0, 1fr)',
-            gap: '8px',
-            alignItems: 'center',
-            margin: 0,
-            minWidth: 0,
-          }}
-        >
-          <span style={{ fontSize: 12, color: '#666' }}>Том</span>
-          <div style={{ minWidth: 0, width: '100%' }}>
-            <select
-              value={volFilter}
-              aria-label="Том"
-              title="Том книги"
-              onChange={(e) =>
-                setVolFilter(e.target.value === 'all' ? 'all' : (Number(e.target.value) as 1 | 2 | 3))
-              }
-              style={filterSelectSx}
+          onClear={clearHighlight}
+          onCompact={() => setCompactOpen(true)}
+        />
+
+        {contextMenu && (
+          <div
+            data-testid="node-context-menu"
+            style={{
+              position: 'fixed',
+              top: contextMenu.y,
+              left: contextMenu.x,
+              zIndex: 300,
+              ...glassPanel,
+              borderRadius: 16,
+              padding: 8,
+              minWidth: 200,
+            }}
+          >
+            <ContextItem
+              testId="context-menu-highlight-connected"
+              onClick={() => applyHighlight(contextMenu.nodeId, 'both')}
             >
-              <option value="all">Все</option>
-              <option value="1">Том I</option>
-              <option value="2">Том II</option>
-              <option value="3">Том III</option>
-            </select>
-          </div>
-        </label>
-
-        <label
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '72px minmax(0, 1fr)',
-            gap: '8px',
-            alignItems: 'center',
-            margin: 0,
-            minWidth: 0,
-          }}
-        >
-          <span style={{ fontSize: 12, color: '#666' }}>Регион</span>
-          <div style={{ minWidth: 0, width: '100%' }}>
-            <select
-              value={terrFilter}
-              aria-label="Регион на карте"
-              title="Выбор территориальной дорожки"
-              onChange={(e) => setTerrFilter(e.target.value)}
-              style={filterSelectSx}
+              {t('highlightConnected')}…
+            </ContextItem>
+            <ContextItem
+              testId="context-menu-highlight-downstream"
+              onClick={() => applyHighlight(contextMenu.nodeId, 'down')}
             >
-              <option value="all">Все дорожки</option>
-              {TERRITORIES.map((t) => (
-                <option key={t.name} value={t.name}>
-                  {t.name}
-                </option>
-              ))}
-            </select>
+              {t('highlightDownstream')}…
+            </ContextItem>
+            <ContextItem
+              testId="context-menu-highlight-upstream"
+              onClick={() => applyHighlight(contextMenu.nodeId, 'up')}
+            >
+              {t('highlightUpstream')}…
+            </ContextItem>
+            <label style={{ display: 'flex', gap: 6, padding: '6px 10px', fontSize: 12 }}>
+              <input
+                type="checkbox"
+                checked={includeSiblings}
+                onChange={(e) => setIncludeSiblings(e.target.checked)}
+              />
+              {t('includeSiblings')}
+            </label>
+            <label style={{ display: 'flex', gap: 6, padding: '6px 10px', fontSize: 12 }}>
+              <span>{t('depth')}</span>
+              <input
+                type="number"
+                min={1}
+                max={10}
+                value={highlightDepth}
+                onChange={(e) => setHighlightDepth(Number(e.target.value))}
+                style={{ width: 48 }}
+              />
+            </label>
+            <ContextItem testId="context-menu-clear" onClick={clearHighlight}>
+              {t('clearHighlight')}
+            </ContextItem>
           </div>
-        </label>
+        )}
 
-        <label
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 8,
-            margin: '2px 0 0',
-            cursor: 'pointer',
-            paddingLeft: 80,
-          }}
-        >
-          <input
-            type="checkbox"
-            checked={firstOnly}
-            onChange={(e) => setFirstOnly(e.target.checked)}
-            style={{ width: 16, height: 16, accentColor: '#2980b9', flexShrink: 0 }}
+        {compactOpen && highlightSet && highlightRoot && (
+          <CompactFlowView
+            rootId={highlightRoot}
+            highlightIds={highlightSet}
+            events={filteredEvents}
+            onClose={() => setCompactOpen(false)}
           />
-          <span style={{ fontSize: 13, lineHeight: 1.35, color: '#333' }}>
-            Только «впервые»
-          </span>
-        </label>
-        <p
-          style={{
-            margin: '4px 0 0',
-            paddingTop: 10,
-            borderTop: '1px solid rgba(0,0,0,0.06)',
-            fontSize: 11,
-            color: '#777',
-            lineHeight: 1.45,
-          }}
-        >
-          Часовая шкала и число дорожек подстраиваются под выбранные события (года и регионы).
-          После перетаскивания координаты объединяются с сохранёнными в браузере.
-        </p>
-      </div>
+        )}
 
-      {/* Toolbar */}
-      <div
-        style={{
-          position: 'fixed',
-          top: 12,
-          right: 12,
-          display: 'flex',
-          gap: 8,
-          zIndex: 200,
-        }}
-      >
-        <ToolbarButton
-          dataTestId="toolbar-fit-view"
-          onClick={handleFit}
-          title="Вписать все узлы в экран"
-        >
-          ⛶ Вписать
-        </ToolbarButton>
-        <ToolbarButton
-          dataTestId="toolbar-reset-layout"
-          onClick={handleReset}
-          title="Сбросить позиции и применить авторазмещение"
-        >
-          ⟳ Авторасстановка
-        </ToolbarButton>
+        {mapStatusOpen && (
+          <div
+            id="map-status-popover"
+            data-testid="map-status"
+            role="tooltip"
+            style={{
+              position: 'fixed',
+              top: 76,
+              right: 12,
+              maxWidth: 420,
+              ...glassPanel,
+              background: 'rgba(15,23,42,0.88)',
+              color: '#fff',
+              padding: '10px 14px',
+              borderRadius: 8,
+              fontSize: 12,
+              lineHeight: 1.45,
+              zIndex: 210,
+              pointerEvents: 'auto',
+            }}
+          >
+            {t('statusYears')}{' '}
+            {chartLayoutSpec.yearStart <= 0
+              ? `${Math.abs(chartLayoutSpec.yearStart).toLocaleString()} BCE`
+              : `${chartLayoutSpec.yearStart.toLocaleString()} CE`}
+            —
+            {chartLayoutSpec.yearEnd <= 0
+              ? `${Math.abs(chartLayoutSpec.yearEnd).toLocaleString()} BCE`
+              : `${chartLayoutSpec.yearEnd.toLocaleString()} CE`}
+            , {chartLayoutSpec.territories.length} {t('statusLanes')} · {filteredEvents.length}{' '}
+            {t('statusOf')} {localeEvents.length} {t('statusEvents')}
+          </div>
+        )}
       </div>
-
-      {/* Status bar */}
-      <div
-        data-testid="map-status"
-        style={{
-          position: 'fixed',
-          bottom: 12,
-          right: 12,
-          background: 'rgba(0,0,0,0.6)',
-          color: '#fff',
-          padding: '4px 12px',
-          borderRadius: 4,
-          fontSize: 12,
-          zIndex: 100,
-          pointerEvents: 'none',
-        }}
-      >
-        Лет{' '}
-        {chartLayoutSpec.yearStart <= 0
-          ? `${Math.abs(chartLayoutSpec.yearStart).toLocaleString()} до н.э.`
-          : `${chartLayoutSpec.yearStart.toLocaleString()} н.э.`}
-        —
-        {chartLayoutSpec.yearEnd <= 0
-          ? `${Math.abs(chartLayoutSpec.yearEnd).toLocaleString()} до н.э.`
-          : `${chartLayoutSpec.yearEnd.toLocaleString()} н.э.`}
-        , дорожки {chartLayoutSpec.territories.length}, высота дорожки {chartLayoutSpec.laneHeightPx}px · событий{' '}
-        {filteredEvents.length} из {events.length} · клик — сведения · перетаскивание сохраняется
-      </div>
-    </div>
+    </EditorialProvider>
   )
 }
 
-function ToolbarButton({
-  onClick,
-  title,
+function ContextItem({
   children,
-  dataTestId,
+  onClick,
+  testId,
 }: {
-  onClick: () => void
-  title?: string
   children: React.ReactNode
-  dataTestId?: string
+  onClick: () => void
+  testId?: string
 }) {
   return (
     <button
       type="button"
-      data-testid={dataTestId}
+      data-testid={testId}
       onClick={onClick}
-      title={title}
       style={{
-        padding: '6px 14px',
-        background: 'rgba(255,255,255,0.95)',
-        border: '1px solid rgba(0,0,0,0.15)',
-        borderRadius: 5,
+        display: 'block',
+        width: '100%',
+        textAlign: 'left',
+        padding: '8px 10px',
+        border: 'none',
+        background: 'transparent',
         cursor: 'pointer',
         fontSize: 13,
-        fontWeight: 600,
-        boxShadow: '0 1px 4px rgba(0,0,0,0.15)',
-        color: '#333',
+        color: theme.ink,
+        borderRadius: 10,
       }}
     >
       {children}
     </button>
   )
 }
-
-// ─── error boundary ───────────────────────────────────────────────────────────
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
@@ -395,14 +531,14 @@ class ErrorBoundary extends React.Component<
   }
 }
 
-// ─── root ─────────────────────────────────────────────────────────────────────
-
 export default function App() {
   return (
     <ErrorBoundary>
-      <ReactFlowProvider>
-        <FlowCanvas />
-      </ReactFlowProvider>
+      <I18nProvider>
+        <ReactFlowProvider>
+          <FlowCanvas />
+        </ReactFlowProvider>
+      </I18nProvider>
     </ErrorBoundary>
   )
 }

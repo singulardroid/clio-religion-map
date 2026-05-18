@@ -10,7 +10,12 @@
         "nga_id": "1",
         "nga_name": "Latium",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "western-monasticism-benedict",
@@ -27,12 +32,16 @@
         "polity_id": "186",
         "polity_name": "it_ostrogoth_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "charlemagne-coronation",
       "territory": "Западная Европа",
-      "precise_location": "Рим",
       "year_from": 800,
       "year_to": 800,
       "references": [
@@ -44,7 +53,16 @@
         "polity_id": "188",
         "polity_name": "it_st_peter_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Рим"
+        },
+        "en": {
+          "precise_location": "Рим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "year-1000-eschatology",
@@ -64,7 +82,12 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "truce-of-god",
@@ -80,12 +103,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "gregorian-reform",
       "territory": "Западная Европа",
-      "precise_location": "Рим",
       "year_from": 1073,
       "year_to": 1085,
       "references": [],
@@ -95,7 +122,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Рим"
+        },
+        "en": {
+          "precise_location": "Рим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "carthusian-order-foundation",
@@ -109,12 +145,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "first-crusade",
       "territory": "Западная Европа",
-      "precise_location": "Константинополь, Антиохия, Триполи, Эдесса, Иерусалим",
       "year_from": 1095,
       "year_to": 1099,
       "references": [
@@ -126,12 +166,20 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Константинополь, Антиохия, Триполи, Эдесса, Иерусалим"
+        },
+        "en": {
+          "precise_location": "Константинополь, Антиохия, Триполи, Эдесса, Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "cistercian-order-foundation",
       "territory": "Западная Европа",
-      "precise_location": "Сито, близ Дижона",
       "year_from": 1098,
       "year_to": 1098,
       "references": [],
@@ -141,7 +189,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Сито, близ Дижона"
+        },
+        "en": {
+          "precise_location": "Сито, близ Дижона"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "christian-knighthood-consecration",
@@ -157,12 +214,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "courtly-love-troubadours",
       "territory": "Западная Европа",
-      "precise_location": "Пуатье, Прованс, Шампань",
       "year_from": 1100,
       "year_to": 1200,
       "references": [
@@ -178,12 +239,20 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Пуатье, Прованс, Шампань"
+        },
+        "en": {
+          "precise_location": "Пуатье, Прованс, Шампань"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "fedeli-d-amore",
       "territory": "Западная Европа",
-      "precise_location": "Прованс, Италия, Франция, Бельгия",
       "year_from": 1100,
       "year_to": 1300,
       "references": [
@@ -197,12 +266,20 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Прованс, Италия, Франция, Бельгия"
+        },
+        "en": {
+          "precise_location": "Прованс, Италия, Франция, Бельгия"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "premonstratensian-order-foundation",
       "territory": "Западная Европа",
-      "precise_location": "Премонтре",
       "year_from": 1120,
       "year_to": 1120,
       "references": [],
@@ -212,12 +289,20 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Премонтре"
+        },
+        "en": {
+          "precise_location": "Премонтре"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "second-crusade",
       "territory": "Западная Европа",
-      "precise_location": "Везеле, Константинополь, Икония, Дамаск",
       "year_from": 1145,
       "year_to": 1149,
       "references": [],
@@ -227,7 +312,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Везеле, Константинополь, Икония, Дамаск"
+        },
+        "en": {
+          "precise_location": "Везеле, Константинополь, Икония, Дамаск"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "grail-mythology",
@@ -250,12 +344,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "third-crusade",
       "territory": "Западная Европа",
-      "precise_location": "Майнц, Акка, Иерусалим",
       "year_from": 1188,
       "year_to": 1192,
       "references": [
@@ -267,12 +365,20 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Майнц, Акка, Иерусалим"
+        },
+        "en": {
+          "precise_location": "Майнц, Акка, Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "joachim-of-fiore-theology",
       "territory": "Западная Европа",
-      "precise_location": "Калабрия, Кораццо, Сан-Джованни ди Фьоре",
       "year_from": 1192,
       "year_to": 1202,
       "references": [
@@ -292,7 +398,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Калабрия, Кораццо, Сан-Джованни ди Фьоре"
+        },
+        "en": {
+          "precise_location": "Калабрия, Кораццо, Сан-Джованни ди Фьоре"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "mendicant-orders-foundation",
@@ -306,12 +421,16 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "fourth-crusade",
       "territory": "Западная Европа",
-      "precise_location": "Константинополь",
       "year_from": 1202,
       "year_to": 1204,
       "references": [
@@ -323,12 +442,20 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Константинополь"
+        },
+        "en": {
+          "precise_location": "Константинополь"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "childrens-crusade",
       "territory": "Западная Европа",
-      "precise_location": "Северная Франция, Германия, Марсель, Рим",
       "year_from": 1212,
       "year_to": 1212,
       "references": [
@@ -346,12 +473,20 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Северная Франция, Германия, Марсель, Рим"
+        },
+        "en": {
+          "precise_location": "Северная Франция, Германия, Марсель, Рим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "eternal-gospel-scandal",
       "territory": "Западная Европа",
-      "precise_location": "Париж",
       "year_from": 1254,
       "year_to": 1254,
       "references": [],
@@ -361,7 +496,16 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Париж"
+        },
+        "en": {
+          "precise_location": "Париж"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "joachim-condemnation",
@@ -375,7 +519,12 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     }
   ]
 }

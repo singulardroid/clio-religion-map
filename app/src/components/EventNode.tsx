@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import { Handle, Position, NodeProps } from 'reactflow'
-import type { ReligionEvent } from '../types'
+
+import { useEditorial } from '../EditorialContext'
+import { ISSUE_TAG_IDS } from '../editorial'
+import { useI18n } from '../i18n'
+import { openIssueCount, resolveEventForLocale } from '../locale'
+import type { LocaleCode, ReligionEvent } from '../types'
+import { displayTerritoryName, theme } from '../theme'
 
 interface EventNodeData {
   event: ReligionEvent
@@ -11,8 +17,15 @@ interface EventNodeData {
 export function EventNode({ data }: NodeProps<EventNodeData>) {
   const { event, eraColor } = data
   const [expanded, setExpanded] = useState(false)
+  const [showOther, setShowOther] = useState(false)
+  const [commentDraft, setCommentDraft] = useState('')
+  const { locale, t } = useI18n()
+  const editorial = useEditorial()
 
-  const borderColor = event.is_first_occurrence ? '#e67e22' : '#7f8c8d'
+  const borderColor = event.is_first_occurrence ? theme.gold : 'rgba(100,116,139,0.55)'
+  const issuesOpen = openIssueCount(event)
+  const otherLocale: LocaleCode = locale === 'en' ? 'ru' : 'en'
+  const otherResolved = resolveEventForLocale(event, otherLocale)
 
   return (
     <div
@@ -22,25 +35,46 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
       data-dead-end={event.is_dead_end === true ? 'true' : 'false'}
       onClick={() => setExpanded((v) => !v)}
       style={{
-        width: 260,
-        background: eraColor,
-        border: `2px solid ${borderColor}`,
-        borderRadius: 6,
+        width: 268,
+        background: `linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.90)), ${eraColor}`,
+        border: `1px solid ${issuesOpen ? theme.issue : borderColor}`,
+        borderLeft: `4px solid ${issuesOpen ? theme.issue : borderColor}`,
+        borderRadius: 16,
         cursor: 'pointer',
-        boxShadow: '0 2px 6px rgba(0,0,0,0.18)',
+        boxShadow: '0 16px 36px rgba(15,23,42,0.16)',
         position: 'relative',
         overflow: 'hidden',
+        color: theme.ink,
+        fontFamily: theme.font,
       }}
     >
-      {/* Territory Header Bar */}
+      {issuesOpen > 0 && (
+        <span
+          data-testid="open-issue-badge"
+          style={{
+            position: 'absolute',
+            top: 4,
+            left: 4,
+            background: theme.issue,
+            color: '#fff',
+            fontSize: 9,
+            fontWeight: 700,
+            padding: '1px 5px',
+            borderRadius: 3,
+          }}
+        >
+          {issuesOpen}
+        </span>
+      )}
+
       <div
         style={{
-          background: 'rgba(255,255,255,0.85)',
-          borderBottom: '1px solid rgba(0,0,0,0.1)',
-          padding: '4px 10px',
+          background: 'rgba(248,250,252,0.84)',
+          borderBottom: `1px solid ${theme.line}`,
+          padding: '6px 12px',
           fontSize: 10,
-          fontWeight: 700,
-          color: 'rgba(0,0,0,0.65)',
+          fontWeight: 800,
+          color: theme.muted,
           textTransform: 'uppercase',
           letterSpacing: 0.5,
           whiteSpace: 'nowrap',
@@ -48,140 +82,235 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
           textOverflow: 'ellipsis',
         }}
       >
-        {event.territory}
+        {displayTerritoryName(event.territory, locale)}
         {event.precise_location ? ` — ${event.precise_location}` : ''}
       </div>
 
-      <div style={{ padding: '8px 10px' }}>
-        {/* First-occurrence badge */}
+      <div style={{ padding: '10px 12px 12px' }}>
         {event.is_first_occurrence && (
           <span
             style={{
               position: 'absolute',
               top: 24,
               right: 6,
-              background: '#e67e22',
+              background: theme.gold,
               color: '#fff',
               fontSize: 9,
               fontWeight: 700,
               padding: '1px 5px',
               borderRadius: 3,
-              letterSpacing: 0.5,
             }}
           >
-            ВПЕРВЫЕ
+            {locale === 'ru' ? 'ВПЕРВЫЕ' : 'FIRST'}
           </span>
         )}
 
-        {/* Period */}
-        <div style={{ color: '#555', fontWeight: 600, marginBottom: 2, fontSize: 10 }}>
+        <div style={{ color: theme.muted, fontWeight: 700, marginBottom: 4, fontSize: 10 }}>
           {event.period ?? '—'}
         </div>
 
-        {/* Statement / body */}
-        <div style={{ fontWeight: 700, fontSize: 11.5, lineHeight: 1.35, marginBottom: 4 }}>
+        <div style={{ fontWeight: 750, fontSize: 12, lineHeight: 1.38, marginBottom: 8 }}>
           {event.statement ?? event.description ?? event.name ?? '—'}
         </div>
 
-        {/* Tags row */}
         <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
           <Tag color="#27ae60">{event.religion ?? '—'}</Tag>
-          {event.is_dead_end && <Tag color="#c0392b">Тупик</Tag>}
+          {event.is_dead_end && <Tag color="#c0392b">Dead end</Tag>}
         </div>
 
-        {/* Expanded detail */}
         {expanded && (
           <div
             style={{
               marginTop: 8,
-              borderTop: '1px solid rgba(0,0,0,0.1)',
-              paddingTop: 6,
+              borderTop: `1px solid ${theme.line}`,
+              paddingTop: 8,
               fontSize: 10.5,
-              color: '#333',
+              color: theme.ink,
             }}
           >
             <em style={{ display: 'block', marginBottom: 4, color: '#555' }}>
               {event.quote ? `«${event.quote}»` : null}
             </em>
-            {event.source_ref ? <div style={{ color: '#777' }}>{event.source_ref}</div> : null}
-            
-            {/* Map Links */}
-            <div style={{ marginTop: 6, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              <a 
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.precise_location || event.territory)}`}
+            {event.source_ref ? <div style={{ color: theme.muted }}>{event.source_ref}</div> : null}
+
+            <div style={{ marginTop: 8 }}>
+              <strong>{locale === 'ru' ? 'Локация:' : 'Location:'}</strong>{' '}
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                  event.precise_location || event.territory || '',
+                )}`}
                 target="_blank"
                 rel="noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                style={{ color: '#3498db', textDecoration: 'none', fontWeight: 600, fontSize: 10 }}
               >
-                📍 Google Maps
+                Google Maps
               </a>
-              {event.seshat?.nga_name && (
-                <a 
-                  href="https://seshat-db.com/"
+            </div>
+
+            {event.seshat?.nga_name && (
+              <div style={{ marginTop: 6 }}>
+                <strong>Seshat NGA:</strong>{' '}
+                <a
+                  href={`https://seshat-db.com/core/ngas/${encodeURIComponent(
+                    event.seshat.nga_id || event.seshat.nga_name,
+                  )}`}
                   target="_blank"
                   rel="noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  style={{ color: '#9b59b6', textDecoration: 'none', fontWeight: 600, fontSize: 10 }}
-                  title={event.seshat.polity_name ? `Polity: ${event.seshat.polity_name}` : 'NGA Match'}
                 >
-                  🏛️ Seshat: {event.seshat.nga_name}{' '}
-                  {event.seshat.polity_name && `(${event.seshat.polity_name})`}
+                  Seshat {event.seshat.nga_name}
                 </a>
-              )}
-            </div>
+              </div>
+            )}
 
-            {(event.connections?.length ?? 0) > 0 && (
-              <div style={{ marginTop: 6 }}>
-                <strong>Связи:</strong>
-                <ul style={{ margin: '2px 0 0 14px', padding: 0 }}>
-                  {(event.connections ?? []).map((c) => (
-                    <li key={c.target_concept_id} style={{ fontSize: 10 }}>
-                      → {c.target_concept_id}: {c.label}
+            {Array.isArray(event.references) && event.references.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <strong>{locale === 'ru' ? 'Литература:' : 'Bibliography:'}</strong>
+                <ol style={{ margin: '4px 0 0 18px', padding: 0 }}>
+                  {event.references.map((ref, idx) => {
+                    const text =
+                      typeof ref === 'string'
+                        ? ref
+                        : `${ref.num ? `${ref.num}. ` : ''}${ref.text ?? ''}`
+                    return (
+                      <li key={idx} style={{ marginBottom: 3 }}>
+                        {text}
+                      </li>
+                    )
+                  })}
+                </ol>
+              </div>
+            )}
+
+            <button
+              type="button"
+              data-testid="show-other-languages"
+              onClick={(e) => {
+                e.stopPropagation()
+                setShowOther((v) => !v)
+              }}
+              style={{
+                marginTop: 6,
+                fontSize: 10,
+                border: 'none',
+                background: 'transparent',
+                color: theme.accent,
+                cursor: 'pointer',
+                textDecoration: 'underline',
+              }}
+            >
+              {t('showOtherLanguages')}
+            </button>
+
+            {showOther && (
+              <div
+                data-testid="other-locale-block"
+                style={{
+                  marginTop: 6,
+                  padding: 6,
+                  background: theme.accentSoft,
+                  borderRadius: 12,
+                }}
+              >
+                <strong style={{ fontSize: 10 }}>{otherLocale.toUpperCase()}</strong>
+                <div style={{ fontSize: 10, marginTop: 4 }}>
+                  {otherResolved.statement ?? otherResolved.description ?? '—'}
+                </div>
+                {otherResolved.quote && (
+                  <em style={{ fontSize: 9.5, display: 'block', marginTop: 4 }}>
+                    «{otherResolved.quote}»
+                  </em>
+                )}
+              </div>
+            )}
+
+            {(event.editorial?.comments?.length ?? 0) > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <strong>{t('comments')}</strong>
+                <ul style={{ margin: '4px 0 0 16px', padding: 0 }}>
+                  {event.editorial!.comments.map((c) => (
+                    <li key={c.id} style={{ fontSize: 10, marginBottom: 4 }}>
+                      {c.body}
                     </li>
                   ))}
                 </ul>
               </div>
             )}
 
-          {event.references && event.references.length > 0 && (
-            <div style={{ marginTop: 6, borderTop: '1px dashed rgba(0,0,0,0.12)', paddingTop: 5 }}>
-              <strong style={{ fontSize: 10 }}>Литература:</strong>
-              <ol style={{ margin: '3px 0 0 14px', padding: 0 }}>
-                {event.references.map((ref, idx) =>
-                  typeof ref === 'string' ? (
-                    <li
-                      key={`rf-${idx}`}
-                      style={{
-                        fontSize: 9.5,
-                        color: '#444',
-                        lineHeight: 1.4,
-                        marginBottom: 2,
-                        fontFamily: 'Georgia, serif',
-                      }}
-                    >
-                      {ref}
+            {!editorial.readonly && (
+              <div style={{ marginTop: 8 }} onClick={(e) => e.stopPropagation()}>
+                <textarea
+                  data-testid="editorial-comment-input"
+                  value={commentDraft}
+                  onChange={(e) => setCommentDraft(e.target.value)}
+                  placeholder={t('addComment')}
+                  style={{ width: '100%', minHeight: 48, fontSize: 10 }}
+                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (!commentDraft.trim()) return
+                    editorial.onAddComment(event.concept_id, commentDraft.trim())
+                    setCommentDraft('')
+                  }}
+                  style={{ marginTop: 4, fontSize: 10 }}
+                >
+                  {t('addComment')}
+                </button>
+                <div style={{ marginTop: 8 }}>
+                  <strong>{t('issueTags')}</strong>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 4 }}>
+                    {ISSUE_TAG_IDS.map((tag) => {
+                      const active = (event.editorial?.issues ?? []).some(
+                        (i) => i.tag === tag && !i.resolved,
+                      )
+                      return (
+                        <button
+                          key={tag}
+                          type="button"
+                          data-testid={`issue-tag-${tag}`}
+                          onClick={() => editorial.onToggleIssue(event.concept_id, tag)}
+                          style={{
+                            fontSize: 9,
+                            padding: '2px 6px',
+                            borderRadius: 4,
+                            border: '1px solid #999',
+                            background: active ? theme.issue : '#fff',
+                            color: active ? '#fff' : theme.ink,
+                            cursor: 'pointer',
+                          }}
+                        >
+                          {tag}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  data-testid="export-overlay"
+                  onClick={() => editorial.onExportOverlay()}
+                  style={{ marginTop: 8, fontSize: 10 }}
+                >
+                  {t('exportOverlay')}
+                </button>
+              </div>
+            )}
+
+            {(event.connections?.length ?? 0) > 0 && (
+              <div style={{ marginTop: 6 }}>
+                <strong>Links:</strong>
+                <ul style={{ margin: '2px 0 0 14px', padding: 0 }}>
+                  {(event.connections ?? []).map((c) => (
+                    <li key={c.target_concept_id} style={{ fontSize: 10 }}>
+                      → {c.target_concept_id}: {typeof c.label === 'string' ? c.label : ''}
                     </li>
-                  ) : (
-                    <li
-                      key={`rf-${ref.num}-${idx}`}
-                      value={ref.num}
-                      style={{
-                        fontSize: 9.5,
-                        color: '#444',
-                        lineHeight: 1.4,
-                        marginBottom: 2,
-                        fontFamily: 'Georgia, serif',
-                      }}
-                      dangerouslySetInnerHTML={{ __html: ref.text }}
-                    />
-                  ),
-                )}
-              </ol>
-            </div>
-          )}
-        </div>
-      )}
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       <Handle type="target" position={Position.Left} style={{ opacity: 0 }} />

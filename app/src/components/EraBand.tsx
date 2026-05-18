@@ -2,6 +2,8 @@ import React from 'react'
 import type { ChartLayoutEra } from '../chartLayout'
 import { canvasHeightForSpec, timeToXForSpec } from '../chartLayout'
 import { useChartLayout } from '../ChartLayoutContext'
+import { useI18n } from '../i18n'
+import { displayEraName, theme } from '../theme'
 
 interface EraBandProps {
   era: ChartLayoutEra
@@ -14,6 +16,7 @@ interface EraBandProps {
  */
 export function EraBand({ era, isFirst, isLast }: EraBandProps) {
   const spec = useChartLayout()
+  const { locale } = useI18n()
   let x = timeToXForSpec(era.yearFrom, spec)
   let width = timeToXForSpec(era.yearTo, spec) - x
 
@@ -37,9 +40,9 @@ export function EraBand({ era, isFirst, isLast }: EraBandProps) {
         width,
         height: height + 100000,
         backgroundColor: era.color,
-        opacity: 0.6,
+        opacity: 0.46,
         pointerEvents: 'none',
-        borderRight: '1px solid rgba(0,0,0,0.08)',
+        borderRight: `1px solid ${theme.line}`,
       }}
     >
       <span
@@ -47,17 +50,17 @@ export function EraBand({ era, isFirst, isLast }: EraBandProps) {
           position: 'sticky',
           top: 8,
           display: 'block',
-          padding: '4px 8px',
+          padding: '5px 10px',
           fontSize: 11,
-          fontWeight: 600,
-          color: 'rgba(0,0,0,0.45)',
+          fontWeight: 700,
+          color: 'rgba(30,41,59,0.50)',
           whiteSpace: 'nowrap',
           letterSpacing: '0.04em',
           textTransform: 'uppercase',
           marginTop: 50000,
         }}
       >
-        {era.name}
+        {displayEraName(era.name, locale)}
       </span>
     </div>
   )

@@ -4,14 +4,18 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "postinstall": "node scripts/playwright-local-install.mjs",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview --host 127.0.0.1 --port 5173",
+    "compile:events": "cd .. && python3 scripts/compile_events.py --strict-en",
     "test": "vitest",
+    "test:pytest": "cd .. && pytest tests/",
+    "pretest:e2e": "playwright install chromium chromium-headless-shell",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:ui": "playwright test --ui",
-    "test:e2e:install": "playwright install chromium"
+    "test:e2e:install": "playwright install chromium chromium-headless-shell"
   },
   "dependencies": {
     "react": "^18.3.1",

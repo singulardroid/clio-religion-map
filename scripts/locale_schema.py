@@ -1,0 +1,136 @@
+"""Shared locale field helpers for religion-map data pipeline."""
+
+from __future__ import annotations
+
+from copy import deepcopy
+from typing import Any
+
+LOCALE_CODES = ("en", "ru")
+LOCALIZABLE_EVENT_FIELDS = (
+    "statement",
+    "description",
+    "name",
+    "quote",
+    "period",
+    "religion",
+    "source_ref",
+    "chapter_title",
+    "precise_location",
+    "era",
+)
+REQUIRED_EN_FIELDS = ("quote", "source_ref")
+
+
+def _pick_localizable(event: dict) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for key in LOCALIZABLE_EVENT_FIELDS:
+        val = event.get(key)
+        if isinstance(val, str) and val.strip():
+            out[key] = val.strip()
+    return out
+
+
+def event_has_locales(event: dict) -> bool:
+    loc = event.get("locales")
+    return isinstance(loc, dict) and bool(loc)
+
+
+def wrap_legacy_event_to_locales(event: dict) -> dict:
+    """Copy event; move string fields into locales.ru; strip from top level."""
+    out = deepcopy(event)
+    ru_payload = _pick_localizable(out)
+    for key in LOCALIZABLE_EVENT_FIELDS:
+        out.pop(key, None)
+
+    locales: dict[str, dict[str, str]] = {"ru": ru_payload, "en": {}}
+    out["locales"] = locales
+
+    conns = out.get("connections") or []
+    normalized = []
+    for c in conns:
+        if not isinstance(c, dict):
+            continue
+        nc = dict(c)
+        lab = nc.get("label")
+        if isinstance(lab, str):
+            nc["label"] = {"ru": lab, "en": lab}
+        elif isinstance(lab, dict):
+            nc["label"] = {
+                "ru": lab.get("ru") or lab.get("en") or "",
+                "en": lab.get("en") or lab.get("ru") or "",
+            }
+        normalized.append(nc)
+    out["connections"] = normalized
+    return out
+
+
+def ensure_locales_shape(event: dict) -> dict:
+    if event_has_locales(event):
+        loc = event.setdefault("locales", {})
+        loc.setdefault("ru", {})
+        loc.setdefault("en", {})
+        return event
+    return wrap_legacy_event_to_locales(event)
+
+
+def locale_block(event: dict, code: str) -> dict[str, str]:
+    loc = event.get("locales") or {}
+    block = loc.get(code) or {}
+    return block if isinstance(block, dict) else {}
+
+
+def _locale_display_complete(block: dict, ru_block: dict) -> bool:
+    """Locale is complete when every present RU field has a non-empty EN counterpart."""
+    if not (block.get("statement") or block.get("description") or block.get("quote")):
+        return False
+    if (ru_block.get("statement") or ru_block.get("description")) and not (
+        block.get("statement") or block.get("description")
+    ):
+        return False
+    if (ru_block.get("quote") or "").strip() and not (block.get("quote") or "").strip():
+        return False
+    if (ru_block.get("source_ref") or "").strip() and not (block.get("source_ref") or "").strip():
+        return False
+    return True
+
+
+def en_is_complete(event: dict) -> bool:
+    ru = locale_block(event, "ru")
+    en = locale_block(event, "en")
+    display_keys = ("statement", "description", "quote")
+    if not any((ru.get(k) or "").strip() for k in display_keys):
+        return True
+    return _locale_display_complete(en, ru)
+
+
+def ru_is_complete(event: dict) -> bool:
+    return _locale_display_complete(locale_block(event, "ru"), locale_block(event, "ru"))
+
+
+def connection_label(conn: dict, code: str) -> str:
+    lab = conn.get("label")
+    if isinstance(lab, dict):
+        return (lab.get(code) or lab.get("en") or lab.get("ru") or "").strip()
+    if isinstance(lab, str):
+        return lab.strip()
+    return ""
+
+
+def flatten_event_for_locale(event: dict, code: str) -> dict:
+    """Merge stable fields + locale block for SPA backward compatibility."""
+    out = deepcopy(event)
+    block = locale_block(out, code)
+    for key, val in block.items():
+        if val:
+            out[key] = val
+    conns = out.get("connections") or []
+    flat_conns = []
+    for c in conns:
+        if not isinstance(c, dict):
+            continue
+        fc = dict(c)
+        fc["label"] = connection_label(c, code)
+        flat_conns.append(fc)
+    out["connections"] = flat_conns
+    out["_active_locale"] = code
+    return out

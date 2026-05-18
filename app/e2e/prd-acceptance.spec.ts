@@ -4,10 +4,10 @@
 
 import fs from 'node:fs'
 
-import type { TestInfo } from '@playwright/test'
+import type { Page, TestInfo } from '@playwright/test'
 import { test, expect } from '@playwright/test'
 
-import { compileEventsReadable, loadCompiledEvents } from './helpers/events-data'
+import { compileEventsReadable, loadVisibleEvents } from './helpers/events-data'
 import { fitMapViewport, focusEventNode } from './helpers/nav'
 import { scratchPrd } from './helpers/repo-paths'
 
@@ -16,6 +16,12 @@ function annotatePrd(testInfo: TestInfo, storyNumbers: number[]) {
     type: 'prd-story',
     description: storyNumbers.map((s) => `US-${s}`).join(', '),
   })
+}
+
+async function useRussian(page: Page) {
+  await page.goto('/')
+  await page.evaluate(() => localStorage.setItem('clio-lang', 'ru'))
+  await page.reload()
 }
 
 test.describe('PRD file presence', () => {
@@ -32,12 +38,13 @@ test.describe('PRD user stories mapped to SPA', () => {
   test('US6/US19 researcher reads period + русский текст on cards', async ({ page }, testInfo) => {
     annotatePrd(testInfo, [6, 19])
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
+    await page.getByTestId('toolbar-help').click()
     await expect(page.getByTestId('map-status')).toContainText('Лет')
 
-    const sample = loadCompiledEvents().find((ev) => !!ev.period)!
+    const sample = loadVisibleEvents('ru').find((ev) => !!ev.period)!
 
     const node = page.locator(`[data-event-concept-id="${sample.concept_id}"]`)
     await focusEventNode(page, sample.concept_id)
@@ -50,7 +57,7 @@ test.describe('PRD user stories mapped to SPA', () => {
   test('US12 draggable host nodes wired through React Flow', async ({ page }, testInfo) => {
     annotatePrd(testInfo, [12])
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     const host = page.locator('[data-testid="event-node"]').first().locator(
@@ -69,14 +76,14 @@ test.describe('PRD user stories mapped to SPA', () => {
       seshat?: { nga_name?: string }
     }
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     await expect(page.locator('[data-first-occurrence="true"]').first()).toBeVisible({
       timeout: 90_000,
     })
 
-    const enriched = loadCompiledEvents() as EnrichedEv[]
+    const enriched = loadVisibleEvents('ru') as EnrichedEv[]
 
     const sample = enriched.find((e) => !!e.seshat?.nga_name)!
 
@@ -96,12 +103,13 @@ test.describe('PRD user stories mapped to SPA', () => {
   test('US9 swimlanes hinted via фильтры + status lane counts', async ({ page }, testInfo) => {
     annotatePrd(testInfo, [9])
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     await expect(page.getByTestId('filter-panel')).toContainText('Регион')
 
-    await expect(page.getByTestId('map-status')).toContainText('дорожки')
+    await page.getByTestId('toolbar-help').click()
+    await expect(page.getByTestId('map-status')).toContainText(/дорож/)
 
   })
 

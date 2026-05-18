@@ -3,11 +3,8 @@ import { useViewport } from 'reactflow'
 import { LANE_LABEL_WIDTH } from '../config'
 import { timeToXForSpec } from '../chartLayout'
 import { useChartLayout } from '../ChartLayoutContext'
-
-function formatTick(y: number): string {
-  if (y === 0) return '1 н.э.'
-  return y < 0 ? `${Math.abs(y)} до н.э.` : `${y} н.э.`
-}
+import { useI18n } from '../i18n'
+import { formatYear, theme } from '../theme'
 
 function ticksForSpan(yearStart: number, yearEnd: number, maxTicks = 14): number[] {
   if (!Number.isFinite(yearStart) || !Number.isFinite(yearEnd)) return []
@@ -43,6 +40,7 @@ function ticksForSpan(yearStart: number, yearEnd: number, maxTicks = 14): number
 export function TimelineRuler() {
   const { x, zoom } = useViewport()
   const spec = useChartLayout()
+  const { locale } = useI18n()
   const ticks = ticksForSpan(spec.yearStart, spec.yearEnd)
   const winW = typeof window !== 'undefined' ? window.innerWidth : 1400
 
@@ -54,8 +52,10 @@ export function TimelineRuler() {
         left: LANE_LABEL_WIDTH,
         right: 0,
         height: 30,
-        backgroundColor: 'rgba(255, 255, 255, 0.9)',
-        borderTop: '1px solid rgba(0,0,0,0.1)',
+        background: 'rgba(255,255,255,0.78)',
+        backdropFilter: 'blur(14px)',
+        WebkitBackdropFilter: 'blur(14px)',
+        borderTop: `1px solid ${theme.line}`,
         zIndex: 50,
         overflow: 'hidden',
         pointerEvents: 'none',
@@ -85,16 +85,16 @@ export function TimelineRuler() {
             <div
               style={{
                 fontSize: 10,
-                fontWeight: 600,
-                color: '#666',
+                fontWeight: 700,
+                color: theme.muted,
                 marginBottom: 2,
                 whiteSpace: 'nowrap',
                 transform: 'translateX(-50%)',
               }}
             >
-              {formatTick(year)}
+              {formatYear(year, locale)}
             </div>
-            <div style={{ width: 1, height: 6, backgroundColor: '#999' }} />
+            <div style={{ width: 1, height: 7, backgroundColor: 'rgba(100,116,139,0.65)' }} />
           </div>
         )
       })}

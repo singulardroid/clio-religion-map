@@ -4,6 +4,8 @@ input/
 
 # Generated data
 data/
+!data/editorial/
+!data/editorial/**
 app/src/data/events.json
 
 # Node modules

@@ -2,10 +2,7 @@
   "events": [
     {
       "concept_id": "saul-paul-vision-damascus",
-      "name": "Обращение Савла (апостола Павла)",
-      "description": "Молодой фарисей Савл, преследовавший христиан, переживает экстатическое видение Христа воскресшего по дороге в Дамаск.",
       "territory": "Рим",
-      "precise_location": "Дамаск",
       "year_from": 32,
       "year_to": 36,
       "references": [
@@ -18,14 +15,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Молодой фарисей Савл, преследовавший христиан, переживает экстатическое видение Христа воскресшего по дороге в Дамаск.",
+          "name": "Обращение Савла (апостола Павла)",
+          "precise_location": "Дамаск"
+        },
+        "en": {
+          "description": "Молодой фарисей Савл, преследовавший христиан, переживает экстатическое видение Христа воскресшего по дороге в Дамаск.",
+          "name": "Обращение Савла (апостола Павла)",
+          "precise_location": "Дамаск"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-baptism-jordan",
-      "name": "Крещение Иисуса",
-      "description": "Иисус из Назарета принимает крещение от Иоанна Крестителя на реке Иордан, после чего ему открывается его мессианское достоинство.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "река Иордан",
       "year_from": 28,
       "year_to": 29,
       "references": [
@@ -37,14 +44,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Иисус из Назарета принимает крещение от Иоанна Крестителя на реке Иордан, после чего ему открывается его мессианское достоинство.",
+          "name": "Крещение Иисуса",
+          "precise_location": "река Иордан"
+        },
+        "en": {
+          "description": "Иисус из Назарета принимает крещение от Иоанна Крестителя на реке Иордан, после чего ему открывается его мессианское достоинство.",
+          "name": "Крещение Иисуса",
+          "precise_location": "река Иордан"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-temptation-wilderness",
-      "name": "Искушение Иисуса в пустыне",
-      "description": "После крещения Иисус удаляется в пустыню на сорок дней, где Сатана искушает его.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "пустыня",
       "year_from": 28,
       "year_to": 29,
       "references": [
@@ -56,14 +73,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "После крещения Иисус удаляется в пустыню на сорок дней, где Сатана искушает его.",
+          "name": "Искушение Иисуса в пустыне",
+          "precise_location": "пустыня"
+        },
+        "en": {
+          "description": "После крещения Иисус удаляется в пустыню на сорок дней, где Сатана искушает его.",
+          "name": "Искушение Иисуса в пустыне",
+          "precise_location": "пустыня"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-galilee-preaching-kingdom",
-      "name": "Проповедь Иисуса в Галилее",
-      "description": "Иисус возвещает Благую Весть о приближении Царства Божия, проповедует и совершает чудеса.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Галилея",
       "year_from": 29,
       "year_to": 30,
       "references": [
@@ -77,14 +104,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Иисус возвещает Благую Весть о приближении Царства Божия, проповедует и совершает чудеса.",
+          "name": "Проповедь Иисуса в Галилее",
+          "precise_location": "Галилея"
+        },
+        "en": {
+          "description": "Иисус возвещает Благую Весть о приближении Царства Божия, проповедует и совершает чудеса.",
+          "name": "Проповедь Иисуса в Галилее",
+          "precise_location": "Галилея"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-multiplication-of-loaves",
-      "name": "Умножение хлебов и рыб",
-      "description": "Чудесное умножение Иисусом хлебов и рыб для пяти тысяч человек, символическое предвосхищение эсхатона.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Тивериадское озеро",
       "year_from": 29,
       "year_to": 30,
       "references": [
@@ -96,14 +133,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Чудесное умножение Иисусом хлебов и рыб для пяти тысяч человек, символическое предвосхищение эсхатона.",
+          "name": "Умножение хлебов и рыб",
+          "precise_location": "Тивериадское озеро"
+        },
+        "en": {
+          "description": "Чудесное умножение Иисусом хлебов и рыб для пяти тысяч человек, символическое предвосхищение эсхатона.",
+          "name": "Умножение хлебов и рыб",
+          "precise_location": "Тивериадское озеро"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-entry-jerusalem-and-temple-cleansing",
-      "name": "Вход Иисуса в Иерусалим",
-      "description": "Иисус входит в Иерусалим перед Пасхой, изгоняет торгующих из Храма.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 30,
       "year_to": 33,
       "references": [
@@ -116,14 +163,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Иисус входит в Иерусалим перед Пасхой, изгоняет торгующих из Храма.",
+          "name": "Вход Иисуса в Иерусалим",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "Иисус входит в Иерусалим перед Пасхой, изгоняет торгующих из Храма.",
+          "name": "Вход Иисуса в Иерусалим",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-last-supper-eucharist",
-      "name": "Тайная Вечеря (Евхаристия)",
-      "description": "Последняя трапеза Иисуса с учениками в канун Пасхи, ставшая основанием христианского таинства Евхаристии.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 30,
       "year_to": 33,
       "references": [
@@ -137,14 +194,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Последняя трапеза Иисуса с учениками в канун Пасхи, ставшая основанием христианского таинства Евхаристии.",
+          "name": "Тайная Вечеря (Евхаристия)",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "Последняя трапеза Иисуса с учениками в канун Пасхи, ставшая основанием христианского таинства Евхаристии.",
+          "name": "Тайная Вечеря (Евхаристия)",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-crucifixion",
-      "name": "Суд и распятие Иисуса Христа",
-      "description": "Иисус осужден Синедрионом и Понтием Пилатом и казнен через распятие.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 30,
       "year_to": 33,
       "references": [
@@ -156,14 +223,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Иисус осужден Синедрионом и Понтием Пилатом и казнен через распятие.",
+          "name": "Суд и распятие Иисуса Христа",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "Иисус осужден Синедрионом и Понтием Пилатом и казнен через распятие.",
+          "name": "Суд и распятие Иисуса Христа",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jesus-resurrection-belief",
-      "name": "Воскресение Иисуса Христа",
-      "description": "Вера учеников в воскресение распятого Иисуса.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 30,
       "year_to": 33,
       "references": [
@@ -176,14 +253,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Вера учеников в воскресение распятого Иисуса.",
+          "name": "Воскресение Иисуса Христа",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "Вера учеников в воскресение распятого Иисуса.",
+          "name": "Воскресение Иисуса Христа",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "pentecost-holy-spirit",
-      "name": "Схождение Святого Духа (Пятидесятница)",
-      "description": "Схождение Святого Духа на апостолов в виде огненных языков, дарование глоссолалии.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 30,
       "year_to": 30,
       "references": [
@@ -195,14 +282,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Схождение Святого Духа на апостолов в виде огненных языков, дарование глоссолалии.",
+          "name": "Схождение Святого Духа (Пятидесятница)",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "Схождение Святого Духа на апостолов в виде огненных языков, дарование глоссолалии.",
+          "name": "Схождение Святого Духа (Пятидесятница)",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "stephen-martyrdom",
-      "name": "Мученичество Стефана",
-      "description": "Первомученик Стефан забит камнями, а христиане из эллинистов изгнаны из Иерусалима.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 36,
       "year_to": 37,
       "references": [],
@@ -212,14 +309,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Первомученик Стефан забит камнями, а христиане из эллинистов изгнаны из Иерусалима.",
+          "name": "Мученичество Стефана",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "Первомученик Стефан забит камнями, а христиане из эллинистов изгнаны из Иерусалима.",
+          "name": "Мученичество Стефана",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "antioch-first-christians",
-      "name": "Первая языко-христианская община в Антиохии",
-      "description": "В Антиохии Сирийской образуется первая община из бывших язычников, впервые используется слово 'христиане'.",
       "territory": "Рим",
-      "precise_location": "Антиохия (Сирия)",
       "year_from": 40,
       "year_to": 45,
       "references": [
@@ -231,14 +338,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "В Антиохии Сирийской образуется первая община из бывших язычников, впервые используется слово 'христиане'.",
+          "name": "Первая языко-христианская община в Антиохии",
+          "precise_location": "Антиохия (Сирия)"
+        },
+        "en": {
+          "description": "В Антиохии Сирийской образуется первая община из бывших язычников, впервые используется слово 'христиане'.",
+          "name": "Первая языко-христианская община в Антиохии",
+          "precise_location": "Антиохия (Сирия)"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "paul-missionary-journeys",
-      "name": "Миссионерские путешествия апостола Павла",
-      "description": "Апостол Павел совершает длительные путешествия, основывая церкви.",
       "territory": "Рим",
-      "precise_location": "Малая Азия, Кипр, Греция, Македония",
       "year_from": 45,
       "year_to": 62,
       "references": [
@@ -250,14 +367,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Апостол Павел совершает длительные путешествия, основывая церкви.",
+          "name": "Миссионерские путешествия апостола Павла",
+          "precise_location": "Малая Азия, Кипр, Греция, Македония"
+        },
+        "en": {
+          "description": "Апостол Павел совершает длительные путешествия, основывая церкви.",
+          "name": "Миссионерские путешествия апостола Павла",
+          "precise_location": "Малая Азия, Кипр, Греция, Македония"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "paul-martyrdom-rome",
-      "name": "Мученическая смерть апостола Павла",
-      "description": "После ареста и суда Павел погибает мученической смертью в Риме.",
       "territory": "Рим",
-      "precise_location": "Рим",
       "year_from": 62,
       "year_to": 64,
       "references": [],
@@ -267,14 +394,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "После ареста и суда Павел погибает мученической смертью в Риме.",
+          "name": "Мученическая смерть апостола Павла",
+          "precise_location": "Рим"
+        },
+        "en": {
+          "description": "После ареста и суда Павел погибает мученической смертью в Риме.",
+          "name": "Мученическая смерть апостола Павла",
+          "precise_location": "Рим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "qumran-community-destruction",
-      "name": "Разрушение Кумранской общины",
-      "description": "Армия римлян под командованием Веспасиана разрушает Кумранский монастырь ессеев.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Кумран, побережье Мертвого моря",
       "year_from": 68,
       "year_to": 68,
       "references": [
@@ -286,14 +423,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Армия римлян под командованием Веспасиана разрушает Кумранский монастырь ессеев.",
+          "name": "Разрушение Кумранской общины",
+          "precise_location": "Кумран, побережье Мертвого моря"
+        },
+        "en": {
+          "description": "Армия римлян под командованием Веспасиана разрушает Кумранский монастырь ессеев.",
+          "name": "Разрушение Кумранской общины",
+          "precise_location": "Кумран, побережье Мертвого моря"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jerusalem-temple-destruction-70",
-      "name": "Разрушение Иерусалимского Храма",
-      "description": "В результате иудейской войны римляне берут Иерусалим и разрушают Второй Храм.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Иерусалим",
       "year_from": 70,
       "year_to": 70,
       "references": [
@@ -305,14 +452,24 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "В результате иудейской войны римляне берут Иерусалим и разрушают Второй Храм.",
+          "name": "Разрушение Иерусалимского Храма",
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "description": "В результате иудейской войны римляне берут Иерусалим и разрушают Второй Храм.",
+          "name": "Разрушение Иерусалимского Храма",
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "yavneh-rabbinic-school-johanan",
-      "name": "Основание школы в Явне",
-      "description": "Рабби Иоханан бен Заккай основывает школу в Явне, спасшую духовные ценности иудаизма.",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Явне (близ Яффо)",
       "year_from": 70,
       "year_to": 80,
       "references": [
@@ -325,7 +482,20 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "description": "Рабби Иоханан бен Заккай основывает школу в Явне, спасшую духовные ценности иудаизма.",
+          "name": "Основание школы в Явне",
+          "precise_location": "Явне (близ Яффо)"
+        },
+        "en": {
+          "description": "Рабби Иоханан бен Заккай основывает школу в Явне, спасшую духовные ценности иудаизма.",
+          "name": "Основание школы в Явне",
+          "precise_location": "Явне (близ Яффо)"
+        }
+      },
+      "connections": []
     }
   ]
 }

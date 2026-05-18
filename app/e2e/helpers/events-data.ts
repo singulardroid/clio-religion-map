@@ -14,11 +14,16 @@ export type CompiledEvent = {
   precise_location?: string
   is_first_occurrence?: boolean
   is_dead_end?: boolean
+  period?: string
   statement?: string
   description?: string
   name?: string
+  quote?: string
+  source_ref?: string
   references?: unknown[]
   connections?: Array<{ target_concept_id: string; label?: string }>
+  locales?: Record<string, Record<string, string>>
+  seshat?: { nga_name?: string | null }
 }
 
 const helpersDir = path.dirname(fileURLToPath(import.meta.url))
@@ -31,6 +36,50 @@ export function loadCompiledEventsPath(): string {
 export function loadCompiledEvents(): CompiledEvent[] {
   const raw = fs.readFileSync(eventsPath, 'utf8')
   return JSON.parse(raw) as CompiledEvent[]
+}
+
+export type LocaleCode = 'en' | 'ru'
+
+function localeBlock(event: CompiledEvent, code: LocaleCode): Record<string, string> {
+  return event.locales?.[code] ?? {}
+}
+
+function localeComplete(event: CompiledEvent, code: LocaleCode): boolean {
+  const ru = localeBlock(event, 'ru')
+  const block = localeBlock(event, code)
+  if (!ru.statement && !ru.description && !ru.quote) return false
+  if ((ru.statement || ru.description) && !block.statement && !block.description) return false
+  if (ru.quote && !block.quote) return false
+  if (ru.source_ref && !block.source_ref) return false
+  return true
+}
+
+export function resolveCompiledEventForLocale(
+  event: CompiledEvent,
+  code: LocaleCode,
+): CompiledEvent {
+  const block = localeBlock(event, code)
+  return {
+    ...event,
+    period: block.period ?? event.period,
+    statement: block.statement ?? event.statement,
+    description: block.description ?? event.description,
+    name: block.name ?? event.name,
+    quote: block.quote ?? event.quote,
+    source_ref: block.source_ref ?? event.source_ref,
+    precise_location: block.precise_location ?? event.precise_location,
+    connections: (event.connections ?? []).map((conn) => {
+      const label = conn.label
+      if (!label || typeof label === 'string') return conn
+      return { ...conn, label: label[code] ?? label.en ?? label.ru ?? '' }
+    }),
+  }
+}
+
+export function loadVisibleEvents(code: LocaleCode = 'en'): CompiledEvent[] {
+  return loadCompiledEvents()
+    .filter((event) => localeComplete(event, code))
+    .map((event) => resolveCompiledEventForLocale(event, code))
 }
 
 /** Edges emitted by SPA when both endpoints exist (same logic as compile graph). */

@@ -4,12 +4,12 @@
 
 import fs from 'node:fs'
 
-import type { TestInfo } from '@playwright/test'
+import type { Page, TestInfo } from '@playwright/test'
 import { test, expect } from '@playwright/test'
 
 import {
   POSITION_STORAGE_KEY,
-  loadCompiledEvents,
+  loadVisibleEvents,
   countRenderableEdges,
   compileEventsReadable,
   type CompiledEvent,
@@ -31,6 +31,12 @@ function annotateIssue(testInfo: TestInfo, issueNo: number) {
 
 function pick(events: CompiledEvent[], pred: (e: CompiledEvent) => boolean): CompiledEvent | undefined {
   return events.find(pred)
+}
+
+async function useRussian(page: Page) {
+  await page.goto('/')
+  await page.evaluate(() => localStorage.setItem('clio-lang', 'ru'))
+  await page.reload()
 }
 
 /** Issues primarily delivered outside React/Vite (Python, MCP, notebooks). */
@@ -68,9 +74,9 @@ test.describe('Issue #07 — Compiled events + graph topology', () => {
 
   test('node cardinality matches SPA import', async ({ page }, testInfo) => {
     annotateIssue(testInfo, 7)
-    const events = loadCompiledEvents()
+    const events = loadVisibleEvents('ru')
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     await expect(page.locator('[data-testid="event-node"]').first()).toBeVisible({ timeout: 90_000 })
@@ -81,11 +87,11 @@ test.describe('Issue #07 — Compiled events + graph topology', () => {
   test('edges match compilable intra-graph refs', async ({ page }, testInfo) => {
     annotateIssue(testInfo, 7)
 
-    const events = loadCompiledEvents()
+    const events = loadVisibleEvents('ru')
 
     const edges = countRenderableEdges(events)
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
     await expect(page.locator('.react-flow')).toBeVisible({ timeout: 90_000 })
     await expect(page.locator('.react-flow__edge')).toHaveCount(edges)
@@ -107,10 +113,10 @@ test.describe('Issue #08 — EventNode UX', () => {
   test('surface copy matches JSON statement/description excerpt', async ({ page }, testInfo) => {
     annotateIssue(testInfo, 8)
 
-    const events = loadCompiledEvents()
+    const events = loadVisibleEvents('ru')
     const sample = pick(events, (e) => !!(e.statement ?? e.description))!
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     const slot = page.locator(`[data-event-concept-id="${sample.concept_id}"]`)
@@ -125,7 +131,7 @@ test.describe('Issue #08 — EventNode UX', () => {
   test('first-appearance badge рус.', async ({ page }, testInfo) => {
     annotateIssue(testInfo, 8)
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     await expect(page.locator('[data-first-occurrence="true"]').first()).toContainText('ВПЕРВЫЕ')
@@ -135,10 +141,10 @@ test.describe('Issue #08 — EventNode UX', () => {
   test('click expands quote + томовая строка источника', async ({ page }, testInfo) => {
     annotateIssue(testInfo, 8)
 
-    const events = loadCompiledEvents()
+    const events = loadVisibleEvents('ru')
     const sample = pick(events, (e) => !!e.quote && !!e.source_ref)!
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
     await focusEventNode(page, sample.concept_id)
 
@@ -169,11 +175,11 @@ test.describe('Issue #09 — Influence edges labelled', () => {
 
     annotateIssue(testInfo, 9)
 
-    const events = loadCompiledEvents()
+    const events = loadVisibleEvents('ru')
 
     const edges = countRenderableEdges(events)
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
 
     await expect(page.locator('.react-flow')).toBeVisible({ timeout: 90_000 })
@@ -205,7 +211,7 @@ test.describe('Issue #10 — drag persistence primitives', () => {
   }, testInfo) => {
     annotateIssue(testInfo, 10)
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
     await page.evaluate((key) => localStorage.removeItem(key), POSITION_STORAGE_KEY)
 
@@ -266,9 +272,9 @@ test.describe('Issue #12 — Seshat link', () => {
 
     type Ev = CompiledEvent & { seshat?: { nga_name?: string } }
 
-    const sample = pick(loadCompiledEvents() as Ev[], (e) => !!e.seshat?.nga_name)!
+    const sample = pick(loadVisibleEvents('ru') as Ev[], (e) => !!e.seshat?.nga_name)!
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
     await focusEventNode(page, sample.concept_id)
     const node = page.locator(`[data-event-concept-id="${sample.concept_id}"]`)
@@ -296,12 +302,12 @@ test.describe('Issue #13 — Литература', () => {
     annotateIssue(testInfo, 13)
 
     const sample = pick(
-      loadCompiledEvents(),
+      loadVisibleEvents('ru'),
       (e) => Array.isArray(e.references) && e.references.length > 2,
 
     )!
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
     await focusEventNode(page, sample.concept_id)
 
@@ -332,12 +338,12 @@ test.describe('Issue #14 — Territory header / Google Maps deeplink', () => {
     annotateIssue(testInfo, 14)
 
     const sample = pick(
-      loadCompiledEvents(),
+      loadVisibleEvents('ru'),
       (e) => !!e.territory && !!e.precise_location,
 
     )!
 
-    await page.goto('/')
+    await useRussian(page)
     await fitMapViewport(page)
     await focusEventNode(page, sample.concept_id)
 
@@ -353,8 +359,8 @@ test.describe('Issue #14 — Territory header / Google Maps deeplink', () => {
   test('Google Maps href surfaced when expanded', async ({ page }, testInfo) => {
     annotateIssue(testInfo, 14)
 
-    const sample = pick(loadCompiledEvents(), (e) => !!e.territory)!
-    await page.goto('/')
+    const sample = pick(loadVisibleEvents('ru'), (e) => !!e.territory)!
+    await useRussian(page)
     await fitMapViewport(page)
     await focusEventNode(page, sample.concept_id)
 

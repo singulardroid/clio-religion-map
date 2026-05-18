@@ -3,7 +3,6 @@
     {
       "concept_id": "yavneh-academy-foundation",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Явна (Иудея)",
       "year_from": 66,
       "year_to": 73,
       "references": [
@@ -16,7 +15,16 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Явна (Иудея)"
+        },
+        "en": {
+          "precise_location": "Явна (Иудея)"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "bar-kokhba-revolt",
@@ -30,7 +38,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "mishnah-compilation",
@@ -51,7 +64,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "talmud-compilation",
@@ -68,7 +86,12 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "karaite-movement",
@@ -84,12 +107,16 @@
         "polity_id": "188",
         "polity_name": "it_st_peter_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "jewish-medieval-philosophy-saadia",
       "territory": "Вавилон / Месопотамия",
-      "precise_location": "Багдад",
       "year_from": 882,
       "year_to": 942,
       "references": [
@@ -102,12 +129,20 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Багдад"
+        },
+        "en": {
+          "precise_location": "Багдад"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jewish-neoplatonism-gabirol",
       "territory": "Испания",
-      "precise_location": "Малага",
       "year_from": 1021,
       "year_to": 1058,
       "references": [
@@ -120,7 +155,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Малага"
+        },
+        "en": {
+          "precise_location": "Малага"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "jewish-spiritual-morality-bahya",
@@ -136,7 +180,12 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "jewish-anti-philosophy-halevi",
@@ -152,12 +201,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "maimonides-aristotelian-synthesis",
       "territory": "Египет",
-      "precise_location": "Каир",
       "year_from": 1135,
       "year_to": 1204,
       "references": [
@@ -177,7 +230,16 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Каир"
+        },
+        "en": {
+          "precise_location": "Каир"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "merkavah-mysticism",
@@ -199,7 +261,12 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "sefer-yetsirah-cosmogony",
@@ -219,12 +286,16 @@
         "polity_id": "186",
         "polity_name": "it_ostrogoth_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "hasidei-ashkenaz-pietism",
       "territory": "Европа",
-      "precise_location": "Германия (Рейнская область)",
       "year_from": 1150,
       "year_to": 1250,
       "references": [
@@ -241,12 +312,20 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Германия (Рейнская область)"
+        },
+        "en": {
+          "precise_location": "Германия (Рейнская область)"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "kabbalah-bahir",
       "territory": "Европа",
-      "precise_location": "Прованс",
       "year_from": 1100,
       "year_to": 1199,
       "references": [
@@ -262,12 +341,20 @@
         "polity_id": "189",
         "polity_name": "it_st_peter_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Прованс"
+        },
+        "en": {
+          "precise_location": "Прованс"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "ecstatic-kabbalah-abulafia",
       "territory": "Испания",
-      "precise_location": "Сарагоса",
       "year_from": 1240,
       "year_to": 1290,
       "references": [
@@ -282,7 +369,16 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Сарагоса"
+        },
+        "en": {
+          "precise_location": "Сарагоса"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "zohar-kabbalah",
@@ -304,12 +400,16 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "lurianic-kabbalah",
       "territory": "Израиль / Ханаан",
-      "precise_location": "Цфат (Галилея)",
       "year_from": 1530,
       "year_to": 1572,
       "references": [
@@ -330,12 +430,20 @@
         "polity_id": "192",
         "polity_name": "it_papal_state_3",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Цфат (Галилея)"
+        },
+        "en": {
+          "precise_location": "Цфат (Галилея)"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "sabbatean-messianism",
       "territory": "Малая Азия",
-      "precise_location": "Смирна",
       "year_from": 1665,
       "year_to": 1676,
       "references": [
@@ -354,12 +462,20 @@
         "polity_id": "193",
         "polity_name": "it_papal_state_4",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Смирна"
+        },
+        "en": {
+          "precise_location": "Смирна"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "hasidism-baal-shem-tov",
       "territory": "Европа",
-      "precise_location": "Подолия и Волынь",
       "year_from": 1700,
       "year_to": 1810,
       "references": [
@@ -376,7 +492,16 @@
         "polity_id": "193",
         "polity_name": "it_papal_state_4",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Подолия и Волынь"
+        },
+        "en": {
+          "precise_location": "Подолия и Волынь"
+        }
+      },
+      "connections": []
     }
   ]
 }

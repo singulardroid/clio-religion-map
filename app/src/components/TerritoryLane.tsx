@@ -3,6 +3,8 @@ import { LANE_LABEL_WIDTH } from '../config'
 import { canvasHeightForSpec } from '../chartLayout'
 import { useChartLayout } from '../ChartLayoutContext'
 import { useViewport } from 'reactflow'
+import { useI18n } from '../i18n'
+import { displayTerritoryName, theme } from '../theme'
 
 /**
  * Horizontal dividers synced to the compact lane list for the filtered view.
@@ -23,7 +25,7 @@ export function TerritoryLines() {
             top: displayIdx * laneHeightPx,
             width: 100000,
             height: 1,
-            backgroundColor: 'rgba(0,0,0,0.07)',
+            backgroundColor: 'rgba(30,41,59,0.08)',
             pointerEvents: 'none',
           }}
         />
@@ -35,7 +37,7 @@ export function TerritoryLines() {
           top: heightFull,
           width: 100000,
           height: 1,
-          backgroundColor: 'rgba(0,0,0,0.07)',
+          backgroundColor: 'rgba(30,41,59,0.08)',
           pointerEvents: 'none',
         }}
       />
@@ -49,6 +51,7 @@ export function TerritoryLines() {
 export function TerritoryLabels() {
   const spec = useChartLayout()
   const { y, zoom } = useViewport()
+  const { locale } = useI18n()
   const { laneHeightPx, territories } = spec
   const maxIdx = territories.length - 1
 
@@ -89,9 +92,14 @@ export function TerritoryLabels() {
               top,
               width: LANE_LABEL_WIDTH,
               height: boxHeight,
-              backgroundColor: displayIdx === 0 ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.85)',
-              borderRight: '2px solid rgba(0,0,0,0.1)',
-              borderBottom: displayIdx === maxIdx ? 'none' : '1px solid rgba(0,0,0,0.05)',
+              background:
+                displayIdx === 0
+                  ? 'linear-gradient(90deg, rgba(255,255,255,0.96), rgba(255,255,255,0.84))'
+                  : 'linear-gradient(90deg, rgba(255,255,255,0.88), rgba(255,255,255,0.72))',
+              backdropFilter: 'blur(14px)',
+              WebkitBackdropFilter: 'blur(14px)',
+              borderRight: `1px solid ${theme.line}`,
+              borderBottom: displayIdx === maxIdx ? 'none' : `1px solid ${theme.line}`,
               pointerEvents: 'none',
               zIndex: 10,
               overflow: 'hidden',
@@ -108,13 +116,14 @@ export function TerritoryLabels() {
                 alignItems: 'center',
                 padding: '0 12px',
                 fontSize: Math.max(10, Math.min(14, 14 * zoom)),
-                fontWeight: 600,
-                color: 'rgba(0,0,0,0.55)',
+                fontWeight: 700,
+                color: theme.ink,
+                letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
                 textOverflow: 'ellipsis',
               }}
             >
-              {t.name}
+              {displayTerritoryName(t.name, locale)}
             </div>
           </div>
         )

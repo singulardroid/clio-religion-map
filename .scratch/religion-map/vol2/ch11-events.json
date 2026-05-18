@@ -9,14 +9,22 @@
         "458 Имеется в виду Вавилонское пленение 6 в. до н. э.",
         "459 Ср.: Fohrer. Нistory of Israelite Religion, р. 328 sq."
       ],
-      "precise_location": "Вавилон",
       "seshat": {
         "nga_id": "1",
         "nga_name": "Latium",
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Вавилон"
+        },
+        "en": {
+          "precise_location": "Вавилон"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "suffering-servant-redemption",
@@ -26,14 +34,22 @@
       "references": [
         "460 В синодальном переводе — \"Песни Отрока Господня\": для старославянского языка характерно отождествление «раба» с «отроком», как представителем младшей, зависимой социальной категории. В современном русском языке этот смысл утерян."
       ],
-      "precise_location": "Вавилон",
       "seshat": {
         "nga_id": "1",
         "nga_name": "Latium",
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Вавилон"
+        },
+        "en": {
+          "precise_location": "Вавилон"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "second-temple-restoration-messianism",
@@ -47,14 +63,22 @@
         "464 Fohrer. Ор. cit., р. 340.",
         "465 Пророк Малахия (V в.) не указывает точно дату \"дня Яхве\". Самое главное — приготовить себя внутренне, так как \"день Его пришествия\" (3:2) может наступить в любую минуту."
       ],
-      "precise_location": "Иерусалим",
       "seshat": {
         "nga_id": "1",
         "nga_name": "Latium",
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "eschatological-cosmic-renewal",
@@ -68,14 +92,22 @@
         "469 Ср. среди пр.: G. Widengren. Sakrales Кonigtum, р. 30 sq.; Mowinckel. Не Тhat Cometh, 280 sq. et passim; Ringgren. Кonig und Messias etc.",
         "470 Ср.: Fohrer, р. 352."
       ],
-      "precise_location": "Иерусалим",
       "seshat": {
         "nga_id": "1",
         "nga_name": "Latium",
         "polity_id": "181",
         "polity_name": "it_roman_k",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "post-exilic-legalism-torah",
@@ -88,14 +120,22 @@
         "473 Подобная же экзегеза обосновывает учение махаяны и тантрические техники, а также герметические, апокалиптические и гностические «откровения».",
         "474 Напомним, что книгу Иова многие историки хронологические помещают в эпоху после Плена."
       ],
-      "precise_location": "Иерусалим",
       "seshat": {
         "nga_id": "1",
         "nga_name": "Latium",
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "personification-of-wisdom-hokma",
@@ -115,7 +155,12 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "wisdom-literature-crisis-kohelet-ben-sira",
@@ -136,7 +181,12 @@
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "apocalyptic-literature-daniel-enoch",
@@ -158,14 +208,22 @@
         "497 В своем экстатическом восхождении на небо Енох видит скрижали, на которых записана вся история (1 Енох 81:1 и сл.) Тот же мотив ср.: Widengren. Тhe Ascension of the Apostle, особ. р. 27 sq.",
         "498 Как писал сам Элиаде в I томе (§ 55. С. 160), уже в эпоху патриархов \"религиозный гений Израиля преобразовал отношения Бога с богоизбранным народом в священную историю неведомого до той поры типа\". События любой истории не вписываются в \"вечный ритм космического цикла и не зависят от звезд\". Это вполне осознавалось иудейской традицией: в распространенном ветхозаветном псевдоэпиграфе \"Малое Бытие\" (или \"Книга юбилеев\"), созданном во II в. до н. э. и приписываемом самому Моисею, рассказывается, как \"сидел Аврам целую ночь… и наблюдал звезды с вечера до утра, чтобы узнать, много ли дождей будет в тот год… И вошло слово в сердце его, и сказал он: \"Все знамения звезд, и все знамения луны и солнца, все они в руке Господней\" (Малое Бытие. Гл. XII // Ветхозаветные апокрифы. М., 2001. С. 44)."
       ],
-      "precise_location": "Иерусалим",
       "seshat": {
         "nga_id": "1",
         "nga_name": "Latium",
         "polity_id": "183",
         "polity_name": "it_roman_rep_2",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Иерусалим"
+        },
+        "en": {
+          "precise_location": "Иерусалим"
+        }
+      },
+      "connections": []
     },
     {
       "concept": "apocalyptic-resurrection-and-judgment",
@@ -194,7 +252,12 @@
         "polity_id": "184",
         "polity_name": "it_roman_rep_3",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept": "torah-as-ontological-reality",
@@ -221,7 +284,12 @@
         "polity_id": "184",
         "polity_name": "it_roman_rep_3",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     }
   ]
 }

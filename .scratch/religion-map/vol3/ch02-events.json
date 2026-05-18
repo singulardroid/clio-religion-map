@@ -3,7 +3,6 @@
     {
       "concept_id": "wolf-demiurge-ancestor",
       "territory": "Евразийская степь",
-      "precise_location": "Алтайские горы",
       "year_from": -1000,
       "year_to": 400,
       "is_first_occurrence": true,
@@ -14,12 +13,20 @@
         "polity_id": "182",
         "polity_name": "it_roman_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Алтайские горы"
+        },
+        "en": {
+          "precise_location": "Алтайские горы"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "tengri-sky-god",
       "territory": "Центральная Азия",
-      "precise_location": "Монголия",
       "year_from": -200,
       "year_to": 1400,
       "is_first_occurrence": true,
@@ -37,7 +44,16 @@
         "polity_id": "187",
         "polity_name": "it_ravenna_exarchate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Монголия"
+        },
+        "en": {
+          "precise_location": "Монголия"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "tengri-deus-otiosus-fragmentation",
@@ -56,12 +72,16 @@
         "polity_id": "188",
         "polity_name": "it_st_peter_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "world-tree-axis-mundi-altaic",
       "territory": "Центральная Азия",
-      "precise_location": "Алтай",
       "year_from": -1000,
       "year_to": 1900,
       "is_first_occurrence": true,
@@ -74,12 +94,20 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Алтай"
+        },
+        "en": {
+          "precise_location": "Алтай"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "cosmogonic-dive-dualistic",
       "territory": "Евразия",
-      "precise_location": "Центральная и Северная Азия, Восточная Европа",
       "year_from": -1000,
       "year_to": 1900,
       "is_first_occurrence": true,
@@ -99,7 +127,16 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Центральная и Северная Азия, Восточная Европа"
+        },
+        "en": {
+          "precise_location": "Центральная и Северная Азия, Восточная Европа"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "shamanic-initiation-dismemberment",
@@ -117,7 +154,12 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "shamanic-ascent-birch-tree",
@@ -135,12 +177,16 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "shamanic-descent-underworld",
       "territory": "Алтай",
-      "precise_location": "Сибирь",
       "year_from": -1000,
       "year_to": 1900,
       "is_first_occurrence": true,
@@ -156,7 +202,16 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {
+          "precise_location": "Сибирь"
+        },
+        "en": {
+          "precise_location": "Сибирь"
+        }
+      },
+      "connections": []
     },
     {
       "concept_id": "num-sky-god-samoyed",
@@ -177,7 +232,12 @@
         "polity_id": "185",
         "polity_name": "it_western_roman_emp",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "baltic-sky-god-dievs",
@@ -194,7 +254,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "baltic-thunder-god-perkunas",
@@ -211,7 +276,12 @@
         "polity_id": "70",
         "polity_name": "it_roman_principate",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "slavic-thunder-god-perun",
@@ -228,7 +298,12 @@
         "polity_id": "188",
         "polity_name": "it_st_peter_rep_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "slavic-secondary-burial",
@@ -246,7 +321,12 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     },
     {
       "concept_id": "slavic-dualistic-cosmogony-dive",
@@ -266,7 +346,12 @@
         "polity_id": "190",
         "polity_name": "it_papal_state_1",
         "enriched": true
-      }
+      },
+      "locales": {
+        "ru": {},
+        "en": {}
+      },
+      "connections": []
     }
   ]
 }

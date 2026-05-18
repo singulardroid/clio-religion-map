@@ -5,37 +5,7 @@ import { timeToXForSpec } from '../chartLayout'
 import { useChartLayout } from '../ChartLayoutContext'
 import { useI18n } from '../i18n'
 import { formatYear, theme } from '../theme'
-
-function ticksForSpan(yearStart: number, yearEnd: number, maxTicks = 14): number[] {
-  if (!Number.isFinite(yearStart) || !Number.isFinite(yearEnd)) return []
-  let lo = Math.min(yearStart, yearEnd)
-  let hi = Math.max(yearStart, yearEnd)
-  if (!(hi > lo)) return [Math.round(lo)]
-
-  const span = hi - lo
-  const rough = span / Math.max(maxTicks - 1, 2)
-
-  /** Round rough to magnitude {1,2,5} */
-  const log10 = Math.log10(Math.max(rough, 1e-6))
-  const exp = Math.floor(log10)
-  const fra = rough / Math.pow(10, exp)
-  let niceFrac = 1
-  if (fra <= 1) niceFrac = 1
-  else if (fra <= 2) niceFrac = 2
-  else if (fra <= 5) niceFrac = 5
-  else niceFrac = 10
-
-  let step = niceFrac * Math.pow(10, exp)
-  if (!Number.isFinite(step) || step <= 0) step = span
-
-  const ticks: number[] = []
-  const start = Math.floor(lo / step) * step
-  for (let y = start; y <= hi + step * 0.01; y += step) ticks.push(Math.round(y))
-  ticks.push(lo, hi)
-
-  const uniqSorted = [...new Set(ticks)].sort((a, b) => a - b)
-  return uniqSorted.filter((y) => y >= lo && y <= hi)
-}
+import { offscreenTickPointers, ticksForSpan, visibleTickModels } from '../timelineRuler'
 
 export function TimelineRuler() {
   const { x, zoom } = useViewport()
@@ -43,6 +13,14 @@ export function TimelineRuler() {
   const { locale } = useI18n()
   const ticks = ticksForSpan(spec.yearStart, spec.yearEnd)
   const winW = typeof window !== 'undefined' ? window.innerWidth : 1400
+  const rulerWidth = Math.max(0, winW - LANE_LABEL_WIDTH)
+  const tickModels = ticks.map((year) => {
+    const naturalCanvasX = timeToXForSpec(year, spec)
+    const transformedX = x + naturalCanvasX * zoom
+    return { year, screenX: transformedX - LANE_LABEL_WIDTH }
+  })
+  const visibleTicks = visibleTickModels(tickModels, rulerWidth)
+  const pointers = offscreenTickPointers(tickModels, rulerWidth)
 
   return (
     <div
@@ -61,13 +39,7 @@ export function TimelineRuler() {
         pointerEvents: 'none',
       }}
     >
-      {ticks.map((year) => {
-        const naturalCanvasX = timeToXForSpec(year, spec)
-        const transformedX = x + naturalCanvasX * zoom
-        const screenX = transformedX - LANE_LABEL_WIDTH
-
-        if (screenX < -100 || screenX > winW + 100) return null
-
+      {visibleTicks.map(({ year, screenX }) => {
         return (
           <div
             key={year}
@@ -98,6 +70,34 @@ export function TimelineRuler() {
           </div>
         )
       })}
+      {pointers.left && (
+        <FloatingTick side="left" label={`← ${formatYear(pointers.left.year, locale)}`} />
+      )}
+      {pointers.right && (
+        <FloatingTick side="right" label={`${formatYear(pointers.right.year, locale)} →`} />
+      )}
+    </div>
+  )
+}
+
+function FloatingTick({ side, label }: { side: 'left' | 'right'; label: string }) {
+  return (
+    <div
+      data-testid={`timeline-offscreen-${side}`}
+      style={{
+        position: 'absolute',
+        [side]: 8,
+        bottom: 4,
+        padding: '2px 7px',
+        borderRadius: 999,
+        background: 'rgba(15,23,42,0.82)',
+        color: '#fff',
+        fontSize: 10,
+        fontWeight: 800,
+        whiteSpace: 'nowrap',
+      }}
+    >
+      {label}
     </div>
   )
 }

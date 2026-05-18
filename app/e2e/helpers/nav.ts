@@ -15,3 +15,17 @@ export async function focusEventNode(page: Page, conceptId: string): Promise<voi
   }, conceptId)
   await page.waitForTimeout(450)
 }
+
+export async function setMapViewport(
+  page: Page,
+  viewport: { x: number; y: number; zoom: number },
+): Promise<void> {
+  await page.evaluate((nextViewport) => {
+    ;(
+      window as E2eWindow & {
+        __e2eSetViewport?: (viewport: { x: number; y: number; zoom: number }) => void
+      }
+    ).__e2eSetViewport?.(nextViewport)
+  }, viewport)
+  await page.waitForTimeout(250)
+}

@@ -12,11 +12,13 @@ interface EventNodeData {
   event: ReligionEvent
   eraColor: string
   laneRow?: number
+  expanded?: boolean
+  onToggleExpanded?: (conceptId: string) => void
 }
 
 export function EventNode({ data }: NodeProps<EventNodeData>) {
   const { event, eraColor } = data
-  const [expanded, setExpanded] = useState(false)
+  const expanded = data.expanded === true
   const [showOther, setShowOther] = useState(false)
   const [commentDraft, setCommentDraft] = useState('')
   const { locale, t } = useI18n()
@@ -26,6 +28,8 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
   const issuesOpen = openIssueCount(event)
   const otherLocale: LocaleCode = locale === 'en' ? 'ru' : 'en'
   const otherResolved = resolveEventForLocale(event, otherLocale)
+  const volumeTone = volumeToneFor(event.volume)
+  const volumeLabel = volumeLabelFor(event.volume)
 
   return (
     <div
@@ -33,10 +37,10 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
       data-event-concept-id={event.concept_id}
       data-first-occurrence={event.is_first_occurrence === true ? 'true' : 'false'}
       data-dead-end={event.is_dead_end === true ? 'true' : 'false'}
-      onClick={() => setExpanded((v) => !v)}
+      onClick={() => data.onToggleExpanded?.(event.concept_id)}
       style={{
         width: 268,
-        background: `linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.90)), ${eraColor}`,
+        background: `linear-gradient(180deg, ${volumeTone.top}, ${volumeTone.bottom}), ${eraColor}`,
         border: `1px solid ${issuesOpen ? theme.issue : borderColor}`,
         borderLeft: `4px solid ${issuesOpen ? theme.issue : borderColor}`,
         borderRadius: 16,
@@ -64,6 +68,26 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
           }}
         >
           {issuesOpen}
+        </span>
+      )}
+      {volumeLabel && (
+        <span
+          data-testid="volume-badge"
+          style={{
+            position: 'absolute',
+            right: 8,
+            bottom: 6,
+            background: volumeTone.badge,
+            color: '#fff',
+            fontSize: 9,
+            fontWeight: 800,
+            padding: '2px 6px',
+            borderRadius: 999,
+            zIndex: 2,
+            boxShadow: '0 4px 10px rgba(15,23,42,0.14)',
+          }}
+        >
+          {volumeLabel}
         </span>
       )}
 
@@ -323,6 +347,42 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
       <Handle id="source-bottom" type="source" position={Position.Bottom} style={{ opacity: 0 }} />
     </div>
   )
+}
+
+function volumeLabelFor(volume: number | undefined): string | null {
+  if (volume === 1) return 'Vol I'
+  if (volume === 2) return 'Vol II'
+  if (volume === 3) return 'Vol III'
+  return null
+}
+
+function volumeToneFor(volume: number | undefined): { top: string; bottom: string; badge: string } {
+  if (volume === 1) {
+    return {
+      top: 'rgba(255,251,235,0.98)',
+      bottom: 'rgba(255,247,237,0.92)',
+      badge: '#b45309',
+    }
+  }
+  if (volume === 2) {
+    return {
+      top: 'rgba(239,246,255,0.98)',
+      bottom: 'rgba(219,234,254,0.88)',
+      badge: '#2563eb',
+    }
+  }
+  if (volume === 3) {
+    return {
+      top: 'rgba(240,253,244,0.98)',
+      bottom: 'rgba(220,252,231,0.88)',
+      badge: '#16a34a',
+    }
+  }
+  return {
+    top: 'rgba(255,255,255,0.96)',
+    bottom: 'rgba(255,255,255,0.90)',
+    badge: theme.muted,
+  }
 }
 
 function Tag({ children, color }: { children: React.ReactNode; color: string }) {

@@ -23,7 +23,7 @@ import { EDITORIAL_READONLY } from './i18n'
 import { I18nProvider, useI18n } from './i18n'
 import type { ReligionEvent } from './types'
 import rawEvents from './data/events.json'
-import { buildGraph, refineChartSpecForEvents } from './graph'
+import { autoAlignSelectedNodes, buildGraph, refineChartSpecForEvents } from './graph'
 import { ChartLayoutProvider } from './ChartLayoutContext'
 import { filterEventsForLocale, openIssueCount, resolveEventForLocale } from './locale'
 import {
@@ -68,12 +68,15 @@ function storedPositionsFromEvents(evts: ReligionEvent[]) {
 }
 
 function FlowCanvas() {
-  const { fitView } = useReactFlow()
+  const { fitView, setViewport } = useReactFlow()
   const { locale, t } = useI18n()
   const [volFilter, setVolFilter] = useState<'all' | 1 | 2 | 3>('all')
   const [terrFilter, setTerrFilter] = useState<string>('all')
   const [firstOnly, setFirstOnly] = useState(false)
   const [openIssuesOnly, setOpenIssuesOnly] = useState(false)
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(() => new Set())
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(() => new Set())
+  const [temporaryPositions, setTemporaryPositions] = useState<Record<string, { x: number; y: number }>>({})
 
   const [overlayState, setOverlayState] = useState(() => overlayFromEvents(sourceEvents))
 
@@ -134,6 +137,22 @@ function FlowCanvas() {
 
   useEffect(() => {
     const g = buildGraph(filteredEvents, chartLayoutSpec, stored, true)
+    for (const n of g.nodes) {
+      const temp = temporaryPositions[n.id]
+      if (temp) n.position = { ...temp }
+      n.data = {
+        ...(n.data as object),
+        expanded: expandedIds.has(n.id),
+        onToggleExpanded: (conceptId: string) => {
+          setExpandedIds((prev) => {
+            const next = new Set(prev)
+            if (next.has(conceptId)) next.delete(conceptId)
+            else next.add(conceptId)
+            return next
+          })
+        },
+      }
+    }
     const hl = highlightSet
     if (hl) {
       for (const n of g.nodes) {
@@ -156,7 +175,17 @@ function FlowCanvas() {
     }
     setNodes(g.nodes)
     setEdges(g.edges)
-  }, [filteredEvents, chartLayoutSpec, stored, highlightSet, fitView, setNodes, setEdges])
+  }, [
+    filteredEvents,
+    chartLayoutSpec,
+    stored,
+    highlightSet,
+    expandedIds,
+    temporaryPositions,
+    fitView,
+    setNodes,
+    setEdges,
+  ])
 
   const applyHighlight = useCallback(
     (nodeId: string, direction: HighlightDirection) => {
@@ -178,10 +207,14 @@ function FlowCanvas() {
     setCompactOpen(false)
   }, [])
 
-  const onNodeContextMenu = useCallback((evt: MouseEvent, node: { id: string }) => {
-    evt.preventDefault()
-    setContextMenu({ x: evt.clientX, y: evt.clientY, nodeId: node.id })
-  }, [])
+  const onNodeContextMenu = useCallback(
+    (evt: MouseEvent, node: { id: string }) => {
+      evt.preventDefault()
+      if (!selectedIds.has(node.id)) setSelectedIds(new Set([node.id]))
+      setContextMenu({ x: evt.clientX, y: evt.clientY, nodeId: node.id })
+    },
+    [selectedIds],
+  )
 
   const persistNodePosition = useCallback((id: string, position: { x: number; y: number }) => {
     try {
@@ -258,7 +291,11 @@ function FlowCanvas() {
     } catch {
       /* ignore */
     }
-    const g = buildGraph(filteredEvents, chartLayoutSpec, {}, false)
+    setTemporaryPositions({})
+    const g = buildGraph(filteredEvents, chartLayoutSpec, {}, false, {
+      reserveExpandedSpace: true,
+      applyEditorialPositions: false,
+    })
     setNodes(g.nodes)
     setEdges(g.edges)
     setTimeout(() => fitView({ padding: 0.12, duration: 400 }), 50)
@@ -268,8 +305,30 @@ function FlowCanvas() {
     fitView({ padding: 0.12, duration: 400 })
   }, [fitView])
 
+  const handleExpandAll = useCallback(() => {
+    setExpandedIds(new Set(filteredEvents.map((event) => event.concept_id)))
+  }, [filteredEvents])
+
+  const handleCollapseAll = useCallback(() => {
+    setExpandedIds(new Set())
+  }, [])
+
+  const handleAutoAlignSelected = useCallback(() => {
+    const aligned = autoAlignSelectedNodes(nodes, chartLayoutSpec, selectedIds)
+    const next: Record<string, { x: number; y: number }> = {}
+    for (const node of aligned) {
+      if (selectedIds.has(node.id)) next[node.id] = node.position
+    }
+    setTemporaryPositions((prev) => ({ ...prev, ...next }))
+    setNodes(aligned)
+    setContextMenu(null)
+  }, [chartLayoutSpec, nodes, selectedIds, setNodes])
+
   useEffect(() => {
-    const w = window as Window & { __e2eFocusNode?: (nodeId: string) => void }
+    const w = window as Window & {
+      __e2eFocusNode?: (nodeId: string) => void
+      __e2eSetViewport?: (viewport: { x: number; y: number; zoom: number }) => void
+    }
     w.__e2eFocusNode = (nodeId: string) => {
       fitView({
         nodes: [{ id: nodeId }],
@@ -279,10 +338,14 @@ function FlowCanvas() {
         maxZoom: 2.25,
       })
     }
+    w.__e2eSetViewport = (viewport: { x: number; y: number; zoom: number }) => {
+      setViewport(viewport)
+    }
     return () => {
       delete w.__e2eFocusNode
+      delete w.__e2eSetViewport
     }
-  }, [fitView])
+  }, [fitView, setViewport])
 
   useEffect(() => {
     if (!highlightRoot || !highlightDir) return
@@ -312,12 +375,19 @@ function FlowCanvas() {
             onNodesChange={onNodesChange}
             onEdgesChange={onEdgesChange}
             onNodeContextMenu={onNodeContextMenu}
+            onSelectionChange={({ nodes: selected }) => {
+              setSelectedIds(new Set(selected.map((node) => node.id)))
+            }}
             onNodeDragStop={(_, node: Node) => persistNodePosition(node.id, node.position)}
             onPaneClick={() => {
               setContextMenu(null)
               setMapStatusOpen(false)
             }}
             nodesDraggable={!EDITORIAL_READONLY}
+            nodesFocusable
+            elementsSelectable
+            selectNodesOnDrag={false}
+            multiSelectionKeyCode={['Meta', 'Shift']}
             minZoom={0.04}
             maxZoom={3}
             fitView={false}
@@ -348,6 +418,8 @@ function FlowCanvas() {
           setOpenIssuesOnly={setOpenIssuesOnly}
           onFit={handleFit}
           onReset={handleReset}
+          onExpandAll={handleExpandAll}
+          onCollapseAll={handleCollapseAll}
           showOpenIssuesFilter={!EDITORIAL_READONLY}
           mapStatusOpen={mapStatusOpen}
           onToggleMapStatus={() => setMapStatusOpen((v) => !v)}
@@ -391,6 +463,11 @@ function FlowCanvas() {
             >
               {t('highlightConnected')}…
             </ContextItem>
+            {selectedIds.size > 1 && selectedIds.has(contextMenu.nodeId) && (
+              <ContextItem testId="context-menu-auto-align-selected" onClick={handleAutoAlignSelected}>
+                Auto-align selected
+              </ContextItem>
+            )}
             <ContextItem
               testId="context-menu-highlight-downstream"
               onClick={() => applyHighlight(contextMenu.nodeId, 'down')}

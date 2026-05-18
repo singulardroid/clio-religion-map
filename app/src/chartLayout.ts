@@ -35,7 +35,7 @@ export type ChartLayoutSpec = {
 const MIN_CONTENT_WIDTH = 3200
 const MAX_CONTENT_WIDTH = 56000
 const MIN_LANE_HEIGHT = 340
-const MAX_LANE_HEIGHT = 1600
+const MAX_LANE_HEIGHT = 24000
 const LANE_BOTTOM_PAD = 40
 
 /** Match lane key (same heuristics used before dynamic layout). */
@@ -253,7 +253,7 @@ export function buildChartLayoutSpec(events: ReligionEvent[]): ChartLayoutSpec {
  * Rows are keyed by laneRow carried on node.data.
  */
 export function uniformLaneHeightToFitStacks(
-  nodes: Array<{ position: { y: number }; data?: { laneRow?: number } }>,
+  nodes: Array<{ position: { y: number }; data?: { laneRow?: number }; height?: number }>,
   currentLaneHeight: number,
 ): number {
   if (!nodes.length) return Math.max(currentLaneHeight, MIN_LANE_HEIGHT)
@@ -264,7 +264,7 @@ export function uniformLaneHeightToFitStacks(
   for (const n of nodes) {
     const row = typeof n.data?.laneRow === 'number' ? n.data.laneRow : 0
     const top = n.position.y
-    const bottom = top + NODE_HEIGHT
+    const bottom = top + (n.height ?? NODE_HEIGHT)
     let a = byRow.get(row)
     if (!a) {
       a = { minY: top, maxBottom: bottom }

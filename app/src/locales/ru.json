@@ -7,6 +7,8 @@
   "firstOnly": "Только «впервые»",
   "fitView": "Вписать",
   "resetLayout": "Авторасстановка",
+  "expandAll": "Раскрыть всё",
+  "collapseAll": "Свернуть всё",
   "helpTip": "Шкала и дорожки подстраиваются под фильтр. Позиции сохраняются в editorial overlay (dev).",
   "language": "Язык",
   "showOtherLanguages": "Показать на других языках",

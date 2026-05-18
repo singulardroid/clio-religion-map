@@ -16,6 +16,13 @@ import type { ReligionEvent } from './types'
 
 export { primaryTimelineYear } from './timeline'
 
+export const EXPANDED_NODE_HEIGHT = 520
+
+export interface LayoutOptions {
+  reserveExpandedSpace?: boolean
+  applyEditorialPositions?: boolean
+}
+
 /** Node data augmented for lane packing */
 export interface EventGraphData {
   event: ReligionEvent
@@ -31,14 +38,24 @@ export function eraColorForYear(year: number): string {
 /**
  * Widens lane height vertically until intra-lane stacking fits the chosen scale.
  */
-export function refineChartSpecForEvents(events: ReligionEvent[]): ChartLayoutSpec {
+export function refineChartSpecForEvents(
+  events: ReligionEvent[],
+  options: LayoutOptions = {},
+): ChartLayoutSpec {
   let spec = buildChartLayoutSpec(events)
   if (!events.length) return spec
 
   for (let iter = 0; iter < 14; iter++) {
     const prevLh = spec.laneHeightPx
-    const packed = packEventNodes(events, spec)
-    const nextLh = uniformLaneHeightToFitStacks(packed, prevLh)
+    const packed = packEventNodes(events, spec, options)
+    const nextLh = uniformLaneHeightToFitStacks(
+      packed.map((node) => ({
+        position: node.position,
+        data: node.data as { laneRow?: number },
+        height: nodeHeightFor(node, options),
+      })),
+      prevLh,
+    )
     spec = {
       ...spec,
       laneHeightPx: nextLh,
@@ -50,8 +67,8 @@ export function refineChartSpecForEvents(events: ReligionEvent[]): ChartLayoutSp
   return spec
 }
 
-function packEventNodes(events: ReligionEvent[], spec: ChartLayoutSpec): Node[] {
-  return autoLayout(placeRawNodes(events, spec), spec)
+function packEventNodes(events: ReligionEvent[], spec: ChartLayoutSpec, options: LayoutOptions = {}): Node[] {
+  return autoLayout(placeRawNodes(events, spec), spec, options)
 }
 
 function placeRawNodes(events: ReligionEvent[], spec: ChartLayoutSpec): Node[] {
@@ -77,7 +94,7 @@ function placeRawNodes(events: ReligionEvent[], spec: ChartLayoutSpec): Node[] {
 /**
  * Horizontal packing rows within each territory lane (stacked vertically when overlaps).
  */
-export function autoLayout(nodes: Node[], spec: ChartLayoutSpec): Node[] {
+export function autoLayout(nodes: Node[], spec: ChartLayoutSpec, options: LayoutOptions = {}): Node[] {
   const byRow = new Map<number, Node[]>()
 
   for (const n of nodes) {
@@ -98,18 +115,37 @@ export function autoLayout(nodes: Node[], spec: ChartLayoutSpec): Node[] {
     const laneTop = laneTopPx(laneRow, spec)
     const sorted = [...laneNodes].sort((a, b) => a.position.x - b.position.x)
     const rowsRightX: number[] = []
+    const rowOffsets: number[] = []
 
     for (const node of sorted) {
-      const nodeX = node.position.x
+      const naturalX = node.position.x
       let placed = false
 
       for (let r = 0; r < rowsRightX.length; r++) {
-        if (nodeX > rowsRightX[r]! + NODE_PAD_X) {
+        const earliestX = rowsRightX[r]! + NODE_PAD_X
+        if (naturalX >= earliestX) {
+          const rowOffset = rowOffsets[r] ?? 0
+          const nodeX = naturalX + rowOffset
           result.push({
             ...node,
             position: {
               x: nodeX,
-              y: laneTop + NODE_PAD_Y + r * (NODE_HEIGHT + NODE_PAD_Y),
+              y: laneTop + NODE_PAD_Y + r * (nodeHeightFor(node, options) + NODE_PAD_Y),
+            },
+          })
+          rowsRightX[r] = nodeX + NODE_WIDTH
+          placed = true
+          break
+        }
+        const requiredOffset = earliestX - naturalX
+        if (requiredOffset <= maxHorizontalShiftFor(options)) {
+          rowOffsets[r] = Math.max(rowOffsets[r] ?? 0, requiredOffset)
+          const nodeX = naturalX + rowOffsets[r]!
+          result.push({
+            ...node,
+            position: {
+              x: nodeX,
+              y: laneTop + NODE_PAD_Y + r * (nodeHeightFor(node, options) + NODE_PAD_Y),
             },
           })
           rowsRightX[r] = nodeX + NODE_WIDTH
@@ -120,19 +156,59 @@ export function autoLayout(nodes: Node[], spec: ChartLayoutSpec): Node[] {
 
       if (!placed) {
         const r = rowsRightX.length
+        rowOffsets.push(0)
         result.push({
           ...node,
           position: {
-            x: nodeX,
-            y: laneTop + NODE_PAD_Y + r * (NODE_HEIGHT + NODE_PAD_Y),
+            x: naturalX,
+            y: laneTop + NODE_PAD_Y + r * (nodeHeightFor(node, options) + NODE_PAD_Y),
           },
         })
-        rowsRightX.push(nodeX + NODE_WIDTH)
+        rowsRightX.push(naturalX + NODE_WIDTH)
       }
     }
   }
 
   return result
+}
+
+function nodeHeightFor(_node: Node, options: LayoutOptions): number {
+  return options.reserveExpandedSpace ? EXPANDED_NODE_HEIGHT : NODE_HEIGHT
+}
+
+function maxHorizontalShiftFor(options: LayoutOptions): number {
+  return options.reserveExpandedSpace ? NODE_WIDTH * 1.35 : NODE_WIDTH * 0.5
+}
+
+export function autoAlignSelectedNodes(nodes: Node[], spec: ChartLayoutSpec, selectedIds: Set<string>): Node[] {
+  const selected = nodes.filter((node) => selectedIds.has(node.id))
+  if (selected.length === 0) return nodes
+
+  const selectedByLane = new Map<number, Node[]>()
+  for (const node of selected) {
+    const laneRow =
+      typeof (node.data as EventGraphData).laneRow === 'number'
+        ? (node.data as EventGraphData).laneRow
+        : displayRowIndex(spec, ((node.data as EventGraphData).event?.territory ?? ''))
+    const arr = selectedByLane.get(laneRow)
+    if (arr) arr.push(node)
+    else selectedByLane.set(laneRow, [node])
+  }
+
+  const positions = new Map<string, { x: number; y: number }>()
+  for (const [laneRow, laneNodes] of selectedByLane) {
+    const sorted = [...laneNodes].sort((a, b) => a.position.x - b.position.x)
+    const minX = Math.min(...sorted.map((node) => node.position.x))
+    const maxX = Math.max(...sorted.map((node) => node.position.x))
+    const span = Math.max(maxX - minX, (sorted.length - 1) * (NODE_WIDTH + NODE_PAD_X))
+    const step = sorted.length > 1 ? span / (sorted.length - 1) : 0
+    const y = laneTopPx(laneRow, spec) + NODE_PAD_Y
+    sorted.forEach((node, index) => {
+      positions.set(node.id, { x: minX + step * index, y })
+    })
+  }
+
+  return nodes.map((node) => (positions.has(node.id) ? { ...node, position: positions.get(node.id)! } : node))
 }
 
 type NodeSide = 'left' | 'right' | 'top' | 'bottom'
@@ -167,17 +243,18 @@ export function buildGraph(
   spec: ChartLayoutSpec,
   stored: Record<string, { x: number; y: number }>,
   useStored: boolean,
+  options: LayoutOptions = {},
 ): { nodes: Node[]; edges: Edge[] } {
   const byId = new Map<string, ReligionEvent>()
   for (const e of evts) byId.set(e.concept_id, e)
 
-  const nodes = packEventNodes(evts, spec)
+  const nodes = packEventNodes(evts, spec, options)
   if (useStored) {
     for (const n of nodes) {
       const s = stored[n.id]
       if (s) n.position = { ...s }
     }
-  } else {
+  } else if (options.applyEditorialPositions !== false) {
     for (const n of nodes) {
       const ed = byId.get(n.id)?.editorial?.position
       if (ed) n.position = { x: ed.x, y: ed.y }

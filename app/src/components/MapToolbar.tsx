@@ -48,6 +48,8 @@ export function MapToolbar({
   setOpenIssuesOnly,
   onFit,
   onReset,
+  onExpandAll,
+  onCollapseAll,
   showOpenIssuesFilter,
   mapStatusOpen,
   onToggleMapStatus,
@@ -62,6 +64,8 @@ export function MapToolbar({
   setOpenIssuesOnly: (v: boolean) => void
   onFit: () => void
   onReset: () => void
+  onExpandAll: () => void
+  onCollapseAll: () => void
   showOpenIssuesFilter: boolean
   mapStatusOpen: boolean
   onToggleMapStatus: () => void
@@ -164,6 +168,12 @@ export function MapToolbar({
 
       <ToolbarButton dataTestId="toolbar-fit-view" onClick={onFit} title={t('fitView')}>
         ⛶ {t('fitView')}
+      </ToolbarButton>
+      <ToolbarButton dataTestId="toolbar-expand-all" onClick={onExpandAll} title={t('expandAll')}>
+        {t('expandAll')}
+      </ToolbarButton>
+      <ToolbarButton dataTestId="toolbar-collapse-all" onClick={onCollapseAll} title={t('collapseAll')}>
+        {t('collapseAll')}
       </ToolbarButton>
       <ToolbarButton dataTestId="toolbar-reset-layout" onClick={onReset} title={t('resetLayout')}>
         ⟳ {t('resetLayout')}

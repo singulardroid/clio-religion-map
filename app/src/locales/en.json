@@ -7,6 +7,8 @@
   "firstOnly": "First occurrence only",
   "fitView": "Fit view",
   "resetLayout": "Auto layout",
+  "expandAll": "Expand all",
+  "collapseAll": "Collapse all",
   "helpTip": "Timeline and lanes adapt to filtered events. Positions save via editorial overlay in dev.",
   "language": "Language",
   "showOtherLanguages": "Show in other languages",

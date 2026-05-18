@@ -35,7 +35,22 @@
       },
       "locales": {
         "ru": {},
-        "en": {}
+        "en": {
+          "statement": "Saint Benedict (ca. 480-ca. 540), the father of Western monasticism, had organized a series of small communities which were completely autonomous from an economic point of view.",
+          "quote": "Saint Benedict (ca. 480-ca. 540), the father of Western monasticism, had organized a series of small communities which were completely autonomous from an economic point of view.",
+          "source_ref": "Eliade vol.3 (OEBPS/xhtml/Chapter04.html)",
+          "_source": {
+            "method": "source_reconciliation",
+            "confidence": 9,
+            "language": "en",
+            "volume": 3,
+            "source": "A History of Religious Ideas, Volume 3 - Eliade, Mircea.epub",
+            "section_id": "epub:OEBPS/xhtml/Chapter04.html",
+            "section_label": "OEBPS/xhtml/Chapter04.html",
+            "char_start": 180073,
+            "char_end": 180250
+          }
+        }
       },
       "connections": []
     },
@@ -245,7 +260,27 @@
           "precise_location": "Пуатье, Прованс, Шампань"
         },
         "en": {
-          "precise_location": "Пуатье, Прованс, Шампань"
+          "precise_location": "Пуатье, Прованс, Шампань",
+          "statement": "Esotericism and literary creations: Troubadours, Fedeli d’Amore , and the Grail cycle In courtly love, one exalts, for the first time since the Gnostics of the second and third century, the spiritual dignity and religious values of Woman. 49 According to numerous scholars, the troubadours of Provence were inspired by the model of the Arabic poetry of Spain, which glorified the Lady and the spiritual love that she awakened. 50 But it is equally necessary to take into account the Celtic, Gnostic, and Oriental elements that were rediscovered or reactualized in the twelfth century.",
+          "quote": "Esotericism and literary creations: Troubadours, Fedeli d’Amore , and the Grail cycle In courtly love, one exalts, for the first time since the Gnostics of the second and third century, the spiritual dignity and religious values of Woman. 49 According to numerous scholars, the troubadours of Provence were inspired by the model of the Arabic poetry of Spain, which glorified the Lady and the spiritual love that she awakened. 50 But it is equally necessary to take into account the Celtic, Gnostic, and Oriental elements that were rediscovered or reactualized in the twelfth century.",
+          "source_ref": "Eliade vol.3 (OEBPS/xhtml/Chapter04.html)",
+          "_source": {
+            "method": "source_reconciliation",
+            "confidence": 9,
+            "language": "en",
+            "volume": 3,
+            "source": "A History of Religious Ideas, Volume 3 - Eliade, Mircea.epub",
+            "section_id": "epub:OEBPS/xhtml/Chapter04.html",
+            "section_label": "OEBPS/xhtml/Chapter04.html",
+            "char_start": 212420,
+            "char_end": 213004
+          },
+          "_relation_evidence": [
+            {
+              "verb": "inspired",
+              "phrase": "s of Woman. 49 According to numerous scholars, the troubadours of Provence were inspired by the model of the Arabic poetry of Spain, which glorified the Lady and the spiritual love that she awakened. 50 But i"
+            }
+          ]
         }
       },
       "connections": []

@@ -23,6 +23,54 @@ describe('buildGraph (fixtures)', () => {
       expect(events.some((x) => x.concept_id === e.target)).toBe(true)
     }
   })
+
+  it('uses the nearest node sides for edge handles', () => {
+    const localEvents: ReligionEvent[] = [
+      {
+        concept_id: 'left',
+        territory: 'T',
+        year_from: 0,
+        connections: [{ target_concept_id: 'right', label: 'x' }],
+      },
+      {
+        concept_id: 'right',
+        territory: 'T',
+        year_from: 100,
+        connections: [],
+      },
+      {
+        concept_id: 'top',
+        territory: 'T',
+        year_from: 0,
+        connections: [{ target_concept_id: 'bottom', label: 'x' }],
+      },
+      {
+        concept_id: 'bottom',
+        territory: 'T',
+        year_from: 0,
+        connections: [],
+      },
+    ]
+    const spec = refineChartSpecForEvents(localEvents)
+    const { edges } = buildGraph(
+      localEvents,
+      spec,
+      {
+        left: { x: 0, y: 0 },
+        right: { x: 800, y: 0 },
+        top: { x: 0, y: 0 },
+        bottom: { x: 0, y: 600 },
+      },
+      true,
+    )
+    const horizontal = edges.find((e) => e.source === 'left')!
+    expect(horizontal.sourceHandle).toBe('source-right')
+    expect(horizontal.targetHandle).toBe('target-left')
+
+    const vertical = edges.find((e) => e.source === 'top')!
+    expect(vertical.sourceHandle).toBe('source-bottom')
+    expect(vertical.targetHandle).toBe('target-top')
+  })
 })
 
 describe('primaryTimelineYear', () => {

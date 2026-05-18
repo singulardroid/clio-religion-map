@@ -39,7 +39,38 @@ cd app && npm ci && npm run build && npm run preview
 - Chapter event JSON lives under [`.scratch/religion-map/`](.scratch/religion-map/) (`vol*/ch*-events.json`).
 - [`scripts/compile_events.py`](scripts/compile_events.py) merges chapters into [`app/src/data/events.json`](app/src/data/events.json) (gitignored; generated in CI and locally).
 - Optional: [`scripts/enrich_from_seshat.py`](scripts/enrich_from_seshat.py) for Seshat API enrichment.
-- Source FB2 books in `inputs/` are not committed (see [`.gitignore`](.gitignore)).
+- Source books in `inputs/` are not committed (see [`.gitignore`](.gitignore)).
+
+### Source-grounded research workflow
+
+The source-grounded knowledge graph starts from the official English Eliade EPUBs, then layers Russian evidence from the official Russian FB2/EPUB files after English assertions and relations are verified.
+
+```bash
+# Verify private source inventory without generating caches
+python3 scripts/parse_epub.py --inputs inputs --inventory
+
+# Generate English legacy fulltext plus multilingual source caches
+python3 scripts/parse_epub.py --inputs inputs \
+  --out-dir data/en-epub \
+  --source-cache-dir data/source-cache \
+  --inventory-out data/source-cache/inventory.json
+```
+
+The cache files under `data/source-cache/{en,ru}/` include source hashes, volume metadata, full normalized text, and section offsets for later quote/provenance checks. English remains the canonical extraction source; Russian fields should only be populated from matched Russian source passages.
+
+Generate candidate English idea assertions and a first relation-taxonomy review artifact:
+
+```bash
+python3 scripts/extract_idea_graph.py \
+  --source-cache-dir data/source-cache \
+  --out data/source-kg/idea-graph-candidates.json
+
+python3 scripts/normalize_relation_taxonomy.py \
+  --graph data/source-kg/idea-graph-candidates.json \
+  --out data/source-kg/idea-graph-taxonomy.json
+```
+
+These outputs are review artifacts, not final app data. The extractor keeps raw verb phrases and exact English quote provenance; the taxonomy pass collapses observed verb synonyms into compact candidate relation types while preserving the raw evidence.
 
 Agent and domain notes: [AGENTS.md](AGENTS.md), [docs/agents/](docs/agents/).
 

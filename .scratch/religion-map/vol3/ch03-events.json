@@ -50,7 +50,21 @@
           "precise_location": "Hippo"
         },
         "en": {
-          "precise_location": "Hippo"
+          "precise_location": "Hippo",
+          "statement": "Reacting to it as a sign of things to come, the religious elite and the cultural and political centers of paganism interpreted this unprecedented disaster by abandoning the traditional Roman religion and adopting Christianity. 3 It is in response to this accusation that Augustine, Bishop of Hippo, wrote between 412 and 426 his most important work, De civitate Dei contra paganos.",
+          "quote": "Reacting to it as a sign of things to come, the religious elite and the cultural and political centers of paganism interpreted this unprecedented disaster by abandoning the traditional Roman religion and adopting Christianity. 3 It is in response to this accusation that Augustine, Bishop of Hippo, wrote between 412 and 426 his most important work, De civitate Dei contra paganos.",
+          "source_ref": "Eliade vol.3 (OEBPS/xhtml/Chapter02.html)",
+          "_source": {
+            "method": "source_reconciliation",
+            "confidence": 11,
+            "language": "en",
+            "volume": 3,
+            "source": "A History of Religious Ideas, Volume 3 - Eliade, Mircea.epub",
+            "section_id": "epub:OEBPS/xhtml/Chapter02.html",
+            "section_label": "OEBPS/xhtml/Chapter02.html",
+            "char_start": 79828,
+            "char_end": 80209
+          }
         }
       },
       "connections": []

@@ -50,7 +50,11 @@ def load_overlay(path: Path) -> dict[str, dict]:
 def normalize_event(event: dict) -> dict:
     out = dict(event)
     if not out.get("concept_id"):
-        if isinstance(out.get("concept"), str) and out["concept"].strip():
+        if isinstance(out.get("id"), str) and out["id"].strip():
+            out["concept_id"] = out["id"]
+        elif isinstance(out.get("event_id"), str) and out["event_id"].strip():
+            out["concept_id"] = out["event_id"]
+        elif isinstance(out.get("concept"), str) and out["concept"].strip():
             out["concept_id"] = out["concept"]
         elif isinstance(out.get("concepts"), list) and out["concepts"]:
             first = out["concepts"][0]

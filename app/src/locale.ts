@@ -30,23 +30,22 @@ export function localeBlock(event: ReligionEvent, code: LocaleCode): EventLocale
 
 export function localeDisplayComplete(
   block: EventLocaleFields,
-  ruBlock: EventLocaleFields,
+  sourceBlock: EventLocaleFields,
 ): boolean {
   if (!block.statement && !block.description && !block.quote) return false
-  if ((ruBlock.statement || ruBlock.description) && !block.statement && !block.description) {
+  if ((sourceBlock.statement || sourceBlock.description) && !block.statement && !block.description) {
     return false
   }
-  if ((ruBlock.quote ?? '').trim() && !(block.quote ?? '').trim()) return false
-  if ((ruBlock.source_ref ?? '').trim() && !(block.source_ref ?? '').trim()) return false
+  if ((sourceBlock.quote ?? '').trim() && !(block.quote ?? '').trim()) return false
+  if ((sourceBlock.source_ref ?? '').trim() && !(block.source_ref ?? '').trim()) return false
   return true
 }
 
 export function isCompleteForLocale(event: ReligionEvent, code: LocaleCode): boolean {
-  const ru = localeBlock(event, 'ru')
   const block = localeBlock(event, code)
-  const hasDisplay = DISPLAY_KEYS.some((k) => (ru[k] ?? '').toString().trim())
+  const hasDisplay = DISPLAY_KEYS.some((k) => (block[k] ?? '').toString().trim())
   if (!hasDisplay) return false
-  return localeDisplayComplete(block, ru)
+  return localeDisplayComplete(block, block)
 }
 
 export function connectionLabel(conn: Connection, code: LocaleCode): string {

@@ -45,12 +45,11 @@ function localeBlock(event: CompiledEvent, code: LocaleCode): Record<string, str
 }
 
 function localeComplete(event: CompiledEvent, code: LocaleCode): boolean {
-  const ru = localeBlock(event, 'ru')
   const block = localeBlock(event, code)
-  if (!ru.statement && !ru.description && !ru.quote) return false
-  if ((ru.statement || ru.description) && !block.statement && !block.description) return false
-  if (ru.quote && !block.quote) return false
-  if (ru.source_ref && !block.source_ref) return false
+  if (!block.statement && !block.description && !block.quote) return false
+  if ((block.statement || block.description) && !block.statement && !block.description) return false
+  if (block.quote && !block.quote) return false
+  if (block.source_ref && !block.source_ref) return false
   return true
 }
 

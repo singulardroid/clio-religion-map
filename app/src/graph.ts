@@ -135,6 +135,30 @@ export function autoLayout(nodes: Node[], spec: ChartLayoutSpec): Node[] {
   return result
 }
 
+type NodeSide = 'left' | 'right' | 'top' | 'bottom'
+
+function nearestHandleSides(source: Node, target: Node): { sourceSide: NodeSide; targetSide: NodeSide } {
+  const sourceCenter = {
+    x: source.position.x + NODE_WIDTH / 2,
+    y: source.position.y + NODE_HEIGHT / 2,
+  }
+  const targetCenter = {
+    x: target.position.x + NODE_WIDTH / 2,
+    y: target.position.y + NODE_HEIGHT / 2,
+  }
+  const dx = targetCenter.x - sourceCenter.x
+  const dy = targetCenter.y - sourceCenter.y
+
+  if (Math.abs(dx) >= Math.abs(dy)) {
+    return dx >= 0
+      ? { sourceSide: 'right', targetSide: 'left' }
+      : { sourceSide: 'left', targetSide: 'right' }
+  }
+  return dy >= 0
+    ? { sourceSide: 'bottom', targetSide: 'top' }
+    : { sourceSide: 'top', targetSide: 'bottom' }
+}
+
 /**
  * Compose nodes + directed edges. Chart coordinates follow `spec` (autosized to visible events).
  */
@@ -160,16 +184,25 @@ export function buildGraph(
     }
   }
 
+  const nodesById = new Map(nodes.map((node) => [node.id, node]))
   const edges: Edge[] = []
   for (const event of evts) {
     for (const conn of event.connections ?? []) {
       if (byId.has(conn.target_concept_id)) {
+        const sourceNode = nodesById.get(event.concept_id)
+        const targetNode = nodesById.get(conn.target_concept_id)
+        const handles =
+          sourceNode && targetNode
+            ? nearestHandleSides(sourceNode, targetNode)
+            : { sourceSide: 'right' as const, targetSide: 'left' as const }
         const lab =
           typeof conn.label === 'string' ? conn.label : String(conn.label ?? '')
         edges.push({
           id: `${event.concept_id}→${conn.target_concept_id}`,
           source: event.concept_id,
           target: conn.target_concept_id,
+          sourceHandle: `source-${handles.sourceSide}`,
+          targetHandle: `target-${handles.targetSide}`,
           label: lab,
           type: 'smoothstep',
           animated: false,

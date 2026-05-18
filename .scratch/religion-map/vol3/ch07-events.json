@@ -236,7 +236,21 @@
           "precise_location": "Каир"
         },
         "en": {
-          "precise_location": "Каир"
+          "precise_location": "Каир",
+          "statement": "Maimonides’ ethic is a synthesis of the biblical heritage and the Aristotelian model; in effect, he exalts intellectual effort and philosophic knowledge.",
+          "quote": "Maimonides’ ethic is a synthesis of the biblical heritage and the Aristotelian model; in effect, he exalts intellectual effort and philosophic knowledge.",
+          "source_ref": "Eliade vol.3 (OEBPS/xhtml/Chapter06.html)",
+          "_source": {
+            "method": "source_reconciliation",
+            "confidence": 9,
+            "language": "en",
+            "volume": 3,
+            "source": "A History of Religious Ideas, Volume 3 - Eliade, Mircea.epub",
+            "section_id": "epub:OEBPS/xhtml/Chapter06.html",
+            "section_label": "OEBPS/xhtml/Chapter06.html",
+            "char_start": 335477,
+            "char_end": 335630
+          }
         }
       },
       "connections": []

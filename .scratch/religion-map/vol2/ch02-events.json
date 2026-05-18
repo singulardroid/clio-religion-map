@@ -462,7 +462,22 @@
       },
       "locales": {
         "ru": {},
-        "en": {}
+        "en": {
+          "statement": "We now better understand the Taoist’s desire to recover the primordial situation, the situation that existed “in the beginning.” For him, fullness of life, spontaneity, and bliss are bestowed only at the beginning of a “creation” or of a new epiphany of life. 69 The model for the integration of contraries is always the Tao; in its unity/totality the Yang and Yin coexist.",
+          "quote": "We now better understand the Taoist’s desire to recover the primordial situation, the situation that existed “in the beginning.” For him, fullness of life, spontaneity, and bliss are bestowed only at the beginning of a “creation” or of a new epiphany of life. 69 The model for the integration of contraries is always the Tao; in its unity/totality the Yang and Yin coexist.",
+          "source_ref": "Eliade vol.2 (OEBPS/html/9780226027357_09_ch16.html)",
+          "_source": {
+            "method": "source_reconciliation",
+            "confidence": 9,
+            "language": "en",
+            "volume": 2,
+            "source": "A History of Religious Ideas, Volume 2 - Eliade, Mircea.epub",
+            "section_id": "epub:OEBPS/html/9780226027357_09_ch16.html",
+            "section_label": "OEBPS/html/9780226027357_09_ch16.html",
+            "char_start": 59986,
+            "char_end": 60359
+          }
+        }
       },
       "connections": []
     },
@@ -674,7 +689,22 @@
       },
       "locales": {
         "ru": {},
-        "en": {}
+        "en": {
+          "statement": "It is generally agreed to regard Tsu Yen, a contemporary of Mencius, as the “founder” of alchemy. 94 In the second century before Christ the relation between preparing alchemical gold and obtaining longevity-immortality is clearly recognized by Lü An and other authors. 95 Chinese alchemy, as an autonomous discipline, is a compound of (1) the traditional cosmological beliefs; (2) the myths concerning the elixir of immortality and the Holy Immortals; and (3) the techniques whose goal was not only the prolongation of life but bliss and spiritual spontaneity.",
+          "quote": "It is generally agreed to regard Tsu Yen, a contemporary of Mencius, as the “founder” of alchemy. 94 In the second century before Christ the relation between preparing alchemical gold and obtaining longevity-immortality is clearly recognized by Lü An and other authors. 95 Chinese alchemy, as an autonomous discipline, is a compound of (1) the traditional cosmological beliefs; (2) the myths concerning the elixir of immortality and the Holy Immortals; and (3) the techniques whose goal was not only the prolongation of life but bliss and spiritual spontaneity.",
+          "source_ref": "Eliade vol.2 (OEBPS/html/9780226027357_09_ch16.html)",
+          "_source": {
+            "method": "source_reconciliation",
+            "confidence": 10,
+            "language": "en",
+            "volume": 2,
+            "source": "A History of Religious Ideas, Volume 2 - Eliade, Mircea.epub",
+            "section_id": "epub:OEBPS/html/9780226027357_09_ch16.html",
+            "section_label": "OEBPS/html/9780226027357_09_ch16.html",
+            "char_start": 74357,
+            "char_end": 74918
+          }
+        }
       },
       "connections": []
     },

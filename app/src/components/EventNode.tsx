@@ -313,8 +313,14 @@ export function EventNode({ data }: NodeProps<EventNodeData>) {
         )}
       </div>
 
-      <Handle type="target" position={Position.Left} style={{ opacity: 0 }} />
-      <Handle type="source" position={Position.Right} style={{ opacity: 0 }} />
+      <Handle id="target-left" type="target" position={Position.Left} style={{ opacity: 0 }} />
+      <Handle id="target-right" type="target" position={Position.Right} style={{ opacity: 0 }} />
+      <Handle id="target-top" type="target" position={Position.Top} style={{ opacity: 0 }} />
+      <Handle id="target-bottom" type="target" position={Position.Bottom} style={{ opacity: 0 }} />
+      <Handle id="source-left" type="source" position={Position.Left} style={{ opacity: 0 }} />
+      <Handle id="source-right" type="source" position={Position.Right} style={{ opacity: 0 }} />
+      <Handle id="source-top" type="source" position={Position.Top} style={{ opacity: 0 }} />
+      <Handle id="source-bottom" type="source" position={Position.Bottom} style={{ opacity: 0 }} />
     </div>
   )
 }

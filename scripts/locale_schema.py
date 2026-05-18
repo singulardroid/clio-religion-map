@@ -27,6 +27,19 @@ def _pick_localizable(event: dict) -> dict[str, str]:
         val = event.get(key)
         if isinstance(val, str) and val.strip():
             out[key] = val.strip()
+    legacy_name = event.get("event_name")
+    if "name" not in out and isinstance(legacy_name, str) and legacy_name.strip():
+        out["name"] = legacy_name.strip()
+    legacy_description = event.get("event_description")
+    if "description" not in out and isinstance(legacy_description, str) and legacy_description.strip():
+        out["description"] = legacy_description.strip()
+    if "statement" not in out and "description" in out:
+        out["statement"] = out["description"]
+    legacy_concept = event.get("concept")
+    has_display = any(out.get(key) for key in ("statement", "description", "quote", "name"))
+    if not has_display and isinstance(legacy_concept, str) and legacy_concept.strip():
+        out["name"] = legacy_concept.strip().replace("-", " ")
+        out["statement"] = out["name"]
     return out
 
 
@@ -67,8 +80,20 @@ def wrap_legacy_event_to_locales(event: dict) -> dict:
 def ensure_locales_shape(event: dict) -> dict:
     if event_has_locales(event):
         loc = event.setdefault("locales", {})
-        loc.setdefault("ru", {})
-        loc.setdefault("en", {})
+        ru = loc.setdefault("ru", {})
+        if not isinstance(ru, dict):
+            ru = {}
+            loc["ru"] = ru
+        en = loc.setdefault("en", {})
+        if not isinstance(en, dict):
+            loc["en"] = {}
+
+        # Some phase-1/early phase-2 records already have a locales object
+        # containing only metadata such as precise_location. Keep those fields,
+        # but backfill missing RU display text from legacy top-level fields so
+        # the locale filter does not hide otherwise valid events.
+        for key, val in _pick_localizable(event).items():
+            ru.setdefault(key, val)
         return event
     return wrap_legacy_event_to_locales(event)
 

@@ -34,7 +34,10 @@
           "statement": "Только русский текст.",
           "quote": "цитата"
         },
-        "en": {}
+        "en": {
+          "statement": "Partial English with quote but no source.",
+          "quote": "EN quote without source"
+        }
       }
     }
   ]

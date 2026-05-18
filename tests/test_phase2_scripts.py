@@ -26,7 +26,7 @@ def _run(*args: str) -> subprocess.CompletedProcess[str]:
 
 def test_locale_schema_en_complete():
     sys.path.insert(0, str(SCRIPTS))
-    from locale_schema import en_is_complete
+    from locale_schema import en_has_malformed_partial, en_is_complete
 
     complete = {
         "locales": {
@@ -42,6 +42,13 @@ def test_locale_schema_en_complete():
     }
     assert en_is_complete(complete)
     assert not en_is_complete(incomplete)
+    assert not en_has_malformed_partial(incomplete)
+    assert not en_has_malformed_partial(
+        {"locales": {"ru": {"statement": "ru"}, "en": {"statement": "partial"}}}
+    )
+    assert en_has_malformed_partial(
+        {"locales": {"ru": {"statement": "ru"}, "en": {"statement": "partial", "quote": "q"}}}
+    )
 
 
 def test_locale_schema_backfills_partial_locale_from_legacy_fields():

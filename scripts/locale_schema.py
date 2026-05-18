@@ -128,6 +128,19 @@ def en_is_complete(event: dict) -> bool:
     return _locale_display_complete(en, ru)
 
 
+def en_has_malformed_partial(event: dict) -> bool:
+    """Strict compile should reject partial EN that would render as unsourced/misleading."""
+    en = locale_block(event, "en")
+    has_statement = bool((en.get("statement") or en.get("description") or "").strip())
+    has_quote = bool((en.get("quote") or "").strip())
+    has_source_ref = bool((en.get("source_ref") or "").strip())
+    if has_quote and not has_source_ref:
+        return True
+    if has_source_ref and not has_statement:
+        return True
+    return False
+
+
 def ru_is_complete(event: dict) -> bool:
     return _locale_display_complete(locale_block(event, "ru"), locale_block(event, "ru"))
 

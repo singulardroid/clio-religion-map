@@ -13,7 +13,7 @@ from pathlib import Path
 _SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(_SCRIPT_DIR))
 
-from locale_schema import ensure_locales_shape, en_is_complete
+from locale_schema import en_has_malformed_partial, ensure_locales_shape
 from repo_paths import REPO_ROOT
 
 DEFAULT_OVERLAY = REPO_ROOT / "data" / "editorial" / "event-overlays.json"
@@ -162,7 +162,7 @@ def validate_strict_en(events: list[dict]) -> list[str]:
     errors: list[str] = []
     for ev in events:
         cid = ev.get("concept_id", "?")
-        if not en_is_complete(ev):
+        if en_has_malformed_partial(ev):
             errors.append(cid)
     return errors
 
@@ -175,7 +175,7 @@ def main():
     parser.add_argument(
         "--strict-en",
         action="store_true",
-        help="Fail if any event lacks required locales.en fields",
+        help="Fail if any event has partial/malformed locales.en fields",
     )
     args = parser.parse_args()
 
